@@ -28,10 +28,11 @@ UA = "travel-agent-attraction-fetch/1.0 (local development)"
 OUT_DIR = Path(__file__).resolve().parent.parent / "data" / "attractions"
 
 # 城市 -> (南, 西, 北, 东)
+# 注意：必须覆盖该市"游客真会去"的近郊，否则会漏掉都江堰、兵马俑这类必去点
 CITIES: dict[str, tuple[float, float, float, float]] = {
-    "成都": (30.50, 103.85, 30.85, 104.35),
+    "成都": (30.50, 103.55, 31.15, 104.35),  # 含都江堰、青城山
     "杭州": (30.10, 120.00, 30.45, 120.35),
-    "西安": (34.15, 108.80, 34.45, 109.10),
+    "西安": (34.15, 108.80, 34.45, 109.40),  # 含临潼：兵马俑、华清池
     "北京": (39.75, 116.20, 40.05, 116.55),
     "上海": (31.10, 121.30, 31.35, 121.60),
 }
@@ -112,11 +113,24 @@ def slugify(city_slug: str, name: str, osm_type: str, osm_id: int) -> str:
     return f"{city_slug}-{osm_type}{osm_id}"
 
 
-def fetch_city(city: str, retries: int = 6) -> list[dict]:
-    """镜像轮换 + 指数退避：公共实例会 429/504，必须有耐心。"""
-    query = build_query(CITIES[city])
+def fetch_city(city: str, retries: int = 8) -> list[dict]:
+    """镜像轮换 + 指数退避。
+
+    前 3 次用完整查询；之后退化为只查 tourism 的轻量查询，
+    因为大城市的 7 分支联合查询容易把公共实例打到 500/502。
+    """
+    heavy = build_query(CITIES[city])
+    south, west, north, east = CITIES[city]
+    box = f"({south},{west},{north},{east})"
+    light = f"""[out:json][timeout:120];
+(
+  nwr["tourism"~"^(attraction|museum|gallery|viewpoint|zoo|theme_park)$"]["name"]["wikidata"]{box};
+);
+out center tags;
+"""
     last: Exception | None = None
     for attempt in range(retries):
+        query = heavy if attempt < 3 else light
         endpoint = OVERPASS_ENDPOINTS[attempt % len(OVERPASS_ENDPOINTS)]
         host = endpoint.split("/")[2]
         try:
@@ -247,10 +261,32 @@ def main() -> int:
             "items": items,
         }
         path = OUT_DIR / f"{SLUG[city]}.json"
+        # 轻量兜底查询会丢掉 park/temple/historic 分支，因此与已有数据按 id 合并，
+        # 避免一次降级抓取把更完整的旧结果覆盖掉。
+        merged = {item["id"]: item for item in items}
+        if path.exists():
+            try:
+                previous = json.loads(path.read_text(encoding="utf-8"))
+            except (OSError, json.JSONDecodeError):
+                previous = {}
+            for item in previous.get("items") or []:
+                merged.setdefault(item["id"], item)
+        document["items"] = sorted(
+            merged.values(),
+            key=lambda item: (
+                CATEGORY_ORDER.get(item["category"], 9),
+                0 if item.get("notability") == "wikipedia" else 1,
+                item["name"],
+            ),
+        )[:60]
         path.write_text(
             json.dumps(document, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
         )
-        print(f"  -> {path.name}：{len(items)} 条（原始要素 {len(elements)}）")
+        reused = len(document["items"]) - len(items)
+        print(
+            f"  -> {path.name}：{len(document['items'])} 条"
+            f"（本次 {len(items)} + 沿用 {reused}；原始要素 {len(elements)}）"
+        )
         if index < len(targets) - 1:
             time.sleep(10)  # 对公共实例友好，避免连续重查询
     return 0

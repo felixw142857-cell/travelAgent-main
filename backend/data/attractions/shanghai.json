@@ -1,0 +1,1358 @@
+{
+  "city": "上海",
+  "city_slug": "shanghai",
+  "version": 1,
+  "updated_at": "2026-10-17",
+  "source": {
+    "provider": "openstreetmap",
+    "license": "ODbL-1.0",
+    "endpoint": "https://overpass.kumi.systems/api/interpreter"
+  },
+  "notes": "名称/类别/坐标为 OSM 实测数据；suggested_minutes 与 best_time 为程序估计，非官方信息。",
+  "items": [
+    {
+      "id": "shanghai-way462007561",
+      "name": "上海动物园",
+      "aliases": [
+        "Shanghai Zoo"
+      ],
+      "category": "zoo",
+      "district": "上海",
+      "lat": 31.195155,
+      "lon": 121.358864,
+      "suggested_minutes": 180,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 462007561,
+        "wikidata": "Q3182046"
+      }
+    },
+    {
+      "id": "shanghai-node12585101766",
+      "name": "1927·鲁迅与内山纪念书局",
+      "aliases": [],
+      "category": "sight",
+      "district": "",
+      "lat": 31.266708,
+      "lon": 121.479218,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 12585101766,
+        "wikidata": "Q17370521"
+      }
+    },
+    {
+      "id": "shanghai-node11221740642",
+      "name": "上海中心大厦",
+      "aliases": [
+        "Shanghai Tower"
+      ],
+      "category": "sight",
+      "district": "",
+      "lat": 31.235455,
+      "lon": 121.500439,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 11221740642,
+        "wikidata": "Q18547"
+      }
+    },
+    {
+      "id": "shanghai-way39763758",
+      "name": "上海大剧院",
+      "aliases": [
+        "Shanghai Grand Theatre"
+      ],
+      "category": "sight",
+      "district": "上海市",
+      "lat": 31.231479,
+      "lon": 121.467313,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 39763758,
+        "wikidata": "Q1325611"
+      }
+    },
+    {
+      "id": "shanghai-way10691100",
+      "name": "上海环球金融中心",
+      "aliases": [
+        "Shanghai World Financial Center"
+      ],
+      "category": "sight",
+      "district": "浦东新区",
+      "lat": 31.236577,
+      "lon": 121.50304,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 10691100,
+        "wikidata": "Q80852"
+      }
+    },
+    {
+      "id": "shanghai-way404709025",
+      "name": "人民广场",
+      "aliases": [
+        "People's Square"
+      ],
+      "category": "sight",
+      "district": "上海",
+      "lat": 31.231084,
+      "lon": 121.470396,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 404709025,
+        "wikidata": "Q10883549"
+      }
+    },
+    {
+      "id": "shanghai-way47007059",
+      "name": "人民英雄纪念塔",
+      "aliases": [
+        "Monument to the People's Heroes"
+      ],
+      "category": "sight",
+      "district": "",
+      "lat": 31.244272,
+      "lon": 121.48695,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 47007059,
+        "wikidata": "Q6906900"
+      }
+    },
+    {
+      "id": "shanghai-way39961770",
+      "name": "复兴公园",
+      "aliases": [
+        "Fuxing Park"
+      ],
+      "category": "sight",
+      "district": "",
+      "lat": 31.219067,
+      "lon": 121.464441,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 39961770,
+        "wikidata": "Q5510954"
+      }
+    },
+    {
+      "id": "shanghai-relation2142077",
+      "name": "外滩",
+      "aliases": [
+        "The Bund"
+      ],
+      "category": "sight",
+      "district": "",
+      "lat": 31.238402,
+      "lon": 121.488559,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "relation",
+        "osm_id": 2142077,
+        "wikidata": "Q125474"
+      }
+    },
+    {
+      "id": "shanghai-way494565149",
+      "name": "文庙上海文庙",
+      "aliases": [
+        "Shanghai Confucian Temple"
+      ],
+      "category": "sight",
+      "district": "",
+      "lat": 31.220107,
+      "lon": 121.483368,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 494565149,
+        "wikidata": "Q1909323"
+      }
+    },
+    {
+      "id": "shanghai-way40325255",
+      "name": "新天地",
+      "aliases": [
+        "Xintiandi"
+      ],
+      "category": "sight",
+      "district": "",
+      "lat": 31.221944,
+      "lon": 121.4705,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 40325255,
+        "wikidata": null
+      }
+    },
+    {
+      "id": "shanghai-way745254448",
+      "name": "法租界会审公廨旧址",
+      "aliases": [
+        "Site of the former French Concession Courthouse"
+      ],
+      "category": "sight",
+      "district": "",
+      "lat": 31.211932,
+      "lon": 121.464924,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 745254448,
+        "wikidata": null
+      }
+    },
+    {
+      "id": "shanghai-way404699628",
+      "name": "玉佛禅寺",
+      "aliases": [
+        "Jade Buddha Temple"
+      ],
+      "category": "sight",
+      "district": "上海",
+      "lat": 31.243592,
+      "lon": 121.439848,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 404699628,
+        "wikidata": "Q967601"
+      }
+    },
+    {
+      "id": "shanghai-way293829293",
+      "name": "田子坊",
+      "aliases": [
+        "Tianzifang"
+      ],
+      "category": "sight",
+      "district": "",
+      "lat": 31.210233,
+      "lon": 121.464104,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 293829293,
+        "wikidata": "Q7800264"
+      }
+    },
+    {
+      "id": "shanghai-way40036584",
+      "name": "豫园",
+      "aliases": [
+        "Yu Yuan Garden"
+      ],
+      "category": "sight",
+      "district": "黄浦区",
+      "lat": 31.228924,
+      "lon": 121.487754,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 40036584,
+        "wikidata": "Q1328025"
+      }
+    },
+    {
+      "id": "shanghai-way13981430",
+      "name": "静安寺",
+      "aliases": [
+        "Jing'an Temple"
+      ],
+      "category": "sight",
+      "district": "上海",
+      "lat": 31.225407,
+      "lon": 121.440734,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 13981430,
+        "wikidata": "Q403189"
+      }
+    },
+    {
+      "id": "shanghai-node9907365281",
+      "name": "鲁迅故居",
+      "aliases": [],
+      "category": "sight",
+      "district": "",
+      "lat": 31.268231,
+      "lon": 121.479929,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 9907365281,
+        "wikidata": "Q10868112"
+      }
+    },
+    {
+      "id": "shanghai-way47011877",
+      "name": "龙华塔",
+      "aliases": [
+        "Longhua Pagoda (40 m)"
+      ],
+      "category": "sight",
+      "district": "",
+      "lat": 31.175618,
+      "lon": 121.447345,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 47011877,
+        "wikidata": "Q19854145"
+      }
+    },
+    {
+      "id": "shanghai-way404694432",
+      "name": "龙华寺",
+      "aliases": [
+        "Longhua Temple"
+      ],
+      "category": "sight",
+      "district": "上海市徐汇区",
+      "lat": 31.17707,
+      "lon": 121.447101,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 404694432,
+        "wikidata": "Q41912"
+      }
+    },
+    {
+      "id": "shanghai-way307094922",
+      "name": "A.F.A上海融侨中心",
+      "aliases": [
+        "Red Town"
+      ],
+      "category": "sight",
+      "district": "",
+      "lat": 31.200998,
+      "lon": 121.419498,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 307094922,
+        "wikidata": "Q123335477"
+      }
+    },
+    {
+      "id": "shanghai-node10763850644",
+      "name": "中国共产党第一次全国代表大会代表宿舍旧址",
+      "aliases": [
+        "Former dorm. for delegates to the 1 National Congress of the CPC"
+      ],
+      "category": "sight",
+      "district": "",
+      "lat": 31.223563,
+      "lon": 121.471217,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 10763850644,
+        "wikidata": "Q19852026"
+      }
+    },
+    {
+      "id": "shanghai-way62072384",
+      "name": "九曲桥",
+      "aliases": [
+        "Nine-Zigzag Bridge"
+      ],
+      "category": "sight",
+      "district": "",
+      "lat": 31.228733,
+      "lon": 121.487382,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 62072384,
+        "wikidata": "Q123335448"
+      }
+    },
+    {
+      "id": "shanghai-node5494519825",
+      "name": "刘海粟旧居",
+      "aliases": [
+        "Shanghai Liu Haisu Former Residence"
+      ],
+      "category": "sight",
+      "district": "",
+      "lat": 31.217578,
+      "lon": 121.466932,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 5494519825,
+        "wikidata": "Q59601035"
+      }
+    },
+    {
+      "id": "shanghai-node4827188839",
+      "name": "小南门警钟楼",
+      "aliases": [],
+      "category": "sight",
+      "district": "",
+      "lat": 31.217893,
+      "lon": 121.493443,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 4827188839,
+        "wikidata": "Q47500617"
+      }
+    },
+    {
+      "id": "shanghai-node4443278690",
+      "name": "Post museum",
+      "aliases": [
+        "Post museum"
+      ],
+      "category": "museum",
+      "district": "",
+      "lat": 31.246407,
+      "lon": 121.480755,
+      "suggested_minutes": 120,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 4443278690,
+        "wikidata": "Q4520139"
+      }
+    },
+    {
+      "id": "shanghai-node4880999164",
+      "name": "上海儿童博物馆",
+      "aliases": [
+        "Shanghai Children Museum"
+      ],
+      "category": "museum",
+      "district": "",
+      "lat": 31.195953,
+      "lon": 121.408483,
+      "suggested_minutes": 120,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 4880999164,
+        "wikidata": "Q10867694"
+      }
+    },
+    {
+      "id": "shanghai-way161090899",
+      "name": "上海博物馆",
+      "aliases": [
+        "Shanghai Museum"
+      ],
+      "category": "museum",
+      "district": "",
+      "lat": 31.230191,
+      "lon": 121.471034,
+      "suggested_minutes": 120,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 161090899,
+        "wikidata": "Q1051293"
+      }
+    },
+    {
+      "id": "shanghai-way39763847",
+      "name": "上海城市规划展示馆",
+      "aliases": [
+        "Shanghai Urban Planning Exhibition Hall"
+      ],
+      "category": "museum",
+      "district": "",
+      "lat": 31.233371,
+      "lon": 121.470882,
+      "suggested_minutes": 120,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 39763847,
+        "wikidata": "Q713922"
+      }
+    },
+    {
+      "id": "shanghai-way490345952",
+      "name": "上海工艺美术博物馆",
+      "aliases": [
+        "Shanghai Museum of Arts And Crafts"
+      ],
+      "category": "museum",
+      "district": "",
+      "lat": 31.212216,
+      "lon": 121.4499,
+      "suggested_minutes": 120,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 490345952,
+        "wikidata": "Q15912151"
+      }
+    },
+    {
+      "id": "shanghai-node5530017322",
+      "name": "上海市历史博物馆",
+      "aliases": [
+        "Shanghai History Museum"
+      ],
+      "category": "museum",
+      "district": "",
+      "lat": 31.232617,
+      "lon": 121.46662,
+      "suggested_minutes": 120,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 5530017322,
+        "wikidata": "Q779273"
+      }
+    },
+    {
+      "id": "shanghai-way298132744",
+      "name": "上海当代艺术博物馆",
+      "aliases": [
+        "Power Station of Art"
+      ],
+      "category": "museum",
+      "district": "",
+      "lat": 31.203059,
+      "lon": 121.493896,
+      "suggested_minutes": 120,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 298132744,
+        "wikidata": "Q7236419"
+      }
+    },
+    {
+      "id": "shanghai-way40324703",
+      "name": "上海当代艺术馆",
+      "aliases": [
+        "Museum of Contemporary Art (MOCA) of Shanghai"
+      ],
+      "category": "museum",
+      "district": "上海市",
+      "lat": 31.233315,
+      "lon": 121.468213,
+      "suggested_minutes": 120,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 40324703,
+        "wikidata": "Q3329586"
+      }
+    },
+    {
+      "id": "shanghai-way206608461",
+      "name": "上海犹太难民纪念馆",
+      "aliases": [
+        "Shanghai Jewish Refugee Museum"
+      ],
+      "category": "museum",
+      "district": "虹口区",
+      "lat": 31.256129,
+      "lon": 121.504815,
+      "suggested_minutes": 120,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 206608461,
+        "wikidata": "Q11078482"
+      }
+    },
+    {
+      "id": "shanghai-way43927496",
+      "name": "上海科技馆",
+      "aliases": [
+        "Shanghai Science and Technology Museum"
+      ],
+      "category": "museum",
+      "district": "浦东新区",
+      "lat": 31.220589,
+      "lon": 121.537771,
+      "suggested_minutes": 120,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 43927496,
+        "wikidata": "Q855376"
+      }
+    },
+    {
+      "id": "shanghai-node12127449455",
+      "name": "上海纺织博物馆",
+      "aliases": [
+        "Shanghai Textile Museum"
+      ],
+      "category": "museum",
+      "district": "普陀区",
+      "lat": 31.248646,
+      "lon": 121.441527,
+      "suggested_minutes": 120,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 12127449455,
+        "wikidata": "Q10868014"
+      }
+    },
+    {
+      "id": "shanghai-way425762388",
+      "name": "上海自然博物馆",
+      "aliases": [
+        "Shanghai Natural History Museum"
+      ],
+      "category": "museum",
+      "district": "",
+      "lat": 31.236882,
+      "lon": 121.458012,
+      "suggested_minutes": 120,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 425762388,
+        "wikidata": "Q1312291"
+      }
+    },
+    {
+      "id": "shanghai-node662708794",
+      "name": "上海铁路博物馆",
+      "aliases": [
+        "Shanghai Railways Museum"
+      ],
+      "category": "museum",
+      "district": "",
+      "lat": 31.251986,
+      "lon": 121.47179,
+      "suggested_minutes": 120,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 662708794,
+        "wikidata": "Q7488495"
+      }
+    },
+    {
+      "id": "shanghai-node5699277953",
+      "name": "东方乐器博物馆",
+      "aliases": [
+        "Museum of Oriental Musical Instruments"
+      ],
+      "category": "museum",
+      "district": "",
+      "lat": 31.205361,
+      "lon": 121.439878,
+      "suggested_minutes": 120,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 5699277953,
+        "wikidata": "Q85873949"
+      }
+    },
+    {
+      "id": "shanghai-way372180467",
+      "name": "中共一大会址",
+      "aliases": [
+        "Site of the First Congress of the CPC"
+      ],
+      "category": "museum",
+      "district": "",
+      "lat": 31.222063,
+      "lon": 121.470693,
+      "suggested_minutes": 120,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 372180467,
+        "wikidata": null
+      }
+    },
+    {
+      "id": "shanghai-way206382288",
+      "name": "中华艺术宫",
+      "aliases": [
+        "China Art Museum"
+      ],
+      "category": "museum",
+      "district": "浦东新区",
+      "lat": 31.186484,
+      "lon": 121.489926,
+      "suggested_minutes": 120,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 206382288,
+        "wikidata": "Q5099572"
+      }
+    },
+    {
+      "id": "shanghai-way166776713",
+      "name": "中国武术博物馆",
+      "aliases": [
+        "Chinese Wushu Museum"
+      ],
+      "category": "museum",
+      "district": "",
+      "lat": 31.316108,
+      "lon": 121.523538,
+      "suggested_minutes": 120,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 166776713,
+        "wikidata": "Q10873847"
+      }
+    },
+    {
+      "id": "shanghai-node4628253490",
+      "name": "陆汉斌打字机博物馆",
+      "aliases": [
+        "Luhanbin Typewriter Museum"
+      ],
+      "category": "museum",
+      "district": "",
+      "lat": 31.216309,
+      "lon": 121.42941,
+      "suggested_minutes": 120,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 4628253490,
+        "wikidata": "Q30943947"
+      }
+    },
+    {
+      "id": "shanghai-node3796474701",
+      "name": "上海公安博物馆",
+      "aliases": [
+        "Shanghai Public Security Museum"
+      ],
+      "category": "museum",
+      "district": "",
+      "lat": 31.200352,
+      "lon": 121.463799,
+      "suggested_minutes": 120,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 3796474701,
+        "wikidata": "Q10867747"
+      }
+    },
+    {
+      "id": "shanghai-node4498281092",
+      "name": "上海城市历史发展陈列馆",
+      "aliases": [
+        "Shanghai Municipal History Museum"
+      ],
+      "category": "museum",
+      "district": "",
+      "lat": 31.241586,
+      "lon": 121.495362,
+      "suggested_minutes": 120,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 4498281092,
+        "wikidata": "Q109346936"
+      }
+    },
+    {
+      "id": "shanghai-way965004721",
+      "name": "上海大自然野生昆虫馆",
+      "aliases": [
+        "Shanghai Natural Wild Insect Kingdom"
+      ],
+      "category": "museum",
+      "district": "",
+      "lat": 31.242383,
+      "lon": 121.493402,
+      "suggested_minutes": 120,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 965004721,
+        "wikidata": "Q109346935"
+      }
+    }
+  ]
+}

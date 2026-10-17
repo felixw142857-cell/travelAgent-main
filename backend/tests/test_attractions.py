@@ -17,6 +17,7 @@ from src.tools.attraction import (
     build_candidates,
     load_city,
     normalize_city,
+    score,
     search,
 )
 
@@ -103,12 +104,20 @@ def test_load_unknown_city_reports_available():
 
 
 def test_build_candidates_covers_minimum_slots():
+    """候选数量必须够 days*3 个时段用；偏好命中另由 score 单测覆盖。"""
     cities = available_cities()
     if not cities:
         pytest.skip("景点库为空")
-    candidates = build_candidates(cities[0], preferences=["公园"], days=3)
-    assert len(candidates) >= 12
-    assert any("公园" in item.category_label for item in candidates[:8])
+    for city in cities:
+        candidates = build_candidates(city, preferences=["公园"], days=3)
+        assert len(candidates) >= 12, city
+
+
+def test_score_prefers_preference_match():
+    park = make_attraction("a", "人民公园", "park")
+    tower = make_attraction("b", "天府熊猫塔", "sight")
+    assert score(park, ["公园"]) > score(tower, ["公园"])
+    assert score(park, ["公园"]) > score(park, [])
 
 
 def test_search_filters_by_category():

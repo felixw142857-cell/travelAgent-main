@@ -1,0 +1,906 @@
+{
+  "city": "西安",
+  "city_slug": "xian",
+  "version": 1,
+  "updated_at": "2026-10-17",
+  "source": {
+    "provider": "openstreetmap",
+    "license": "ODbL-1.0",
+    "endpoint": "https://overpass.kumi.systems/api/interpreter"
+  },
+  "notes": "名称/类别/坐标为 OSM 实测数据；suggested_minutes 与 best_time 为程序估计，非官方信息。",
+  "items": [
+    {
+      "id": "xian-way92223044",
+      "name": "大雁塔",
+      "aliases": [
+        "Big Wild Goose Pagoda"
+      ],
+      "category": "sight",
+      "district": "",
+      "lat": 34.219797,
+      "lon": 108.959426,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 92223044,
+        "wikidata": "Q1047061"
+      }
+    },
+    {
+      "id": "xian-way1284311674",
+      "name": "小雁塔",
+      "aliases": [
+        "Small Wild Goose Pagoda"
+      ],
+      "category": "sight",
+      "district": "",
+      "lat": 34.240808,
+      "lon": 108.937348,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 1284311674,
+        "wikidata": "Q1194818"
+      }
+    },
+    {
+      "id": "xian-way445010012",
+      "name": "清真大寺",
+      "aliases": [
+        "The Great Mosque of Xi'an"
+      ],
+      "category": "sight",
+      "district": "西安",
+      "lat": 34.263374,
+      "lon": 108.936524,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 445010012,
+        "wikidata": "Q820842"
+      }
+    },
+    {
+      "id": "xian-way378143131",
+      "name": "秦始皇帝陵博物院丽山园",
+      "aliases": [
+        "Emperor Qinshihuang's Mausoleum Site Park"
+      ],
+      "category": "sight",
+      "district": "",
+      "lat": 34.383935,
+      "lon": 109.25406,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 378143131,
+        "wikidata": "Q910180"
+      }
+    },
+    {
+      "id": "xian-node5008827133",
+      "name": "安定门",
+      "aliases": [
+        "Anding Gate"
+      ],
+      "category": "sight",
+      "district": "",
+      "lat": 34.260988,
+      "lon": 108.920463,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 5008827133,
+        "wikidata": "Q10946594"
+      }
+    },
+    {
+      "id": "xian-node6817037487",
+      "name": "永宁门",
+      "aliases": [
+        "Yongning Gate"
+      ],
+      "category": "sight",
+      "district": "",
+      "lat": 34.253104,
+      "lon": 108.942318,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 6817037487,
+        "wikidata": "Q11131546"
+      }
+    },
+    {
+      "id": "xian-relation3450809",
+      "name": "西安城墙",
+      "aliases": [
+        "Xi'an City Wall"
+      ],
+      "category": "sight",
+      "district": "",
+      "lat": 34.265205,
+      "lon": 108.943651,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "relation",
+        "osm_id": 3450809,
+        "wikidata": "Q1334336"
+      }
+    },
+    {
+      "id": "xian-way423874161",
+      "name": "长乐门",
+      "aliases": [
+        "Changle Gate"
+      ],
+      "category": "sight",
+      "district": "",
+      "lat": 34.260846,
+      "lon": 108.966468,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 423874161,
+        "wikidata": "Q15899428"
+      }
+    },
+    {
+      "id": "xian-way1212560875",
+      "name": "八路军西安办事处纪念馆",
+      "aliases": [],
+      "category": "museum",
+      "district": "新城区",
+      "lat": 34.274636,
+      "lon": 108.950575,
+      "suggested_minutes": 120,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 1212560875,
+        "wikidata": "Q15913387"
+      }
+    },
+    {
+      "id": "xian-way838033005",
+      "name": "半坡博物馆",
+      "aliases": [
+        "Banpo Museum"
+      ],
+      "category": "museum",
+      "district": "",
+      "lat": 34.273955,
+      "lon": 109.047984,
+      "suggested_minutes": 120,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 838033005,
+        "wikidata": "Q806929"
+      }
+    },
+    {
+      "id": "xian-way71235670",
+      "name": "秦始皇兵马俑博物馆",
+      "aliases": [
+        "Terracotta Warriors"
+      ],
+      "category": "museum",
+      "district": "",
+      "lat": 34.387216,
+      "lon": 109.275023,
+      "suggested_minutes": 120,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 71235670,
+        "wikidata": "Q47672"
+      }
+    },
+    {
+      "id": "xian-way1223168141",
+      "name": "秦始皇帝陵铜车马博物馆",
+      "aliases": [
+        "Bronze Chariot and Horse Museum"
+      ],
+      "category": "museum",
+      "district": "",
+      "lat": 34.378932,
+      "lon": 109.249814,
+      "suggested_minutes": 120,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 1223168141,
+        "wikidata": "Q110105682"
+      }
+    },
+    {
+      "id": "xian-relation20048755",
+      "name": "西安事变纪念馆",
+      "aliases": [
+        "Xi'an Incident Memorial"
+      ],
+      "category": "museum",
+      "district": "",
+      "lat": 34.266022,
+      "lon": 108.949217,
+      "suggested_minutes": 120,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "relation",
+        "osm_id": 20048755,
+        "wikidata": "Q137396547"
+      }
+    },
+    {
+      "id": "xian-way1284661069",
+      "name": "西安建筑科技大学校史馆",
+      "aliases": [],
+      "category": "museum",
+      "district": "",
+      "lat": 34.239221,
+      "lon": 108.963891,
+      "suggested_minutes": 120,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 1284661069,
+        "wikidata": "Q4418179"
+      }
+    },
+    {
+      "id": "xian-way256711574",
+      "name": "西安碑林博物馆",
+      "aliases": [
+        "Xi'an Stele Forest Museum"
+      ],
+      "category": "museum",
+      "district": "碑林区",
+      "lat": 34.255174,
+      "lon": 108.948118,
+      "suggested_minutes": 120,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 256711574,
+        "wikidata": "Q10519071"
+      }
+    },
+    {
+      "id": "xian-way1346634173",
+      "name": "西安美术馆",
+      "aliases": [
+        "Xi'an Art Museum"
+      ],
+      "category": "museum",
+      "district": "",
+      "lat": 34.212691,
+      "lon": 108.958725,
+      "suggested_minutes": 120,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 1346634173,
+        "wikidata": "Q15920108"
+      }
+    },
+    {
+      "id": "xian-node2958170395",
+      "name": "西安鼓楼博物馆",
+      "aliases": [
+        "Xi'an Drum Tower Museum"
+      ],
+      "category": "museum",
+      "district": "",
+      "lat": 34.261751,
+      "lon": 108.938964,
+      "suggested_minutes": 120,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 2958170395,
+        "wikidata": "Q2742315"
+      }
+    },
+    {
+      "id": "xian-way1419575277",
+      "name": "陕西历史博物馆",
+      "aliases": [
+        "Shaanxi History Museum"
+      ],
+      "category": "museum",
+      "district": "雁塔区",
+      "lat": 34.225757,
+      "lon": 108.950328,
+      "suggested_minutes": 120,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 1419575277,
+        "wikidata": "Q1151210"
+      }
+    },
+    {
+      "id": "xian-way1284311239",
+      "name": "陕西省美术博物馆",
+      "aliases": [],
+      "category": "museum",
+      "district": "碑林区",
+      "lat": 34.2327,
+      "lon": 108.939661,
+      "suggested_minutes": 120,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 1284311239,
+        "wikidata": "Q124884559"
+      }
+    },
+    {
+      "id": "xian-way254488435",
+      "name": "钟楼",
+      "aliases": [
+        "Bell Tower"
+      ],
+      "category": "museum",
+      "district": "西安市",
+      "lat": 34.261012,
+      "lon": 108.942342,
+      "suggested_minutes": 120,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 254488435,
+        "wikidata": "Q1151087"
+      }
+    },
+    {
+      "id": "xian-way88216827",
+      "name": "华清宫",
+      "aliases": [
+        "Huaqing Hot Springs"
+      ],
+      "category": "park",
+      "district": "",
+      "lat": 34.365051,
+      "lon": 109.207427,
+      "suggested_minutes": 90,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 88216827,
+        "wikidata": "Q4133842"
+      }
+    },
+    {
+      "id": "xian-relation18399358",
+      "name": "大唐芙蓉园",
+      "aliases": [
+        "Tang Paradise"
+      ],
+      "category": "park",
+      "district": "",
+      "lat": 34.214548,
+      "lon": 108.970395,
+      "suggested_minutes": 90,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "relation",
+        "osm_id": 18399358,
+        "wikidata": "Q7682722"
+      }
+    },
+    {
+      "id": "xian-way235397975",
+      "name": "西安植物园",
+      "aliases": [
+        "Xi'an Botanical Garden"
+      ],
+      "category": "park",
+      "district": "",
+      "lat": 34.208948,
+      "lon": 108.954216,
+      "suggested_minutes": 90,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 235397975,
+        "wikidata": "Q15918766"
+      }
+    },
+    {
+      "id": "xian-way245283775",
+      "name": "革命公园",
+      "aliases": [
+        "Revolution Park"
+      ],
+      "category": "park",
+      "district": "新城区",
+      "lat": 34.273099,
+      "lon": 108.953545,
+      "suggested_minutes": 90,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 245283775,
+        "wikidata": null
+      }
+    },
+    {
+      "id": "xian-way972281883",
+      "name": "大兴善寺",
+      "aliases": [
+        "Daxingshan Temple"
+      ],
+      "category": "temple",
+      "district": "雁塔区",
+      "lat": 34.228662,
+      "lon": 108.938816,
+      "suggested_minutes": 60,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 972281883,
+        "wikidata": "Q4155168"
+      }
+    },
+    {
+      "id": "xian-way607049841",
+      "name": "大学习巷清真寺",
+      "aliases": [],
+      "category": "temple",
+      "district": "",
+      "lat": 34.263736,
+      "lon": 108.931108,
+      "suggested_minutes": 60,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 607049841,
+        "wikidata": "Q1179018"
+      }
+    },
+    {
+      "id": "xian-way1416050971",
+      "name": "大慈恩寺",
+      "aliases": [
+        "Da Ci'en Temple"
+      ],
+      "category": "temple",
+      "district": "",
+      "lat": 34.219485,
+      "lon": 108.959443,
+      "suggested_minutes": 60,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 1416050971,
+        "wikidata": "Q5370929"
+      }
+    },
+    {
+      "id": "xian-way607051723",
+      "name": "都城隍庙",
+      "aliases": [
+        "Duchenghuang Temple of Xi'an"
+      ],
+      "category": "temple",
+      "district": "",
+      "lat": 34.262441,
+      "lon": 108.932676,
+      "suggested_minutes": 60,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 607051723,
+        "wikidata": "Q15941584"
+      }
+    },
+    {
+      "id": "xian-node310338331",
+      "name": "青龙寺",
+      "aliases": [
+        "Qinglong Temple"
+      ],
+      "category": "temple",
+      "district": "",
+      "lat": 34.233975,
+      "lon": 108.984591,
+      "suggested_minutes": 60,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 310338331,
+        "wikidata": "Q10565990"
+      }
+    },
+    {
+      "id": "xian-way254488437",
+      "name": "西安鼓楼",
+      "aliases": [
+        "Drum Tower"
+      ],
+      "category": "historic",
+      "district": "西安",
+      "lat": 34.26176,
+      "lon": 108.938842,
+      "suggested_minutes": 60,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 254488437,
+        "wikidata": null
+      }
+    }
+  ]
+}

@@ -1,0 +1,1354 @@
+{
+  "city": "北京",
+  "city_slug": "beijing",
+  "version": 1,
+  "updated_at": "2026-10-17",
+  "source": {
+    "provider": "openstreetmap",
+    "license": "ODbL-1.0",
+    "endpoint": "https://overpass.kumi.systems/api/interpreter"
+  },
+  "notes": "名称/类别/坐标为 OSM 实测数据；suggested_minutes 与 best_time 为程序估计，非官方信息。",
+  "items": [
+    {
+      "id": "beijing-way29222967",
+      "name": "北京动物园",
+      "aliases": [
+        "Beijing Zoo"
+      ],
+      "category": "zoo",
+      "district": "",
+      "lat": 39.941054,
+      "lon": 116.32954,
+      "suggested_minutes": 180,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 29222967,
+        "wikidata": "Q220083"
+      }
+    },
+    {
+      "id": "beijing-way30663427",
+      "name": "798艺术区",
+      "aliases": [
+        "798 Art District"
+      ],
+      "category": "sight",
+      "district": "",
+      "lat": 39.98294,
+      "lon": 116.489783,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 30663427,
+        "wikidata": "Q1203470"
+      }
+    },
+    {
+      "id": "beijing-node13165548723",
+      "name": "三里屯酒吧街",
+      "aliases": [
+        "Sanlitun Bar Street"
+      ],
+      "category": "sight",
+      "district": "",
+      "lat": 39.933993,
+      "lon": 116.449358,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 13165548723,
+        "wikidata": null
+      }
+    },
+    {
+      "id": "beijing-way403383764",
+      "name": "中央电视塔",
+      "aliases": [
+        "CCTV Tower"
+      ],
+      "category": "sight",
+      "district": "",
+      "lat": 39.918177,
+      "lon": 116.300299,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 403383764,
+        "wikidata": "Q190377"
+      }
+    },
+    {
+      "id": "beijing-node12402812275",
+      "name": "利玛窦",
+      "aliases": [
+        "Matteo Ricci"
+      ],
+      "category": "sight",
+      "district": "",
+      "lat": 39.932165,
+      "lon": 116.347328,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 12402812275,
+        "wikidata": "Q233340"
+      }
+    },
+    {
+      "id": "beijing-node269693885",
+      "name": "北京古观象台",
+      "aliases": [
+        "Beijing Ancient Observatory"
+      ],
+      "category": "sight",
+      "district": "",
+      "lat": 39.90618,
+      "lon": 116.428353,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 269693885,
+        "wikidata": "Q439299"
+      }
+    },
+    {
+      "id": "beijing-way24825402",
+      "name": "北京孔庙",
+      "aliases": [
+        "Beijing Temple of Confucius"
+      ],
+      "category": "sight",
+      "district": "",
+      "lat": 39.945144,
+      "lon": 116.408312,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 24825402,
+        "wikidata": "Q1064580"
+      }
+    },
+    {
+      "id": "beijing-way366464114",
+      "name": "北海公园",
+      "aliases": [
+        "Beihai Park"
+      ],
+      "category": "sight",
+      "district": "",
+      "lat": 39.926485,
+      "lon": 116.3825,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 366464114,
+        "wikidata": "Q133650"
+      }
+    },
+    {
+      "id": "beijing-node12402877327",
+      "name": "南怀仁",
+      "aliases": [
+        "Ferdinand Verbiest"
+      ],
+      "category": "sight",
+      "district": "",
+      "lat": 39.932104,
+      "lon": 116.347325,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 12402877327,
+        "wikidata": "Q378277"
+      }
+    },
+    {
+      "id": "beijing-way4922662",
+      "name": "南锣鼓巷",
+      "aliases": [
+        "South Luogu Alley"
+      ],
+      "category": "sight",
+      "district": "",
+      "lat": 39.935772,
+      "lon": 116.396873,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 4922662,
+        "wikidata": "Q9529545"
+      }
+    },
+    {
+      "id": "beijing-way30784273",
+      "name": "国子监",
+      "aliases": [
+        "Imperial College"
+      ],
+      "category": "sight",
+      "district": "",
+      "lat": 39.945668,
+      "lon": 116.406977,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 30784273,
+        "wikidata": "Q718582"
+      }
+    },
+    {
+      "id": "beijing-way152301551",
+      "name": "国家体育场",
+      "aliases": [
+        "National Stadium"
+      ],
+      "category": "sight",
+      "district": "",
+      "lat": 39.991415,
+      "lon": 116.390287,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 152301551,
+        "wikidata": "Q133525"
+      }
+    },
+    {
+      "id": "beijing-way4974233",
+      "name": "国家大剧院",
+      "aliases": [
+        "National Centre for the Performing Arts"
+      ],
+      "category": "sight",
+      "district": "",
+      "lat": 39.903342,
+      "lon": 116.383547,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 4974233,
+        "wikidata": "Q860188"
+      }
+    },
+    {
+      "id": "beijing-node269720154",
+      "name": "大水法",
+      "aliases": [
+        "Great Fountain"
+      ],
+      "category": "sight",
+      "district": "",
+      "lat": 40.012115,
+      "lon": 116.306635,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 269720154,
+        "wikidata": "Q10936157"
+      }
+    },
+    {
+      "id": "beijing-way24824550",
+      "name": "天坛公园",
+      "aliases": [
+        "Temple of Heaven"
+      ],
+      "category": "sight",
+      "district": "",
+      "lat": 39.879892,
+      "lon": 116.404183,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 24824550,
+        "wikidata": "Q125445"
+      }
+    },
+    {
+      "id": "beijing-relation941596",
+      "name": "天安门广场",
+      "aliases": [
+        "Tian'anmen Square"
+      ],
+      "category": "sight",
+      "district": "",
+      "lat": 39.90236,
+      "lon": 116.391465,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "relation",
+        "osm_id": 941596,
+        "wikidata": "Q164055"
+      }
+    },
+    {
+      "id": "beijing-way25109939",
+      "name": "太庙",
+      "aliases": [
+        "Imperial Ancestral Temple"
+      ],
+      "category": "sight",
+      "district": "",
+      "lat": 39.909979,
+      "lon": 116.393628,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 25109939,
+        "wikidata": "Q1347866"
+      }
+    },
+    {
+      "id": "beijing-node700356064",
+      "name": "宛平城",
+      "aliases": [
+        "Wanping City"
+      ],
+      "category": "sight",
+      "district": "",
+      "lat": 39.849839,
+      "lon": 116.22013,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 700356064,
+        "wikidata": "Q1538571"
+      }
+    },
+    {
+      "id": "beijing-relation9511883",
+      "name": "故宫",
+      "aliases": [
+        "Forbidden City"
+      ],
+      "category": "sight",
+      "district": "",
+      "lat": 39.916406,
+      "lon": 116.390796,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "relation",
+        "osm_id": 9511883,
+        "wikidata": "Q80290"
+      }
+    },
+    {
+      "id": "beijing-way1300905085",
+      "name": "斋宫",
+      "aliases": [
+        "Palace of Abstinence"
+      ],
+      "category": "sight",
+      "district": "",
+      "lat": 39.878336,
+      "lon": 116.400665,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 1300905085,
+        "wikidata": null
+      }
+    },
+    {
+      "id": "beijing-node2354348604",
+      "name": "水木清华",
+      "aliases": [],
+      "category": "sight",
+      "district": "",
+      "lat": 40.001926,
+      "lon": 116.316868,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 2354348604,
+        "wikidata": "Q11129980"
+      }
+    },
+    {
+      "id": "beijing-way228041535",
+      "name": "永定门",
+      "aliases": [],
+      "category": "sight",
+      "district": "",
+      "lat": 39.871062,
+      "lon": 116.393113,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 228041535,
+        "wikidata": "Q1808040"
+      }
+    },
+    {
+      "id": "beijing-node12402877187",
+      "name": "汤若望",
+      "aliases": [
+        "Johann Adam Schall von Bell"
+      ],
+      "category": "sight",
+      "district": "",
+      "lat": 39.932228,
+      "lon": 116.347323,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 12402877187,
+        "wikidata": "Q76732"
+      }
+    },
+    {
+      "id": "beijing-way1456261874",
+      "name": "法国使馆旧址",
+      "aliases": [],
+      "category": "sight",
+      "district": "东城区",
+      "lat": 39.902319,
+      "lon": 116.404555,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 1456261874,
+        "wikidata": "Q101971182"
+      }
+    },
+    {
+      "id": "beijing-way727042890",
+      "name": "清晏舫",
+      "aliases": [
+        "Shi Fang (Marble Boat)"
+      ],
+      "category": "sight",
+      "district": "",
+      "lat": 39.996736,
+      "lon": 116.26368,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 727042890,
+        "wikidata": "Q2636083"
+      }
+    },
+    {
+      "id": "beijing-way25053110",
+      "name": "潘家园旧货市场",
+      "aliases": [
+        "Panjiayuan Flea Market"
+      ],
+      "category": "sight",
+      "district": "",
+      "lat": 39.874031,
+      "lon": 116.452181,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 25053110,
+        "wikidata": "Q10902349"
+      }
+    },
+    {
+      "id": "beijing-way33612197",
+      "name": "王府井大街",
+      "aliases": [
+        "Wangfujing Street"
+      ],
+      "category": "sight",
+      "district": "",
+      "lat": 39.913143,
+      "lon": 116.404973,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 33612197,
+        "wikidata": "Q1009423"
+      }
+    },
+    {
+      "id": "beijing-node549374047",
+      "name": "珍妃井",
+      "aliases": [
+        "Well of Concubine Zhen"
+      ],
+      "category": "sight",
+      "district": "",
+      "lat": 39.920528,
+      "lon": 116.393798,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 549374047,
+        "wikidata": "Q15933651"
+      }
+    },
+    {
+      "id": "beijing-way25109930",
+      "name": "社稷坛",
+      "aliases": [
+        "Altar of Earth and Harvests"
+      ],
+      "category": "sight",
+      "district": "",
+      "lat": 39.909818,
+      "lon": 116.388589,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 25109930,
+        "wikidata": "Q6743471"
+      }
+    },
+    {
+      "id": "beijing-way43921139",
+      "name": "祈年殿",
+      "aliases": [
+        "Hall of Prayer for Good Harvests"
+      ],
+      "category": "sight",
+      "district": "",
+      "lat": 39.88225,
+      "lon": 116.406624,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 43921139,
+        "wikidata": null
+      }
+    },
+    {
+      "id": "beijing-way703612796",
+      "name": "神乐署",
+      "aliases": [],
+      "category": "sight",
+      "district": "",
+      "lat": 39.877397,
+      "lon": 116.398031,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 703612796,
+        "wikidata": "Q15905358"
+      }
+    },
+    {
+      "id": "beijing-relation7301355",
+      "name": "钟楼",
+      "aliases": [
+        "Bell Tower"
+      ],
+      "category": "sight",
+      "district": "",
+      "lat": 39.941022,
+      "lon": 116.389645,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "relation",
+        "osm_id": 7301355,
+        "wikidata": null
+      }
+    },
+    {
+      "id": "beijing-way24825312",
+      "name": "雍和宫",
+      "aliases": [
+        "Lama Temple"
+      ],
+      "category": "sight",
+      "district": "北京",
+      "lat": 39.94562,
+      "lon": 116.411,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 24825312,
+        "wikidata": "Q692723"
+      }
+    },
+    {
+      "id": "beijing-way29228773",
+      "name": "颐和园",
+      "aliases": [
+        "Summer Palace"
+      ],
+      "category": "sight",
+      "district": "海淀区",
+      "lat": 39.990178,
+      "lon": 116.265925,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 29228773,
+        "wikidata": "Q4132"
+      }
+    },
+    {
+      "id": "beijing-relation7301352",
+      "name": "鼓楼",
+      "aliases": [
+        "Drum Tower"
+      ],
+      "category": "sight",
+      "district": "",
+      "lat": 39.93935,
+      "lon": 116.389728,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "relation",
+        "osm_id": 7301352,
+        "wikidata": null
+      }
+    },
+    {
+      "id": "beijing-way1033422265",
+      "name": "克勤郡王府",
+      "aliases": [],
+      "category": "sight",
+      "district": "",
+      "lat": 39.903217,
+      "lon": 116.363017,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 1033422265,
+        "wikidata": "Q15909219"
+      }
+    },
+    {
+      "id": "beijing-node5150889521",
+      "name": "前门历史大街",
+      "aliases": [
+        "Qianmen Historic Street"
+      ],
+      "category": "sight",
+      "district": "",
+      "lat": 39.893383,
+      "lon": 116.391926,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 5150889521,
+        "wikidata": "Q10899082"
+      }
+    },
+    {
+      "id": "beijing-way187289006",
+      "name": "寿皇殿",
+      "aliases": [
+        "Shouhuang Palace"
+      ],
+      "category": "sight",
+      "district": "",
+      "lat": 39.926108,
+      "lon": 116.390355,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 187289006,
+        "wikidata": null
+      }
+    },
+    {
+      "id": "beijing-way30802178",
+      "name": "御花园",
+      "aliases": [
+        "Imperial Garden"
+      ],
+      "category": "sight",
+      "district": "",
+      "lat": 39.920137,
+      "lon": 116.390611,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 30802178,
+        "wikidata": "Q15897167"
+      }
+    },
+    {
+      "id": "beijing-relation14180537",
+      "name": "中国人民抗日战争纪念馆",
+      "aliases": [
+        "Museum of the Chinese People Resistance Against Japanese Aggression"
+      ],
+      "category": "museum",
+      "district": "",
+      "lat": 39.851026,
+      "lon": 116.219815,
+      "suggested_minutes": 120,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "relation",
+        "osm_id": 14180537,
+        "wikidata": "Q700376"
+      }
+    },
+    {
+      "id": "beijing-relation963097",
+      "name": "中国人民革命军事博物馆",
+      "aliases": [
+        "Military Museum of the Chinese People's Revolution"
+      ],
+      "category": "museum",
+      "district": "海淀區",
+      "lat": 39.908254,
+      "lon": 116.31786,
+      "suggested_minutes": 120,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "relation",
+        "osm_id": 963097,
+        "wikidata": "Q1789184"
+      }
+    },
+    {
+      "id": "beijing-way955695642",
+      "name": "中国共产党历史展览馆",
+      "aliases": [
+        "Museum of the Communist Party of China"
+      ],
+      "category": "museum",
+      "district": "",
+      "lat": 40.002394,
+      "lon": 116.393077,
+      "suggested_minutes": 120,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 955695642,
+        "wikidata": "Q107292018"
+      }
+    },
+    {
+      "id": "beijing-way656349764",
+      "name": "中国华侨历史博物馆",
+      "aliases": [
+        "Overseas Chinese History Museum of China"
+      ],
+      "category": "museum",
+      "district": "",
+      "lat": 39.941532,
+      "lon": 116.418876,
+      "suggested_minutes": 120,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 656349764,
+        "wikidata": "Q28418208"
+      }
+    },
+    {
+      "id": "beijing-way256653719",
+      "name": "中国古动物馆",
+      "aliases": [
+        "Paleozoological Museum of China"
+      ],
+      "category": "museum",
+      "district": "",
+      "lat": 39.935983,
+      "lon": 116.327885,
+      "suggested_minutes": 120,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 256653719,
+        "wikidata": "Q846592"
+      }
+    },
+    {
+      "id": "beijing-relation8607825",
+      "name": "中国国家博物馆",
+      "aliases": [
+        "National Museum of China"
+      ],
+      "category": "museum",
+      "district": "",
+      "lat": 39.903711,
+      "lon": 116.395444,
+      "suggested_minutes": 120,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "relation",
+        "osm_id": 8607825,
+        "wikidata": "Q1074318"
+      }
+    }
+  ]
+}

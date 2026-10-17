@@ -209,6 +209,21 @@ export default function PlanResult({
                                           </div>
                                         </div>
                                       )}
+
+                                      {/* 资料来源：来自景点库的显示许可，模型自由生成的标待核实 */}
+                                      {activity.source && (
+                                        <div className="mt-1.5">
+                                          {activity.source.startsWith("model") ? (
+                                            <span className="inline-flex items-center gap-1 text-[11px] text-gray-400">
+                                              ⚠ 未经景点库校验，请自行核实
+                                            </span>
+                                          ) : (
+                                            <span className="inline-flex items-center gap-1 rounded-full border border-emerald-200 bg-emerald-50 px-2 py-0.5 text-[11px] text-emerald-700">
+                                              ✓ 来源：{activity.source}
+                                            </span>
+                                          )}
+                                        </div>
+                                      )}
                                     </div>
                                   </div>
                                 </div>

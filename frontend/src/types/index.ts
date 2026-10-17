@@ -19,9 +19,19 @@ export interface WeatherDay {
   source: "qweather" | "unavailable";
 }
 
+export interface PlanActivity {
+  time: string;
+  activity: string;
+  notes: string;
+  /** 候选景点库中的 id；为空表示该时段不对应景点（用餐/交通/休息） */
+  attractionId?: string;
+  /** 服务端按 attractionId 回填的来源；以 model 开头表示未经景点库校验 */
+  source?: string;
+}
+
 export interface DayPlan {
   date: string;
-  plan: { time: string; activity: string; notes: string }[];
+  plan: PlanActivity[];
   generalTips: string;
 }
 
