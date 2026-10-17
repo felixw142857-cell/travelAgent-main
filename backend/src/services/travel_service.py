@@ -1,6 +1,7 @@
 """请求级旅行编排；不保存全局任务状态，也不在浏览器中执行 Agent。"""
 
 import asyncio
+import json
 from typing import Any
 
 import httpx
@@ -10,7 +11,7 @@ from src.core.exceptions import BusinessError
 from src.schemas.travel import (
     AgentResult,
     AgentResults,
-    AnalysisResult,
+    Clarification,
     PlanOutcome,
     PlanRequest,
 )
@@ -47,6 +48,8 @@ class TravelService:
             raise BusinessError(
                 "旅行规划超过总时间限制，请缩短旅行天数或稍后重试", 504
             ) from exc
+        if isinstance(result, Clarification):
+            return PlanOutcome(clarification=result, records=progress.records)
         return PlanOutcome(result=result, records=progress.records)
 
     async def _run(
@@ -54,19 +57,42 @@ class TravelService:
         request: PlanRequest,
         client: httpx.AsyncClient,
         progress: ProgressReporter,
-    ) -> AgentResults:
+    ) -> AgentResults | Clarification:
         llm = LLMClient(client, self.settings)
         tools = WeatherTools(client, self.settings, progress)
+        await progress.emit(
+            "AgentCoordinator",
+            "执行 AnalyzerAgent",
+            "先确认旅行信息是否完整",
+            "supervisor",
+        )
+        analysis = await analyzer.analyze(
+            request.query, "", llm, progress, self.settings, request.history
+        )
+        if isinstance(analysis, Clarification):
+            return analysis
+        conversation = json.dumps(
+            {
+                "history": [message.model_dump() for message in request.history],
+                "currentMessage": request.query,
+                "analysis": analysis.model_dump(mode="json"),
+            },
+            ensure_ascii=False,
+        )
         steps = (
-            await supervisor.make_plan(request.query, llm, progress)
+            await supervisor.make_plan(conversation, llm, progress)
             if request.mode == "smart"
             else supervisor.standard_steps()
         )
-        analysis: AnalysisResult | None = None
         weather_days = []
         daily_plan = []
-        context: dict[str, Any] = {"originalQuery": request.query}
+        context: dict[str, Any] = {
+            "originalQuery": conversation,
+            "analysis": analysis.model_dump(mode="json"),
+        }
         for step in steps:
+            if step.agentName == "AnalyzerAgent":
+                continue
             await progress.emit(
                 "SmartSupervisor" if request.mode == "smart" else "AgentCoordinator",
                 f"执行 {step.agentName}",
@@ -78,14 +104,7 @@ class TravelService:
                 if request.mode == "smart"
                 else ""
             )
-            if step.agentName == "AnalyzerAgent":
-                analysis = await analyzer.analyze(
-                    request.query, prepared, llm, progress, self.settings
-                )
-                context["analysis"] = analysis.model_dump(mode="json")
-            elif step.agentName == "WeatherAgent":
-                if analysis is None:
-                    raise BusinessError("执行计划缺少需求分析结果", 500)
+            if step.agentName == "WeatherAgent":
                 weather_days = await weather.collect_weather(
                     analysis, prepared, tools, llm, progress, self.settings
                 )
@@ -93,8 +112,6 @@ class TravelService:
                     day.model_dump(mode="json") for day in weather_days
                 ]
             else:
-                if analysis is None:
-                    raise BusinessError("执行计划缺少需求分析结果", 500)
                 if not weather_days:
                     weather_days = unavailable_weather(
                         analysis.allDates, "智能编排未执行天气查询"
@@ -105,7 +122,7 @@ class TravelService:
                 daily_plan = await planner.plan_trip(
                     analysis, weather_days, prepared, llm, progress
                 )
-        if analysis is None or not daily_plan:
+        if not daily_plan:
             raise BusinessError("旅行规划未生成完整结果", 502)
         result = AgentResults(
             analysis=AgentResult(

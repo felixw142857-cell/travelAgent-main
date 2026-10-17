@@ -13,7 +13,7 @@ cd C:\download\travelAgent-main\travelAgent-main\backend
 .\scripts\dev.ps1
 ```
 
-默认监听 `127.0.0.1:8001`；指定端口使用 `scripts/dev.ps1 -Port 8002`，同步修改前端 `BACKEND_URL`。也可使用已创建的环境：
+默认监听 `127.0.0.1:8001`；指定端口使用 `scripts/dev.ps1 -Port 8002`，同步修改 `../frontend/.env.local` 的 `BACKEND_URL`。前端在独立的 `../frontend/` 目录启动。也可使用已创建的环境：
 
 ```powershell
 .\.venv\Scripts\python.exe -m uvicorn src:app --reload --reload-dir src --host 127.0.0.1 --port 8001
@@ -47,13 +47,13 @@ cd C:\download\travelAgent-main\travelAgent-main\backend
 
 天气 v1 使用 `/geo/v2/city/lookup` 获取经纬度，再请求 `/weather/v1/daily/{lat}/{lon}`，当前请求 10 天；v7 使用 LocationId 请求 `/v7/weather/{配置天数}`。权限和预报以实际返回为准，超出范围的日期标记缺失。参考 [v1 官方文档](https://dev.qweather.com/docs/api/weather/weather-daily-forecast/) 和 [v7 官方文档](https://dev.qweather.com/docs/api/weather/weather-daily-forecast-webapi-v7/)。
 
-原前端配置可运行以下脚本迁移。已有后端值优先；首次复制模型 Key 时一起复制对应地址及模型名。后端值匹配的旧前端变量会被移除，不一致的项保留并提示变量名，不打印密钥：
+前端 `../frontend/.env.local` 中的旧配置可运行以下脚本迁移。已有后端值优先；首次复制模型 Key 时一起复制对应地址及模型名。后端值匹配的旧前端变量会被移除，不一致的项保留并提示变量名，不打印密钥：
 
 ```powershell
 .\.venv\Scripts\python.exe scripts\migrate_frontend_env.py
 ```
 
-不要把密钥写入 `VITE_*`。前端根目录只需 `BACKEND_URL`（开发代理）和可选的 `VITE_API_BASE_URL`（构建 API 地址）。
+不要把密钥写入 `VITE_*`。`../frontend/.env.local` 只需 `BACKEND_URL`（开发代理）和可选的 `VITE_API_BASE_URL`（构建 API 地址）。
 
 ## 分层与迁移对照
 
@@ -68,7 +68,7 @@ cd C:\download\travelAgent-main\travelAgent-main\backend
 | `SmartSupervisor.ts` | `src/agents/supervisor.py` | 保留智能选择，保证分析在前、规划在后 |
 | `GateKeeper.ts`、`AgentAdapters.ts` | `src/agents/gatekeeper.py` + 类型化上下文 | 整理输入，同时保留原始结构化事实 |
 
-上述前端业务文件和 JS OpenAI SDK 依赖已移除。React `src/lib/api.ts` 只处理 HTTP、中文分块解码、错误和取消。
+上述前端业务文件和 JS OpenAI SDK 依赖已移除。React `../frontend/src/lib/api.ts` 只处理 HTTP、中文分块解码、错误和取消。
 
 其他目录：`src/api/v1/` 接口传输；`src/schemas/` 数据契约；`src/settings/` 配置；`src/core/` 初始化、CORS、异常、中间件和依赖；`src/log/` 请求日志；`src/models/`、`repositories/` 预留持久化。路由只调用 Service，Service 协调 Agent 和工具，后续保存历史时使用模板 Repository/Model 分层。
 
@@ -91,7 +91,11 @@ cd C:\download\travelAgent-main\travelAgent-main\backend
 {"query":"明天去成都玩两天，预算3000元，喜欢美食","mode":"standard"}
 ```
 
-`query` 去首尾空白后 1–5000 字符；`mode` 为 `standard` 或 `smart`。普通响应为 `code/msg/data/request_id`；`data` 包含 `result` 和 `records`。`result` 中 `analysis/weather/planner` 各有 `text` 及对象形式的 `json`，不再返回 JSON 字符串。
+`query` 去首尾空白后 1–5000 字符；`mode` 为 `standard` 或 `smart`。可选 `history` 传入之前的对话，每项只有 `role`（user/assistant）和 `content`；最多 20 条，每条最多 5000 字符，总计不超过 20000 字符。本轮输入只放在 `query`，不要重复追加到历史中。
+
+需求分析先提取 `AnalysisDraft`：目的地、出发日期、天数、预算任一缺失时返回追问，不进入主管、GateKeeper、天气或行程流程，不再默认明天或三天。预算明确为不限、暂未确定或请推荐均可通过；偏好可选。后续输入与历史合并，用户明确修改时采用最新信息。
+
+普通响应为 `code/msg/data/request_id`；`data` 包含 `result`、`clarification` 和 `records`，其中 `result` 与 `clarification` 恰好一个非空。完整 `result` 中 `analysis/weather/planner` 各有 `text` 及对象形式的 `json`。追问 `clarification` 包含可显示的 `message`、`missingFields` 和已提取的 `draft`，属于正常 HTTP 200 业务结果。
 
 实时响应为 `application/x-ndjson`，每行一个对象：
 
@@ -100,6 +104,7 @@ cd C:\download\travelAgent-main\travelAgent-main\backend
 | `record` | `id/name/type/desc/content/contentType/createdAt`，兼容页面时间线 |
 | `heartbeat` | `null`，无记录时约 10 秒发送一次 |
 | `result` | 完整的 `analysis/weather/planner` 对象，随后结束 |
+| `clarification` | `message/missingFields/draft`，显示追问后结束，等待用户下一轮补充 |
 | `error` | `message/code/request_id`，随后结束 |
 
 缺少模型配置或请求校验失败时，在流开始前返回普通 HTTP 错误。流开始后状态已发送，后续错误通过 `error` 事件表达。每次请求有独立有界队列，浏览器取消或断开会取消对应任务及外部调用，不会在后台继续保存结果。
@@ -108,8 +113,8 @@ cd C:\download\travelAgent-main\travelAgent-main\backend
 
 ## 验证范围与边界
 
-自动测试使用 HTTPX MockTransport 替换外部响应，不产生真实调用费用。覆盖基础路由、生命周期、CORS、请求 ID、错误、普通/智能规划、步骤依赖、GateKeeper、v1/v7 天气、天气降级、多个工具调用、JSON 修复、超时、断开取消和并发隔离。
+自动测试使用 HTTPX MockTransport 替换外部响应，不产生真实调用费用。覆盖基础路由、生命周期、CORS、请求 ID、错误、普通/智能规划、步骤依赖、GateKeeper、v1/v7 天气、天气降级、多个工具调用、JSON 修复、超时、断开取消和并发隔离。追问测试覆盖四个必需字段、部分补充、完整补充、预算不限、终结事件、历史长度及角色校验，并确认信息缺失时不执行后续 Agent。
 
-前端 Node 测试直接加载实际流解析代码，验证中文跨字节、跨行分块、心跳、结果、错误 ID、HTTP 错误、代理误配、提前断流及取消。根目录运行 `npm test`、`npm run lint`、`npm run build`。
+前端 Node 测试直接加载实际流解析代码，验证中文跨字节、跨行分块、心跳、结果、错误 ID、HTTP 错误、代理误配、提前断流及取消。在 `../frontend/` 目录运行 `npm test`、`npm run lint`、`npm run build`。
 
 当前没有登录、数据库历史或后台任务队列。

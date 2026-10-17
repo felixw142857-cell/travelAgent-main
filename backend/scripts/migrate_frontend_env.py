@@ -6,7 +6,7 @@ from pathlib import Path
 from dotenv import dotenv_values, set_key
 
 BACKEND_ROOT = Path(__file__).resolve().parents[1]
-FRONTEND_ENV = BACKEND_ROOT.parent / ".env.local"
+FRONTEND_ENV = BACKEND_ROOT.parent / "frontend" / ".env.local"
 BACKEND_ENV = BACKEND_ROOT / ".env"
 
 

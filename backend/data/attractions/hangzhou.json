@@ -1,0 +1,749 @@
+{
+  "city": "杭州",
+  "city_slug": "hangzhou",
+  "version": 1,
+  "updated_at": "2026-10-17",
+  "source": {
+    "provider": "openstreetmap",
+    "license": "ODbL-1.0",
+    "endpoint": "https://overpass.kumi.systems/api/interpreter"
+  },
+  "notes": "名称/类别/坐标为 OSM 实测数据；suggested_minutes 与 best_time 为程序估计，非官方信息。",
+  "items": [
+    {
+      "id": "hangzhou-node1259826992",
+      "name": "杭州动物园",
+      "aliases": [
+        "Hangzhou Zoo"
+      ],
+      "category": "zoo",
+      "district": "",
+      "lat": 30.215683,
+      "lon": 120.130462,
+      "suggested_minutes": 180,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 1259826992,
+        "wikidata": "Q11102420"
+      }
+    },
+    {
+      "id": "hangzhou-node13458238803",
+      "name": "九溪烟树",
+      "aliases": [],
+      "category": "sight",
+      "district": "",
+      "lat": 30.204617,
+      "lon": 120.108545,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 13458238803,
+        "wikidata": "Q10878956"
+      }
+    },
+    {
+      "id": "hangzhou-node5311551422",
+      "name": "文澜阁",
+      "aliases": [
+        "Wenlan Pavilion"
+      ],
+      "category": "sight",
+      "district": "",
+      "lat": 30.25311,
+      "lon": 120.138215,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 5311551422,
+        "wikidata": "Q11080062"
+      }
+    },
+    {
+      "id": "hangzhou-node1218588822",
+      "name": "灵隐寺",
+      "aliases": [
+        "Lingyin Temple"
+      ],
+      "category": "sight",
+      "district": "西湖区",
+      "lat": 30.242795,
+      "lon": 120.096799,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 1218588822,
+        "wikidata": "Q1070228"
+      }
+    },
+    {
+      "id": "hangzhou-relation19614387",
+      "name": "西湖十景",
+      "aliases": [
+        "Ten Scenes of West Lake"
+      ],
+      "category": "sight",
+      "district": "",
+      "lat": 30.246412,
+      "lon": 120.134586,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "relation",
+        "osm_id": 19614387,
+        "wikidata": "Q15906297"
+      }
+    },
+    {
+      "id": "hangzhou-node13164838810",
+      "name": "钱王祠",
+      "aliases": [],
+      "category": "sight",
+      "district": "",
+      "lat": 30.245165,
+      "lon": 120.153289,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 13164838810,
+        "wikidata": "Q15943594"
+      }
+    },
+    {
+      "id": "hangzhou-way1447623937",
+      "name": "闸口白塔",
+      "aliases": [
+        "Zhakou White Pagoda"
+      ],
+      "category": "sight",
+      "district": "",
+      "lat": 30.202796,
+      "lon": 120.140383,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 1447623937,
+        "wikidata": "Q53295"
+      }
+    },
+    {
+      "id": "hangzhou-way489075428",
+      "name": "胡雪岩故居",
+      "aliases": [
+        "Former residence of Xueyan Hu"
+      ],
+      "category": "sight",
+      "district": "",
+      "lat": 30.239582,
+      "lon": 120.168278,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 489075428,
+        "wikidata": "Q15924642"
+      }
+    },
+    {
+      "id": "hangzhou-node4676431394",
+      "name": "虎跑梦泉",
+      "aliases": [
+        "Tiger Spring entrance"
+      ],
+      "category": "sight",
+      "district": "",
+      "lat": 30.211772,
+      "lon": 120.130091,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 4676431394,
+        "wikidata": "Q839278"
+      }
+    },
+    {
+      "id": "hangzhou-node775019817",
+      "name": "西泠印社",
+      "aliases": [
+        "Seal Engravers' Society"
+      ],
+      "category": "sight",
+      "district": "",
+      "lat": 30.252792,
+      "lon": 120.135498,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 775019817,
+        "wikidata": "Q6145857"
+      }
+    },
+    {
+      "id": "hangzhou-way607445656",
+      "name": "中国动漫博物馆",
+      "aliases": [
+        "China Comic & Animation Museum"
+      ],
+      "category": "museum",
+      "district": "",
+      "lat": 30.164473,
+      "lon": 120.201069,
+      "suggested_minutes": 120,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 607445656,
+        "wikidata": "Q107417701"
+      }
+    },
+    {
+      "id": "hangzhou-way433830824",
+      "name": "良渚博物院",
+      "aliases": [],
+      "category": "museum",
+      "district": "",
+      "lat": 30.379766,
+      "lon": 120.023161,
+      "suggested_minutes": 120,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 433830824,
+        "wikidata": "Q11978829"
+      }
+    },
+    {
+      "id": "hangzhou-relation8281187",
+      "name": "中国丝绸博物馆",
+      "aliases": [
+        "China National Silk Museum"
+      ],
+      "category": "museum",
+      "district": "西湖区",
+      "lat": 30.225194,
+      "lon": 120.146589,
+      "suggested_minutes": 120,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "relation",
+        "osm_id": 8281187,
+        "wikidata": "Q569019"
+      }
+    },
+    {
+      "id": "hangzhou-way161455677",
+      "name": "中国茶叶博物馆（双峰馆区）",
+      "aliases": [
+        "China National Tea Museum (Shuangfeng)"
+      ],
+      "category": "museum",
+      "district": "西湖区",
+      "lat": 30.234674,
+      "lon": 120.115556,
+      "suggested_minutes": 120,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 161455677,
+        "wikidata": "Q1514687"
+      }
+    },
+    {
+      "id": "hangzhou-relation13237505",
+      "name": "中国茶叶博物馆（龙井馆区）",
+      "aliases": [
+        "China National Tea Museum (Longjing)"
+      ],
+      "category": "museum",
+      "district": "西湖区",
+      "lat": 30.222134,
+      "lon": 120.108561,
+      "suggested_minutes": 120,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "relation",
+        "osm_id": 13237505,
+        "wikidata": "Q1514687"
+      }
+    },
+    {
+      "id": "hangzhou-way1432228423",
+      "name": "武林書畫院美術館",
+      "aliases": [
+        "Gallery of the Wulin Academy of Arts"
+      ],
+      "category": "museum",
+      "district": "上城区",
+      "lat": 30.248993,
+      "lon": 120.156301,
+      "suggested_minutes": 120,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 1432228423,
+        "wikidata": "Q135615301"
+      }
+    },
+    {
+      "id": "hangzhou-way322644189",
+      "name": "浙江大学艺术与考古博物馆",
+      "aliases": [],
+      "category": "museum",
+      "district": "",
+      "lat": 30.300081,
+      "lon": 120.066742,
+      "suggested_minutes": 120,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 322644189,
+        "wikidata": "Q82952331"
+      }
+    },
+    {
+      "id": "hangzhou-node775020312",
+      "name": "浙江省博物馆",
+      "aliases": [
+        "Zhejiang Provincial Museum"
+      ],
+      "category": "museum",
+      "district": "",
+      "lat": 30.253531,
+      "lon": 120.138783,
+      "suggested_minutes": 120,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 775020312,
+        "wikidata": "Q1278762"
+      }
+    },
+    {
+      "id": "hangzhou-way61232062",
+      "name": "太庙公园",
+      "aliases": [],
+      "category": "park",
+      "district": "",
+      "lat": 30.2351,
+      "lon": 120.165056,
+      "suggested_minutes": 90,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 61232062,
+        "wikidata": "Q10907409"
+      }
+    },
+    {
+      "id": "hangzhou-way615060920",
+      "name": "拱墅运河体育公园",
+      "aliases": [
+        "Gongshu Canal Sports Park"
+      ],
+      "category": "park",
+      "district": "",
+      "lat": 30.316454,
+      "lon": 120.099495,
+      "suggested_minutes": 90,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 615060920,
+        "wikidata": "Q137794030"
+      }
+    },
+    {
+      "id": "hangzhou-way443223606",
+      "name": "杭州乐园",
+      "aliases": [],
+      "category": "park",
+      "district": "萧山区",
+      "lat": 30.162611,
+      "lon": 120.24097,
+      "suggested_minutes": 90,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 443223606,
+        "wikidata": "Q11102395"
+      }
+    },
+    {
+      "id": "hangzhou-way1151997701",
+      "name": "紫竹園",
+      "aliases": [
+        "Zizhu Garden",
+        "武林書畫院紫竹園"
+      ],
+      "category": "park",
+      "district": "",
+      "lat": 30.248641,
+      "lon": 120.156444,
+      "suggested_minutes": 90,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 1151997701,
+        "wikidata": "Q118589328"
+      }
+    },
+    {
+      "id": "hangzhou-way1022141174",
+      "name": "杭州长乔极地海洋公园",
+      "aliases": [],
+      "category": "park",
+      "district": "",
+      "lat": 30.14506,
+      "lon": 120.22217,
+      "suggested_minutes": 90,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 1022141174,
+        "wikidata": "Q18653900"
+      }
+    },
+    {
+      "id": "hangzhou-way608971086",
+      "name": "杭州清真寺",
+      "aliases": [
+        "Hangzhou Mosque"
+      ],
+      "category": "temple",
+      "district": "",
+      "lat": 30.276546,
+      "lon": 120.215632,
+      "suggested_minutes": 60,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 608971086,
+        "wikidata": null
+      }
+    },
+    {
+      "id": "hangzhou-way936614277",
+      "name": "城堡",
+      "aliases": [],
+      "category": "historic",
+      "district": "",
+      "lat": 30.15915,
+      "lon": 120.241493,
+      "suggested_minutes": 60,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 936614277,
+        "wikidata": null
+      }
+    }
+  ]
+}

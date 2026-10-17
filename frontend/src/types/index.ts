@@ -35,3 +35,34 @@ export interface AgentResults {
   weather: AgentResult<WeatherDay[]>;
   planner: AgentResult<DayPlan[]>;
 }
+
+export type RequiredField = "destination" | "startDate" | "duration" | "budget";
+
+export interface ConversationTurn {
+  role: "user" | "assistant";
+  content: string;
+}
+
+export interface ChatMessage extends ConversationTurn {
+  id: string;
+  missingFields?: RequiredField[];
+  isError?: boolean;
+}
+
+export interface Clarification {
+  message: string;
+  missingFields: RequiredField[];
+  draft: {
+    destination: string | null;
+    startDate: string | null;
+    duration: number | null;
+    budget: string | null;
+    preferences: string[];
+    extraRequirements: string;
+    travelers: number;
+  };
+}
+
+export type PlanReply =
+  | { kind: "result"; result: AgentResults }
+  | { kind: "clarification"; clarification: Clarification };

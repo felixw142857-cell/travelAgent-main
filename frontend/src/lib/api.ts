@@ -1,28 +1,30 @@
 import type { RecordItem } from "../model";
-import type { AgentResults } from "../types";
+import type { AgentResults, Clarification, ConversationTurn, PlanReply } from "../types";
 
 interface PlanStreamOptions {
   query: string;
   mode: "standard" | "smart";
   onRecord: (record: RecordItem) => void;
   signal?: AbortSignal;
+  history?: ConversationTurn[];
 }
 
 type PlanEvent =
   | { event: "record"; data: RecordItem }
   | { event: "result"; data: AgentResults }
+  | { event: "clarification"; data: Clarification }
   | { event: "error"; data: { message: string; request_id?: string } }
   | { event: "heartbeat"; data: null };
 
 const apiBaseUrl = import.meta.env.VITE_API_BASE_URL?.replace(/\/$/, "") || "";
 
-export async function streamPlan(options: PlanStreamOptions): Promise<AgentResults> {
+export async function streamPlan(options: PlanStreamOptions): Promise<PlanReply> {
   let response: Response;
   try {
     response = await fetch(`${apiBaseUrl}/api/v1/travel/plan/stream`, {
       method: "POST",
       headers: { "Content-Type": "application/json", Accept: "application/x-ndjson" },
-      body: JSON.stringify({ query: options.query, mode: options.mode }),
+      body: JSON.stringify({ query: options.query, mode: options.mode, history: options.history ?? [] }),
       signal: options.signal,
     });
   } catch (error) {
@@ -42,7 +44,7 @@ export async function streamPlan(options: PlanStreamOptions): Promise<AgentResul
   const decoder = new TextDecoder();
   let buffer = "";
 
-  const consumeLine = (line: string): AgentResults | undefined => {
+  const consumeLine = (line: string): PlanReply | undefined => {
     if (!line.trim()) return;
     let event: PlanEvent;
     try {
@@ -54,7 +56,8 @@ export async function streamPlan(options: PlanStreamOptions): Promise<AgentResul
       throw new Error("后端返回了无效的进度数据，请重试");
     }
     if (event.event === "record") options.onRecord(event.data);
-    else if (event.event === "result") return event.data;
+    else if (event.event === "result") return { kind: "result", result: event.data };
+    else if (event.event === "clarification") return { kind: "clarification", clarification: event.data };
     else if (event.event === "error") {
       const reference = event.data.request_id ? `（请求 ID：${event.data.request_id}）` : "";
       throw new Error(event.data.message + reference);

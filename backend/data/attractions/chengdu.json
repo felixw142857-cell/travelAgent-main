@@ -1,0 +1,705 @@
+{
+  "city": "成都",
+  "city_slug": "chengdu",
+  "version": 1,
+  "updated_at": "2026-10-17",
+  "source": {
+    "provider": "openstreetmap",
+    "license": "ODbL-1.0",
+    "endpoint": "https://overpass-api.de/api/interpreter"
+  },
+  "notes": "名称/类别/坐标为 OSM 实测数据；suggested_minutes 与 best_time 为程序估计，非官方信息。",
+  "items": [
+    {
+      "id": "chengdu-way941885688",
+      "name": "成都大熊猫繁育研究基地",
+      "aliases": [
+        "Chengdu Research Base of Giant Panda Breeding"
+      ],
+      "category": "zoo",
+      "district": "成华区",
+      "lat": 30.743223,
+      "lon": 104.135658,
+      "suggested_minutes": 180,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 941885688,
+        "wikidata": "Q1067861"
+      }
+    },
+    {
+      "id": "chengdu-way1346091164",
+      "name": "天府熊猫塔",
+      "aliases": [
+        "West Pearl Tower"
+      ],
+      "category": "sight",
+      "district": "",
+      "lat": 30.664691,
+      "lon": 104.092106,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 1346091164,
+        "wikidata": "Q2118734"
+      }
+    },
+    {
+      "id": "chengdu-way588905842",
+      "name": "宽窄巷子",
+      "aliases": [
+        "Kuanzhai Xiangzi Alleys"
+      ],
+      "category": "sight",
+      "district": "",
+      "lat": 30.666191,
+      "lon": 104.051265,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 588905842,
+        "wikidata": "Q10951691"
+      }
+    },
+    {
+      "id": "chengdu-way660894418",
+      "name": "文殊院",
+      "aliases": [
+        "Wenshu Monastery"
+      ],
+      "category": "sight",
+      "district": "",
+      "lat": 30.677765,
+      "lon": 104.070206,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 660894418,
+        "wikidata": "Q11080015"
+      }
+    },
+    {
+      "id": "chengdu-relation19806909",
+      "name": "望江楼古建筑群",
+      "aliases": [
+        "Old Buildings of Wangjiang Lou"
+      ],
+      "category": "sight",
+      "district": "",
+      "lat": 30.632706,
+      "lon": 104.090941,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "relation",
+        "osm_id": 19806909,
+        "wikidata": "Q11092442"
+      }
+    },
+    {
+      "id": "chengdu-way299409723",
+      "name": "杜甫草堂",
+      "aliases": [
+        "Du Fu Thatched Cottage"
+      ],
+      "category": "sight",
+      "district": "青羊区",
+      "lat": 30.662772,
+      "lon": 104.026277,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 299409723,
+        "wikidata": "Q4390891"
+      }
+    },
+    {
+      "id": "chengdu-node4787165826",
+      "name": "永陵",
+      "aliases": [
+        "Yongling Mausoleum"
+      ],
+      "category": "sight",
+      "district": "金牛区",
+      "lat": 30.676078,
+      "lon": 104.044499,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 4787165826,
+        "wikidata": "Q1540709"
+      }
+    },
+    {
+      "id": "chengdu-relation18440094",
+      "name": "青羊宫",
+      "aliases": [
+        "Qingyang Taoist Temple"
+      ],
+      "category": "sight",
+      "district": "青羊区",
+      "lat": 30.66397,
+      "lon": 104.040151,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "relation",
+        "osm_id": 18440094,
+        "wikidata": "Q2121639"
+      }
+    },
+    {
+      "id": "chengdu-node6349200760",
+      "name": "安顺廊桥",
+      "aliases": [
+        "Ashun Covered Bridge"
+      ],
+      "category": "sight",
+      "district": "",
+      "lat": 30.644143,
+      "lon": 104.083435,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 6349200760,
+        "wikidata": "Q3366223"
+      }
+    },
+    {
+      "id": "chengdu-way1532678570",
+      "name": "毛主席像",
+      "aliases": [
+        "Chairman Mao statue"
+      ],
+      "category": "sight",
+      "district": "",
+      "lat": 30.661266,
+      "lon": 104.063308,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 1532678570,
+        "wikidata": "Q11880816"
+      }
+    },
+    {
+      "id": "chengdu-way239424429",
+      "name": "四川科技馆",
+      "aliases": [
+        "Sichuan Science and Technology Museum"
+      ],
+      "category": "museum",
+      "district": "",
+      "lat": 30.66249,
+      "lon": 104.063306,
+      "suggested_minutes": 120,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 239424429,
+        "wikidata": "Q7507431"
+      }
+    },
+    {
+      "id": "chengdu-way929666443",
+      "name": "成都博物馆",
+      "aliases": [
+        "Chengdu Museum"
+      ],
+      "category": "museum",
+      "district": "青羊区",
+      "lat": 30.659669,
+      "lon": 104.061127,
+      "suggested_minutes": 120,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 929666443,
+        "wikidata": "Q55696247"
+      }
+    },
+    {
+      "id": "chengdu-way277942162",
+      "name": "武侯祠",
+      "aliases": [
+        "Wuhou Temple",
+        "成都武侯祠博物馆"
+      ],
+      "category": "museum",
+      "district": "武侯区",
+      "lat": 30.648386,
+      "lon": 104.045457,
+      "suggested_minutes": 120,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 277942162,
+        "wikidata": "Q1069942"
+      }
+    },
+    {
+      "id": "chengdu-way968723544",
+      "name": "四川博物院",
+      "aliases": [
+        "Sichuan Museum"
+      ],
+      "category": "museum",
+      "district": "青羊区",
+      "lat": 30.663185,
+      "lon": 104.031695,
+      "suggested_minutes": 120,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 968723544,
+        "wikidata": "Q10924774"
+      }
+    },
+    {
+      "id": "chengdu-node3632996310",
+      "name": "杜甫草堂博物馆",
+      "aliases": [
+        "Du Fu Thatched Cottage Museum"
+      ],
+      "category": "museum",
+      "district": "",
+      "lat": 30.661968,
+      "lon": 104.024432,
+      "suggested_minutes": 120,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 3632996310,
+        "wikidata": "Q4390891"
+      }
+    },
+    {
+      "id": "chengdu-way103295076",
+      "name": "人民公园",
+      "aliases": [
+        "People's Park"
+      ],
+      "category": "park",
+      "district": "",
+      "lat": 30.659414,
+      "lon": 104.055465,
+      "suggested_minutes": 90,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 103295076,
+        "wikidata": "Q16927648"
+      }
+    },
+    {
+      "id": "chengdu-way837197359",
+      "name": "刘湘陵园",
+      "aliases": [
+        "Liu Xiang Cemetery"
+      ],
+      "category": "park",
+      "district": "",
+      "lat": 30.649208,
+      "lon": 104.044553,
+      "suggested_minutes": 90,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 837197359,
+        "wikidata": "Q17498760"
+      }
+    },
+    {
+      "id": "chengdu-relation18440093",
+      "name": "成都市文化公园",
+      "aliases": [
+        "Culture Park"
+      ],
+      "category": "park",
+      "district": "",
+      "lat": 30.66298,
+      "lon": 104.040842,
+      "suggested_minutes": 90,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "relation",
+        "osm_id": 18440093,
+        "wikidata": "Q111377725"
+      }
+    },
+    {
+      "id": "chengdu-way288055435",
+      "name": "大慈寺",
+      "aliases": [
+        "Daci Temple"
+      ],
+      "category": "temple",
+      "district": "",
+      "lat": 30.656691,
+      "lon": 104.081174,
+      "suggested_minutes": 60,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 288055435,
+        "wikidata": "Q9907170"
+      }
+    },
+    {
+      "id": "chengdu-node11961119358",
+      "name": "昭觉寺",
+      "aliases": [
+        "Zhaojue Temple"
+      ],
+      "category": "temple",
+      "district": "",
+      "lat": 30.710757,
+      "lon": 104.103357,
+      "suggested_minutes": 60,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 11961119358,
+        "wikidata": "Q197497"
+      }
+    },
+    {
+      "id": "chengdu-way582845149",
+      "name": "皇城清真寺",
+      "aliases": [
+        "Chengdu Huangcheng Mosque"
+      ],
+      "category": "temple",
+      "district": "青羊区",
+      "lat": 30.659167,
+      "lon": 104.060383,
+      "suggested_minutes": 60,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 582845149,
+        "wikidata": "Q976143"
+      }
+    },
+    {
+      "id": "chengdu-way663125199",
+      "name": "鼓楼南街清真寺",
+      "aliases": [
+        "Gulou South Street Mosque"
+      ],
+      "category": "temple",
+      "district": "",
+      "lat": 30.665581,
+      "lon": 104.069387,
+      "suggested_minutes": 60,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 663125199,
+        "wikidata": "Q21018491"
+      }
+    },
+    {
+      "id": "chengdu-way921160362",
+      "name": "辛亥秋保路死事纪念碑",
+      "aliases": [
+        "Monument to the Martyrs of the Railway Protection Movement"
+      ],
+      "category": "historic",
+      "district": "",
+      "lat": 30.660766,
+      "lon": 104.054476,
+      "suggested_minutes": 60,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 921160362,
+        "wikidata": "Q15934393"
+      }
+    }
+  ]
+}

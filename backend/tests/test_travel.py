@@ -11,9 +11,20 @@ from fastapi.testclient import TestClient
 from pydantic import SecretStr, TypeAdapter
 
 from src import create_app
+from src.agents.prompts import (
+    ANALYZER_PROMPT,
+    GATEKEEPER_PROMPT,
+    PLANNER_PROMPT,
+    SUPERVISOR_PROMPT,
+    WEATHER_PROMPT,
+)
 from src.api.v1.travel.travel import get_travel_service, stream_plan
 from src.core.exceptions import BusinessError
-from src.schemas.travel import AnalysisResult, PlanRequest, ProgressRecord
+from src.schemas.travel import (
+    AnalysisResult,
+    PlanRequest,
+    ProgressRecord,
+)
 from src.services.llm import LLMClient
 from src.services.progress import ProgressReporter
 from src.services.travel_service import TravelService
@@ -71,6 +82,7 @@ class ExternalAPIs:
         self.skip_weather = False
         self.weather_failure = False
         self.model_failure = False
+        self.analysis_response = None
 
     def handle(self, request: httpx.Request) -> httpx.Response:
         self.requests.append(request)
@@ -81,18 +93,22 @@ class ExternalAPIs:
             if self.model_failure:
                 return httpx.Response(401, json={"error": "authentication failed"})
             system = payload["messages"][0]["content"]
-            if "你是旅行需求分析专家" in system:
-                return completion(analysis_data())
-            if "你是资深旅行规划师" in system:
+            if system.startswith(ANALYZER_PROMPT):
+                return completion(
+                    self.analysis_response
+                    if self.analysis_response is not None
+                    else analysis_data()
+                )
+            if system == PLANNER_PROMPT:
                 return completion(plan_data())
-            if "你是天气与出行建议专家" in system:
+            if system == WEATHER_PROMPT:
                 return completion(
                     [
                         {"date": day, "recommendations": "携带雨具，预留室内活动"}
                         for day in ("2026-10-18", "2026-10-19")
                     ]
                 )
-            if "你是旅行 Agent 主管" in system:
+            if system == SUPERVISOR_PROMPT:
                 names = (
                     ["PlannerAgent"]
                     if self.skip_weather
@@ -101,7 +117,7 @@ class ExternalAPIs:
                 return completion(
                     [{"agentName": name, "reason": "按需求执行"} for name in names]
                 )
-            if "你是 GateKeeper 参数整理器" in system:
+            if system == GATEKEEPER_PROMPT:
                 return completion(
                     {
                         "targetAgentInput": "根据已有结构化数据规划成都旅行",
@@ -217,7 +233,7 @@ def test_smart_mode_normalizes_dependencies_and_calls_gatekeeper(travel_setup):
         record["desc"] for record in records if record["desc"].startswith("执行 ")
     ]
     assert executed == ["执行 AnalyzerAgent", "执行 WeatherAgent", "执行 PlannerAgent"]
-    assert sum(record["name"] == "GateKeeper" for record in records) == 6
+    assert sum(record["name"] == "GateKeeper" for record in records) == 4
 
 
 def test_skipped_weather_still_returns_complete_report(travel_setup):

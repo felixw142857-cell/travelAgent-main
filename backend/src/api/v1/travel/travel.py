@@ -68,6 +68,15 @@ async def stream_plan(
         async def produce() -> None:
             try:
                 outcome = await service.execute(payload, on_record)
+                if outcome.clarification is not None:
+                    await queue.put(
+                        {
+                            "event": "clarification",
+                            "data": outcome.clarification.model_dump(mode="json"),
+                        }
+                    )
+                    return
+                assert outcome.result is not None
                 await queue.put(
                     {
                         "event": "result",
@@ -106,7 +115,7 @@ async def stream_plan(
                 except TimeoutError:
                     event = {"event": "heartbeat", "data": None}
                 yield json.dumps(event, ensure_ascii=False) + "\n"
-                if event["event"] in {"result", "error"}:
+                if event["event"] in {"result", "clarification", "error"}:
                     break
         finally:
             # 浏览器取消或断开时，取消该请求的模型调用，避免后台继续工作。

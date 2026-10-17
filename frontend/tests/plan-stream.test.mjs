@@ -33,7 +33,7 @@ test("解析跨字节中文、跨块事件、心跳以及没有末尾换行的�
   const chunks = Array.from(wire, (byte) => Uint8Array.of(byte));
   t.mock.method(globalThis, "fetch", async (url, options) => {
     assert.equal(url, "/api/v1/travel/plan/stream");
-    assert.deepEqual(JSON.parse(options.body), { query: request.query, mode: "standard" });
+    assert.deepEqual(JSON.parse(options.body), { query: request.query, mode: "standard", history: [] });
     // 最后一行没有换行时，使用已关闭的流验证 decoder 的 flush。
     return new Response(new ReadableStream({
       start(controller) {
@@ -43,7 +43,7 @@ test("解析跨字节中文、跨块事件、心跳以及没有末尾换行的�
     }), { headers: { "Content-Type": "application/x-ndjson" } });
   });
   const records = [];
-  assert.deepEqual(await streamPlan({ ...request, onRecord: (item) => records.push(item) }), result);
+  assert.deepEqual(await streamPlan({ ...request, onRecord: (item) => records.push(item) }), { kind: "result", result });
   assert.deepEqual(records, [record]);
 });
 
@@ -52,7 +52,7 @@ test("结果到达后释放连接", async (t) => {
   t.mock.method(globalThis, "fetch", async () => responseFromChunks([
     encoder.encode(JSON.stringify({ event: "result", data: result }) + "\n"),
   ], () => { cancelled = true; }));
-  assert.deepEqual(await streamPlan(request), result);
+  assert.deepEqual(await streamPlan(request), { kind: "result", result });
   assert.equal(cancelled, true);
 });
 
@@ -101,4 +101,16 @@ test("用户取消时传递 AbortSignal 并保留取消异常", async (t) => {
 test("网络断开显示启动后端提示", async (t) => {
   t.mock.method(globalThis, "fetch", async () => { throw new TypeError("fetch failed"); });
   await assert.rejects(streamPlan(request), /确认 FastAPI 已启动/);
+});
+
+test("信息不足时返回追问，并传递之前的对话", async (t) => {
+  const history = [{ role: "user", content: "想去成都" }, { role: "assistant", content: "计划哪天出发，玩几天？" }];
+  const clarification = { message: "总预算是多少？", missingFields: ["budget"], draft: { destination: "成都", duration: 2, startDate: "2026-10-18" } };
+  let cancelled = false;
+  t.mock.method(globalThis, "fetch", async (_url, options) => {
+    assert.deepEqual(JSON.parse(options.body).history, history);
+    return responseFromChunks([encoder.encode(JSON.stringify({ event: "clarification", data: clarification }) + "\n")], () => { cancelled = true; });
+  });
+  assert.deepEqual(await streamPlan({ ...request, query: "明天出发，两天", history }), { kind: "clarification", clarification });
+  assert.equal(cancelled, true);
 });

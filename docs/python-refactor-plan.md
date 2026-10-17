@@ -1,5 +1,7 @@
 # Python 重构方案 A：FastAPI 后端 + 保留现有 React UI
 
+> 历史方案记录：以下路径和接口描述保留当时的设计。当前前端已独立迁入 `frontend/`，实际结构、启动方式和接口以 [项目 README](../README.md)、[前端文档](../frontend/README.md) 和 [后端文档](../backend/README.md) 为准。
+
 > 目标：把"Agent 在浏览器里跑"改成"Agent 在 FastAPI 里跑，界面一行不重画"，用 SSE 把执行日志原样推回现有 UI。
 > 预估：**12–14 小时净工作时间**（砍掉智能编排的精简版 7–9 小时）。
 

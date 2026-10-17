@@ -7,22 +7,51 @@ from typing import Any, Generic, Literal, TypeVar
 from pydantic import BaseModel, ConfigDict, Field, field_validator, model_validator
 
 
+class ConversationMessage(BaseModel):
+    model_config = ConfigDict(str_strip_whitespace=True, extra="forbid")
+    role: Literal["user", "assistant"]
+    content: str = Field(min_length=1, max_length=5000)
+
+
 class PlanRequest(BaseModel):
     model_config = ConfigDict(str_strip_whitespace=True, extra="forbid")
     query: str = Field(min_length=1, max_length=5000)
     mode: Literal["standard", "smart"] = "standard"
+    history: list[ConversationMessage] = Field(default_factory=list, max_length=20)
+
+    @field_validator("history")
+    @classmethod
+    def limit_history_size(cls, value: list[ConversationMessage]):
+        if sum(len(message.content) for message in value) > 20000:
+            raise ValueError("对话历史过长，请开始新对话")
+        return value
 
 
-class AnalysisResult(BaseModel):
+RequiredField = Literal["destination", "startDate", "duration", "budget"]
+
+
+class AnalysisDraft(BaseModel):
     model_config = ConfigDict(str_strip_whitespace=True)
-    destination: str = Field(min_length=1)
-    duration: int = Field(ge=1, le=30)
-    startDate: date
-    allDates: list[date] = Field(default_factory=list)
-    budget: str = "未指定"
+    destination: str | None = Field(default=None, min_length=1)
+    duration: int | None = Field(default=None, ge=1, le=30)
+    startDate: date | None = None
+    budget: str | None = None
     preferences: list[str] = Field(default_factory=list)
     extraRequirements: str = ""
     travelers: int = Field(default=1, ge=1, le=100)
+
+    @field_validator("destination", "duration", "startDate", "budget", mode="before")
+    @classmethod
+    def normalize_missing(cls, value: Any):
+        if isinstance(value, str) and value.strip() in {
+            "",
+            "未指定",
+            "未提供",
+            "未知",
+            "不详",
+        }:
+            return None
+        return value
 
     @field_validator("preferences", mode="before")
     @classmethod
@@ -37,8 +66,21 @@ class AnalysisResult(BaseModel):
 
     @field_validator("budget", mode="before")
     @classmethod
-    def normalize_budget(cls, value: Any) -> str:
-        return str(value) if value is not None else "未指定"
+    def normalize_budget(cls, value: Any) -> str | None:
+        return str(value) if value is not None else None
+
+    @property
+    def missing_fields(self) -> list[RequiredField]:
+        fields: list[RequiredField] = ["destination", "startDate", "duration", "budget"]
+        return [name for name in fields if getattr(self, name) is None]
+
+
+class AnalysisResult(AnalysisDraft):
+    destination: str = Field(min_length=1)
+    duration: int = Field(ge=1, le=30)
+    startDate: date
+    budget: str = "未指定"
+    allDates: list[date] = Field(default_factory=list)
 
     @model_validator(mode="before")
     @classmethod
@@ -54,6 +96,12 @@ class AnalysisResult(BaseModel):
             self.startDate + timedelta(days=day) for day in range(self.duration)
         ]
         return self
+
+
+class Clarification(BaseModel):
+    message: str
+    missingFields: list[RequiredField] = Field(min_length=1)
+    draft: AnalysisDraft
 
 
 class WeatherDay(BaseModel):
@@ -75,6 +123,9 @@ class Activity(BaseModel):
     time: str = Field(min_length=1)
     activity: str = Field(min_length=1)
     notes: str = ""
+    # 模型只能从候选景点中选，必须回填候选 id；source 由服务端按 id 覆写，不采信模型
+    attractionId: str = ""
+    source: str = ""
 
 
 class DayPlan(BaseModel):
@@ -109,8 +160,15 @@ class ProgressRecord(BaseModel):
 
 
 class PlanOutcome(BaseModel):
-    result: AgentResults
+    result: AgentResults | None = None
+    clarification: Clarification | None = None
     records: list[ProgressRecord]
+
+    @model_validator(mode="after")
+    def require_one_outcome(self):
+        if (self.result is None) == (self.clarification is None):
+            raise ValueError("必须返回完整行程或信息补充请求中的一种")
+        return self
 
 
 class PlanStep(BaseModel):

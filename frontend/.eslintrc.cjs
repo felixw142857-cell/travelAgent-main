@@ -6,7 +6,7 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'plugin:react-hooks/recommended',
   ],
-  ignorePatterns: ['dist', 'backend/**', '.eslintrc.cjs'],
+  ignorePatterns: ['dist', '.eslintrc.cjs'],
   overrides: [
     { files: ['*.config.ts', '*.config.js'], env: { node: true } },
     {
