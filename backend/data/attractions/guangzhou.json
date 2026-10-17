@@ -1,0 +1,644 @@
+{
+  "city": "广州",
+  "city_slug": "guangzhou",
+  "version": 1,
+  "updated_at": "2026-10-17",
+  "source": {
+    "provider": "openstreetmap",
+    "license": "ODbL-1.0",
+    "endpoint": "https://nominatim.openstreetmap.org/search",
+    "query_mode": "curated_name_lookup",
+    "attribution": "© OpenStreetMap contributors"
+  },
+  "notes": "指定景点名称逐项查询并核对 OSM 标识与坐标；category 优先按 OSM 标签映射，缺少可映射标签时人工分类（见 field_confidence）；suggested_minutes 与 best_time 为程序估计，门票与预约信息未采集。",
+  "items": [
+    {
+      "id": "guangzhou-way584204634",
+      "name": "广州塔",
+      "aliases": [
+        "Canton Tower",
+        "广州新电视塔;小蛮腰"
+      ],
+      "category": "sight",
+      "district": "海珠区",
+      "lat": 23.109015,
+      "lon": 113.319148,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "curated",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 584204634,
+        "wikidata": "Q168400",
+        "lookup_query": "广州塔, 广州",
+        "osm_category": "man_made",
+        "osm_feature_type": "tower"
+      }
+    },
+    {
+      "id": "guangzhou-way520935699",
+      "name": "陈家祠",
+      "aliases": [
+        "Chen Clan Ancestral Hall"
+      ],
+      "category": "museum",
+      "district": "荔湾区",
+      "lat": 23.129828,
+      "lon": 113.240133,
+      "suggested_minutes": 120,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 520935699,
+        "wikidata": "Q5090739",
+        "lookup_query": "陈家祠, 广州",
+        "osm_category": "tourism",
+        "osm_feature_type": "museum"
+      }
+    },
+    {
+      "id": "guangzhou-way240896442",
+      "name": "广东省博物馆",
+      "aliases": [
+        "Guangdong Museum"
+      ],
+      "category": "museum",
+      "district": "天河区",
+      "lat": 23.1174,
+      "lon": 113.321416,
+      "suggested_minutes": 120,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 240896442,
+        "wikidata": "Q5613644",
+        "lookup_query": "广东省博物馆, 广州",
+        "osm_category": "tourism",
+        "osm_feature_type": "museum"
+      }
+    },
+    {
+      "id": "guangzhou-way255622888",
+      "name": "越秀公园",
+      "aliases": [
+        "Yuexiu Park"
+      ],
+      "category": "park",
+      "district": "越秀区",
+      "lat": 23.142514,
+      "lon": 113.260408,
+      "suggested_minutes": 90,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 255622888,
+        "wikidata": "Q7209907",
+        "lookup_query": "越秀公园, 广州",
+        "osm_category": "leisure",
+        "osm_feature_type": "park"
+      }
+    },
+    {
+      "id": "guangzhou-relation6679655",
+      "name": "沙面",
+      "aliases": [
+        "Shameen",
+        "拾翠洲"
+      ],
+      "category": "sight",
+      "district": "荔湾区",
+      "lat": 23.109448,
+      "lon": 113.239305,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "curated",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "relation",
+        "osm_id": 6679655,
+        "wikidata": "Q529977",
+        "lookup_query": "沙面, 广州",
+        "osm_category": "place",
+        "osm_feature_type": "island"
+      }
+    },
+    {
+      "id": "guangzhou-way34374887",
+      "name": "广州动物园",
+      "aliases": [
+        "Guangzhou Zoological Garden"
+      ],
+      "category": "zoo",
+      "district": "越秀区",
+      "lat": 23.142912,
+      "lon": 113.300031,
+      "suggested_minutes": 180,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 34374887,
+        "wikidata": "Q11062008",
+        "lookup_query": "广州动物园, 广州",
+        "osm_category": "tourism",
+        "osm_feature_type": "zoo"
+      }
+    },
+    {
+      "id": "guangzhou-way297264709",
+      "name": "长隆野生动物世界",
+      "aliases": [
+        "Chimelong Safari Park",
+        "香江野生动物世界 Xiangjiang Safari Park"
+      ],
+      "category": "zoo",
+      "district": "番禺区",
+      "lat": 23.00531,
+      "lon": 113.309305,
+      "suggested_minutes": 180,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 297264709,
+        "wikidata": "Q10566319",
+        "lookup_query": "长隆野生动物世界, 广州",
+        "osm_category": "tourism",
+        "osm_feature_type": "zoo"
+      }
+    },
+    {
+      "id": "guangzhou-way292110019",
+      "name": "长隆欢乐世界",
+      "aliases": [
+        "Chimelong Paradise"
+      ],
+      "category": "park",
+      "district": "番禺区",
+      "lat": 23.002558,
+      "lon": 113.325685,
+      "suggested_minutes": 90,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 292110019,
+        "wikidata": "Q2963655",
+        "lookup_query": "长隆欢乐世界, 广州",
+        "osm_category": "tourism",
+        "osm_feature_type": "theme_park"
+      }
+    },
+    {
+      "id": "guangzhou-relation10076268",
+      "name": "白云山",
+      "aliases": [],
+      "category": "sight",
+      "district": "白云区",
+      "lat": 23.189648,
+      "lon": 113.294429,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "curated",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "curated",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "relation",
+        "osm_id": 10076268,
+        "wikidata": null,
+        "lookup_query": "白云山, 广州",
+        "osm_category": "natural",
+        "osm_feature_type": "wood"
+      }
+    },
+    {
+      "id": "guangzhou-relation8499873",
+      "name": "中山纪念堂",
+      "aliases": [
+        "Sun Yat-sen Memorial Hall"
+      ],
+      "category": "park",
+      "district": "越秀区",
+      "lat": 23.135592,
+      "lon": 113.259326,
+      "suggested_minutes": 90,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "curated",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "relation",
+        "osm_id": 8499873,
+        "wikidata": null,
+        "lookup_query": "中山纪念堂, 广州",
+        "osm_category": "leisure",
+        "osm_feature_type": "park"
+      }
+    },
+    {
+      "id": "guangzhou-way682108182",
+      "name": "广州博物馆",
+      "aliases": [
+        "Guangzhou Municipal Museum"
+      ],
+      "category": "museum",
+      "district": "越秀区",
+      "lat": 23.14039,
+      "lon": 113.260422,
+      "suggested_minutes": 120,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 682108182,
+        "wikidata": "Q30941307",
+        "lookup_query": "广州博物馆, 广州",
+        "osm_category": "tourism",
+        "osm_feature_type": "museum"
+      }
+    },
+    {
+      "id": "guangzhou-way542890833",
+      "name": "石室圣心大教堂",
+      "aliases": [
+        "Sacred Heart Cathedral",
+        "石室;石室耶稣圣心堂;石室天主教堂"
+      ],
+      "category": "temple",
+      "district": "越秀区",
+      "lat": 23.117397,
+      "lon": 113.254726,
+      "suggested_minutes": 60,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 542890833,
+        "wikidata": "Q1195445",
+        "lookup_query": "石室圣心大教堂, 广州",
+        "osm_category": "amenity",
+        "osm_feature_type": "place_of_worship"
+      }
+    },
+    {
+      "id": "guangzhou-way146674393",
+      "name": "六榕寺",
+      "aliases": [
+        "Temple of the Six Banyan Trees"
+      ],
+      "category": "temple",
+      "district": "越秀区",
+      "lat": 23.130468,
+      "lon": 113.254539,
+      "suggested_minutes": 60,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 146674393,
+        "wikidata": "Q683127",
+        "lookup_query": "六榕寺, 广州",
+        "osm_category": "amenity",
+        "osm_feature_type": "place_of_worship"
+      }
+    },
+    {
+      "id": "guangzhou-way361874090",
+      "name": "光孝寺",
+      "aliases": [
+        "Guangxiao Temple"
+      ],
+      "category": "temple",
+      "district": "越秀区",
+      "lat": 23.131917,
+      "lon": 113.251193,
+      "suggested_minutes": 60,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 361874090,
+        "wikidata": "Q985779",
+        "lookup_query": "光孝寺, 广州",
+        "osm_category": "amenity",
+        "osm_feature_type": "place_of_worship"
+      }
+    },
+    {
+      "id": "guangzhou-way422551795",
+      "name": "黄埔军校旧址纪念馆",
+      "aliases": [
+        "Memorial of the Original Site of Whampoa Military Academy",
+        "黄埔军校;陆军军官学校"
+      ],
+      "category": "museum",
+      "district": "黄埔区",
+      "lat": 23.088692,
+      "lon": 113.419455,
+      "suggested_minutes": 120,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 422551795,
+        "wikidata": "Q11177237",
+        "lookup_query": "黄埔军校旧址, 广州",
+        "osm_category": "tourism",
+        "osm_feature_type": "museum"
+      }
+    },
+    {
+      "id": "guangzhou-way1523898842",
+      "name": "余荫山房",
+      "aliases": [
+        "Yuyin Ancestral Garden"
+      ],
+      "category": "park",
+      "district": "番禺区",
+      "lat": 23.013983,
+      "lon": 113.389883,
+      "suggested_minutes": 90,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "curated",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 1523898842,
+        "wikidata": "Q10886663",
+        "lookup_query": "余荫山房, 广州",
+        "osm_category": "leisure",
+        "osm_feature_type": "garden"
+      }
+    },
+    {
+      "id": "guangzhou-way604400712",
+      "name": "宝墨园",
+      "aliases": [
+        "Baomo Garden"
+      ],
+      "category": "park",
+      "district": "番禺区",
+      "lat": 22.897073,
+      "lon": 113.28877,
+      "suggested_minutes": 90,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "curated",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 604400712,
+        "wikidata": null,
+        "lookup_query": "宝墨园, 广州",
+        "osm_category": "leisure",
+        "osm_feature_type": "park"
+      }
+    },
+    {
+      "id": "guangzhou-relation10061850",
+      "name": "广州大剧院",
+      "aliases": [
+        "Guangzhou Opera House"
+      ],
+      "category": "sight",
+      "district": "天河区",
+      "lat": 23.117766,
+      "lon": 113.316749,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "curated",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "relation",
+        "osm_id": 10061850,
+        "wikidata": "Q3354553",
+        "lookup_query": "广州大剧院, 广州",
+        "osm_category": "amenity",
+        "osm_feature_type": "theatre"
+      }
+    },
+    {
+      "id": "guangzhou-node8314756134",
+      "name": "莲花山",
+      "aliases": [],
+      "category": "sight",
+      "district": "",
+      "lat": 22.991132,
+      "lon": 113.496119,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "curated",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "curated",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 8314756134,
+        "wikidata": null,
+        "lookup_query": "莲花山, 广州",
+        "osm_category": "natural",
+        "osm_feature_type": "peak"
+      }
+    }
+  ]
+}

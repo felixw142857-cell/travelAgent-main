@@ -12,6 +12,7 @@ try {
     & $taskPythonExecutable -m ruff format --check src tests scripts
     if ($LASTEXITCODE -ne 0) { throw "Code format check failed." }
     # Use a new project-owned directory rather than a shared pytest temp folder.
+    New-Item -ItemType Directory -Path (Join-Path $taskBackendRoot ".tools") -Force | Out-Null
     $taskTestTemp = Join-Path $taskBackendRoot (".tools\pytest-" + [guid]::NewGuid().ToString("N"))
     if (Test-Path -LiteralPath $taskTestTemp) { throw "Expected a new test directory." }
     & $taskPythonExecutable -m pytest -p no:cacheprovider --basetemp $taskTestTemp

@@ -132,7 +132,7 @@ class TravelService:
                 text=weather.weather_text(weather_days), json_data=weather_days
             ),
             planner=AgentResult(
-                text=planner.planner_text(daily_plan), json_data=daily_plan
+                text=planner.planner_text(daily_plan, analysis), json_data=daily_plan
             ),
         )
         await progress.emit("旅行规划", "全部任务完成", kind="supervisor")

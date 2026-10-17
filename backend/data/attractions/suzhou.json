@@ -1,0 +1,1329 @@
+{
+  "city": "苏州",
+  "city_slug": "suzhou",
+  "version": 1,
+  "updated_at": "2026-10-17",
+  "source": {
+    "provider": "openstreetmap",
+    "license": "ODbL-1.0",
+    "endpoint": "https://overpass-api.de/api/interpreter"
+  },
+  "notes": "名称/类别/坐标为 OSM 实测数据；suggested_minutes 与 best_time 为程序估计，非官方信息。",
+  "items": [
+    {
+      "id": "suzhou-way449265245",
+      "name": "万年桥",
+      "aliases": [],
+      "category": "sight",
+      "district": "",
+      "lat": 31.300299,
+      "lon": 120.607059,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 449265245,
+        "wikidata": "Q10865051"
+      }
+    },
+    {
+      "id": "suzhou-way206076447",
+      "name": "北寺塔",
+      "aliases": [
+        "North Temple Pagoda",
+        "报恩寺塔"
+      ],
+      "category": "sight",
+      "district": "",
+      "lat": 31.324543,
+      "lon": 120.615402,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 206076447,
+        "wikidata": "Q836041"
+      }
+    },
+    {
+      "id": "suzhou-way526710248",
+      "name": "可园",
+      "aliases": [
+        "Keyuan Garden"
+      ],
+      "category": "sight",
+      "district": "",
+      "lat": 31.297597,
+      "lon": 120.620684,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 526710248,
+        "wikidata": "Q67936094"
+      }
+    },
+    {
+      "id": "suzhou-way468359738",
+      "name": "拙政园",
+      "aliases": [
+        "Humble Administrator's Garden"
+      ],
+      "category": "sight",
+      "district": "",
+      "lat": 31.326473,
+      "lon": 120.624727,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 468359738,
+        "wikidata": "Q1076650"
+      }
+    },
+    {
+      "id": "suzhou-way492154541",
+      "name": "沧浪亭",
+      "aliases": [
+        "Great Wave Pavilion"
+      ],
+      "category": "sight",
+      "district": "",
+      "lat": 31.296705,
+      "lon": 120.62128,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 492154541,
+        "wikidata": "Q5600169"
+      }
+    },
+    {
+      "id": "suzhou-way44679451",
+      "name": "狮子林",
+      "aliases": [
+        "Lion Grove Garden"
+      ],
+      "category": "sight",
+      "district": "",
+      "lat": 31.323111,
+      "lon": 120.624832,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 44679451,
+        "wikidata": "Q6555424"
+      }
+    },
+    {
+      "id": "suzhou-way492154599",
+      "name": "环秀山庄",
+      "aliases": [
+        "Mountain Villa with Embracing Beauty"
+      ],
+      "category": "sight",
+      "district": "",
+      "lat": 31.31312,
+      "lon": 120.609015,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 492154599,
+        "wikidata": "Q6925405"
+      }
+    },
+    {
+      "id": "suzhou-way608471429",
+      "name": "瑞光塔",
+      "aliases": [
+        "Ruiguang Pagoda"
+      ],
+      "category": "sight",
+      "district": "",
+      "lat": 31.291332,
+      "lon": 120.614433,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 608471429,
+        "wikidata": "Q19841632"
+      }
+    },
+    {
+      "id": "suzhou-way799019069",
+      "name": "甲辰巷砖塔",
+      "aliases": [],
+      "category": "sight",
+      "district": "",
+      "lat": 31.310441,
+      "lon": 120.634617,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 799019069,
+        "wikidata": "Q15929243"
+      }
+    },
+    {
+      "id": "suzhou-way420034522",
+      "name": "留园",
+      "aliases": [
+        "Lingering Garden"
+      ],
+      "category": "sight",
+      "district": "",
+      "lat": 31.317623,
+      "lon": 120.588267,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 420034522,
+        "wikidata": "Q6553852"
+      }
+    },
+    {
+      "id": "suzhou-way685088107",
+      "name": "盘门",
+      "aliases": [
+        "Pan Gate"
+      ],
+      "category": "sight",
+      "district": "",
+      "lat": 31.289555,
+      "lon": 120.611954,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 685088107,
+        "wikidata": "Q855173"
+      }
+    },
+    {
+      "id": "suzhou-way44679452",
+      "name": "网师园",
+      "aliases": [
+        "Master of Nets Garden"
+      ],
+      "category": "sight",
+      "district": "",
+      "lat": 31.300411,
+      "lon": 120.629791,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 44679452,
+        "wikidata": null
+      }
+    },
+    {
+      "id": "suzhou-way802089955",
+      "name": "胥门",
+      "aliases": [],
+      "category": "sight",
+      "district": "",
+      "lat": 31.299497,
+      "lon": 120.608316,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 802089955,
+        "wikidata": "Q20063978"
+      }
+    },
+    {
+      "id": "suzhou-node4614099867",
+      "name": "苏州摩天轮",
+      "aliases": [
+        "Suzhou Ferris Wheel"
+      ],
+      "category": "sight",
+      "district": "",
+      "lat": 31.316539,
+      "lon": 120.708388,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 4614099867,
+        "wikidata": "Q81417"
+      }
+    },
+    {
+      "id": "suzhou-way405399687",
+      "name": "退思园",
+      "aliases": [
+        "Tuisi Garden"
+      ],
+      "category": "sight",
+      "district": "",
+      "lat": 31.159848,
+      "lon": 120.716319,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 405399687,
+        "wikidata": "Q2459376"
+      }
+    },
+    {
+      "id": "suzhou-way839601898",
+      "name": "下津桥",
+      "aliases": [],
+      "category": "sight",
+      "district": "",
+      "lat": 31.314614,
+      "lon": 120.578121,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 839601898,
+        "wikidata": "Q98479280"
+      }
+    },
+    {
+      "id": "suzhou-way542534201",
+      "name": "太平天国忠王府",
+      "aliases": [
+        "Taiping Heavenly Kingdom"
+      ],
+      "category": "sight",
+      "district": "",
+      "lat": 31.325547,
+      "lon": 120.624438,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 542534201,
+        "wikidata": "Q2145666"
+      }
+    },
+    {
+      "id": "suzhou-way460257370",
+      "name": "宝带桥",
+      "aliases": [],
+      "category": "sight",
+      "district": "",
+      "lat": 31.258764,
+      "lon": 120.649476,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 460257370,
+        "wikidata": "Q807059"
+      }
+    },
+    {
+      "id": "suzhou-way526660676",
+      "name": "怡园",
+      "aliases": [
+        "Garden of Pleasance"
+      ],
+      "category": "sight",
+      "district": "",
+      "lat": 31.309675,
+      "lon": 120.617047,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 526660676,
+        "wikidata": "Q8053962"
+      }
+    },
+    {
+      "id": "suzhou-way492151336",
+      "name": "耦园",
+      "aliases": [
+        "Couple's Retreat Garden"
+      ],
+      "category": "sight",
+      "district": "",
+      "lat": 31.318367,
+      "lon": 120.634062,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 492151336,
+        "wikidata": "Q3372384"
+      }
+    },
+    {
+      "id": "suzhou-node4695225901",
+      "name": "中国昆曲博物馆",
+      "aliases": [
+        "China Kunqu opera museum"
+      ],
+      "category": "museum",
+      "district": "",
+      "lat": 31.315197,
+      "lon": 120.631513,
+      "suggested_minutes": 120,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 4695225901,
+        "wikidata": "Q7651049"
+      }
+    },
+    {
+      "id": "suzhou-way857434712",
+      "name": "柴园·苏州教育博物馆",
+      "aliases": [],
+      "category": "museum",
+      "district": "",
+      "lat": 31.303202,
+      "lon": 120.625117,
+      "suggested_minutes": 120,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 857434712,
+        "wikidata": "Q55354704"
+      }
+    },
+    {
+      "id": "suzhou-way541249963",
+      "name": "苏州丝绸博物馆",
+      "aliases": [
+        "Suzhou Silk Museum"
+      ],
+      "category": "museum",
+      "district": "苏州市",
+      "lat": 31.325121,
+      "lon": 120.613912,
+      "suggested_minutes": 120,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 541249963,
+        "wikidata": "Q4806827"
+      }
+    },
+    {
+      "id": "suzhou-way542534202",
+      "name": "苏州博物馆",
+      "aliases": [
+        "Suzhou Museum"
+      ],
+      "category": "museum",
+      "district": "",
+      "lat": 31.325422,
+      "lon": 120.623497,
+      "suggested_minutes": 120,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 542534202,
+        "wikidata": "Q998042"
+      }
+    },
+    {
+      "id": "suzhou-way542534218",
+      "name": "苏州工艺美术博物馆",
+      "aliases": [
+        "Suzhou Arts and Crafts Museum"
+      ],
+      "category": "museum",
+      "district": "",
+      "lat": 31.324786,
+      "lon": 120.620308,
+      "suggested_minutes": 120,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 542534218,
+        "wikidata": "Q7651035"
+      }
+    },
+    {
+      "id": "suzhou-way1387458584",
+      "name": "苏州考古博物馆",
+      "aliases": [
+        "Suzhou Archaeological Museum"
+      ],
+      "category": "museum",
+      "district": "",
+      "lat": 31.258,
+      "lon": 120.588563,
+      "suggested_minutes": 120,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 1387458584,
+        "wikidata": "Q134559929"
+      }
+    },
+    {
+      "id": "suzhou-way346330952",
+      "name": "苏州文庙",
+      "aliases": [
+        "Temple of Confucius"
+      ],
+      "category": "museum",
+      "district": "",
+      "lat": 31.297481,
+      "lon": 120.619266,
+      "suggested_minutes": 120,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 346330952,
+        "wikidata": "Q4807033"
+      }
+    },
+    {
+      "id": "suzhou-way526710341",
+      "name": "万寿宫",
+      "aliases": [],
+      "category": "park",
+      "district": "",
+      "lat": 31.306653,
+      "lon": 120.626089,
+      "suggested_minutes": 90,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 526710341,
+        "wikidata": "Q55354352"
+      }
+    },
+    {
+      "id": "suzhou-way529003248",
+      "name": "唐寅祠",
+      "aliases": [],
+      "category": "temple",
+      "district": "",
+      "lat": 31.323187,
+      "lon": 120.608717,
+      "suggested_minutes": 60,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 529003248,
+        "wikidata": null
+      }
+    },
+    {
+      "id": "suzhou-way529003311",
+      "name": "城隍庙",
+      "aliases": [
+        "Chenghuang Temple"
+      ],
+      "category": "temple",
+      "district": "",
+      "lat": 31.313612,
+      "lon": 120.61472,
+      "suggested_minutes": 60,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 529003311,
+        "wikidata": "Q2675173"
+      }
+    },
+    {
+      "id": "suzhou-way442387355",
+      "name": "基督教狮山堂",
+      "aliases": [],
+      "category": "temple",
+      "district": "",
+      "lat": 31.286906,
+      "lon": 120.536642,
+      "suggested_minutes": 60,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 442387355,
+        "wikidata": "Q17163754"
+      }
+    },
+    {
+      "id": "suzhou-way526782584",
+      "name": "定慧寺",
+      "aliases": [
+        "Dinghui Temple"
+      ],
+      "category": "temple",
+      "district": "",
+      "lat": 31.309092,
+      "lon": 120.628477,
+      "suggested_minutes": 60,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 526782584,
+        "wikidata": "Q10948561"
+      }
+    },
+    {
+      "id": "suzhou-way442386635",
+      "name": "宫巷基督教堂",
+      "aliases": [],
+      "category": "temple",
+      "district": "",
+      "lat": 31.310689,
+      "lon": 120.622896,
+      "suggested_minutes": 60,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 442386635,
+        "wikidata": null
+      }
+    },
+    {
+      "id": "suzhou-way741882129",
+      "name": "寒山寺",
+      "aliases": [
+        "Hanshan Temple"
+      ],
+      "category": "temple",
+      "district": "姑苏区",
+      "lat": 31.312533,
+      "lon": 120.564369,
+      "suggested_minutes": 60,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 741882129,
+        "wikidata": "Q1146619"
+      }
+    },
+    {
+      "id": "suzhou-way442381758",
+      "name": "苏州圣约翰堂",
+      "aliases": [],
+      "category": "temple",
+      "district": "",
+      "lat": 31.305272,
+      "lon": 120.634662,
+      "suggested_minutes": 60,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 442381758,
+        "wikidata": "Q6723874"
+      }
+    },
+    {
+      "id": "suzhou-way736382204",
+      "name": "西园寺",
+      "aliases": [
+        "Xiyuan Temple"
+      ],
+      "category": "temple",
+      "district": "",
+      "lat": 31.316856,
+      "lon": 120.582998,
+      "suggested_minutes": 60,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 736382204,
+        "wikidata": "Q15929019"
+      }
+    },
+    {
+      "id": "suzhou-way945705668",
+      "name": "8号楼 政府食堂",
+      "aliases": [],
+      "category": "food",
+      "district": "",
+      "lat": 31.302544,
+      "lon": 120.579524,
+      "suggested_minutes": 60,
+      "best_time": "中午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 945705668,
+        "wikidata": null
+      }
+    },
+    {
+      "id": "suzhou-way1487509289",
+      "name": "Bistro181精致法餐",
+      "aliases": [],
+      "category": "food",
+      "district": "",
+      "lat": 31.413117,
+      "lon": 120.89297,
+      "suggested_minutes": 60,
+      "best_time": "中午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 1487509289,
+        "wikidata": null
+      }
+    },
+    {
+      "id": "suzhou-way618786255",
+      "name": "Canteen",
+      "aliases": [],
+      "category": "food",
+      "district": "",
+      "lat": 31.321816,
+      "lon": 120.754131,
+      "suggested_minutes": 60,
+      "best_time": "中午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 618786255,
+        "wikidata": null
+      }
+    },
+    {
+      "id": "suzhou-way1487509287",
+      "name": "Franklin美式牛排馆",
+      "aliases": [],
+      "category": "food",
+      "district": "",
+      "lat": 31.413411,
+      "lon": 120.893014,
+      "suggested_minutes": 60,
+      "best_time": "中午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 1487509287,
+        "wikidata": null
+      }
+    },
+    {
+      "id": "suzhou-way1487509290",
+      "name": "Goobne贡乃",
+      "aliases": [],
+      "category": "food",
+      "district": "",
+      "lat": 31.41313,
+      "lon": 120.892706,
+      "suggested_minutes": 60,
+      "best_time": "中午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 1487509290,
+        "wikidata": null
+      }
+    },
+    {
+      "id": "suzhou-node5897811985",
+      "name": "Goyeap火锅",
+      "aliases": [
+        "Goyeap Hotpot"
+      ],
+      "category": "food",
+      "district": "",
+      "lat": 31.2923,
+      "lon": 120.642523,
+      "suggested_minutes": 60,
+      "best_time": "中午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 5897811985,
+        "wikidata": null
+      }
+    },
+    {
+      "id": "suzhou-node1275008226",
+      "name": "Indian at the cross",
+      "aliases": [],
+      "category": "food",
+      "district": "",
+      "lat": 31.303637,
+      "lon": 120.678859,
+      "suggested_minutes": 60,
+      "best_time": "中午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 1275008226,
+        "wikidata": null
+      }
+    },
+    {
+      "id": "suzhou-way1487509280",
+      "name": "Kun·chef 昆厨",
+      "aliases": [
+        "Kun·chef"
+      ],
+      "category": "food",
+      "district": "",
+      "lat": 31.413593,
+      "lon": 120.892874,
+      "suggested_minutes": 60,
+      "best_time": "中午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 1487509280,
+        "wikidata": null
+      }
+    },
+    {
+      "id": "suzhou-node7553537708",
+      "name": "Mamma Mia!",
+      "aliases": [],
+      "category": "food",
+      "district": "",
+      "lat": 31.312787,
+      "lon": 120.679671,
+      "suggested_minutes": 60,
+      "best_time": "中午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 7553537708,
+        "wikidata": null
+      }
+    }
+  ]
+}

@@ -1,0 +1,738 @@
+{
+  "city": "重庆",
+  "city_slug": "chongqing",
+  "version": 1,
+  "updated_at": "2026-10-17",
+  "source": {
+    "provider": "openstreetmap",
+    "license": "ODbL-1.0",
+    "endpoint": "https://overpass-api.de/api/interpreter"
+  },
+  "notes": "名称/类别/坐标为 OSM 实测数据；suggested_minutes 与 best_time 为程序估计，非官方信息。",
+  "items": [
+    {
+      "id": "chongqing-way413053012",
+      "name": "重庆动物园",
+      "aliases": [
+        "Chongqing Zoo"
+      ],
+      "category": "zoo",
+      "district": "",
+      "lat": 29.506623,
+      "lon": 106.501765,
+      "suggested_minutes": 180,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 413053012,
+        "wikidata": "Q10563866"
+      }
+    },
+    {
+      "id": "chongqing-way939578294",
+      "name": "洪崖洞",
+      "aliases": [
+        "Hong Ya Dong"
+      ],
+      "category": "sight",
+      "district": "",
+      "lat": 29.565073,
+      "lon": 106.575296,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 939578294,
+        "wikidata": "Q32171478"
+      }
+    },
+    {
+      "id": "chongqing-way312090249",
+      "name": "重庆十八梯传统风貌区",
+      "aliases": [
+        "Eighteen Stairs"
+      ],
+      "category": "sight",
+      "district": "",
+      "lat": 29.553778,
+      "lon": 106.569578,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 312090249,
+        "wikidata": "Q32169345"
+      }
+    },
+    {
+      "id": "chongqing-node4150438289",
+      "name": "史迪威博物馆",
+      "aliases": [
+        "Joseph Stilwell Museum"
+      ],
+      "category": "museum",
+      "district": "",
+      "lat": 29.553371,
+      "lon": 106.529721,
+      "suggested_minutes": 120,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 4150438289,
+        "wikidata": "Q9593846"
+      }
+    },
+    {
+      "id": "chongqing-way866088553",
+      "name": "湖广会馆",
+      "aliases": [
+        "Huguang Assembly Hall"
+      ],
+      "category": "museum",
+      "district": "",
+      "lat": 29.560521,
+      "lon": 106.582724,
+      "suggested_minutes": 120,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 866088553,
+        "wikidata": "Q16078575"
+      }
+    },
+    {
+      "id": "chongqing-relation9817953",
+      "name": "重庆科技馆",
+      "aliases": [
+        "Chongqing Science and Technology Museum"
+      ],
+      "category": "museum",
+      "district": "",
+      "lat": 29.57388,
+      "lon": 106.573932,
+      "suggested_minutes": 120,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "relation",
+        "osm_id": 9817953,
+        "wikidata": "Q17038935"
+      }
+    },
+    {
+      "id": "chongqing-way230584222",
+      "name": "三峡博物馆",
+      "aliases": [
+        "Three Gorges Museum"
+      ],
+      "category": "museum",
+      "district": "",
+      "lat": 29.564873,
+      "lon": 106.546625,
+      "suggested_minutes": 120,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 230584222,
+        "wikidata": "Q10872783"
+      }
+    },
+    {
+      "id": "chongqing-way1225419204",
+      "name": "故宫文物南迁纪念馆",
+      "aliases": [],
+      "category": "museum",
+      "district": "",
+      "lat": 29.568885,
+      "lon": 106.591593,
+      "suggested_minutes": 120,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 1225419204,
+        "wikidata": "Q109256955"
+      }
+    },
+    {
+      "id": "chongqing-way412612167",
+      "name": "南滨公园",
+      "aliases": [
+        "Nanbin Park"
+      ],
+      "category": "park",
+      "district": "",
+      "lat": 29.551957,
+      "lon": 106.579421,
+      "suggested_minutes": 90,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 412612167,
+        "wikidata": "Q25104362"
+      }
+    },
+    {
+      "id": "chongqing-way412876067",
+      "name": "枇杷山公园",
+      "aliases": [
+        "Pipa Mountain Park"
+      ],
+      "category": "park",
+      "district": "",
+      "lat": 29.556918,
+      "lon": 106.55376,
+      "suggested_minutes": 90,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 412876067,
+        "wikidata": "Q25110905"
+      }
+    },
+    {
+      "id": "chongqing-relation20130442",
+      "name": "鸿恩寺公园",
+      "aliases": [
+        "Hong'en Temple Forest Park"
+      ],
+      "category": "park",
+      "district": "",
+      "lat": 29.572748,
+      "lon": 106.504147,
+      "suggested_minutes": 90,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "relation",
+        "osm_id": 20130442,
+        "wikidata": "Q97621239"
+      }
+    },
+    {
+      "id": "chongqing-relation20086809",
+      "name": "鹅岭公园",
+      "aliases": [
+        "Goose Range Park (E’ling Park)"
+      ],
+      "category": "park",
+      "district": "",
+      "lat": 29.552498,
+      "lon": 106.531042,
+      "suggested_minutes": 90,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "relation",
+        "osm_id": 20086809,
+        "wikidata": "Q10567057"
+      }
+    },
+    {
+      "id": "chongqing-node13143747801",
+      "name": "ACOC",
+      "aliases": [],
+      "category": "food",
+      "district": "",
+      "lat": 29.573027,
+      "lon": 106.557026,
+      "suggested_minutes": 60,
+      "best_time": "中午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 13143747801,
+        "wikidata": null
+      }
+    },
+    {
+      "id": "chongqing-node13273938699",
+      "name": "Air-raid Shelter Beilou Community Dining Hall",
+      "aliases": [],
+      "category": "food",
+      "district": "",
+      "lat": 29.588102,
+      "lon": 106.548032,
+      "suggested_minutes": 60,
+      "best_time": "中午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 13273938699,
+        "wikidata": null
+      }
+    },
+    {
+      "id": "chongqing-node10647823697",
+      "name": "Chen's noodle",
+      "aliases": [],
+      "category": "food",
+      "district": "",
+      "lat": 29.600794,
+      "lon": 106.561622,
+      "suggested_minutes": 60,
+      "best_time": "中午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 10647823697,
+        "wikidata": null
+      }
+    },
+    {
+      "id": "chongqing-node14152753133",
+      "name": "Chunyang Old Wine House Sichuan Cuisine",
+      "aliases": [],
+      "category": "food",
+      "district": "",
+      "lat": 29.557471,
+      "lon": 106.557689,
+      "suggested_minutes": 60,
+      "best_time": "中午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 14152753133,
+        "wikidata": null
+      }
+    },
+    {
+      "id": "chongqing-node13147455465",
+      "name": "Comune",
+      "aliases": [],
+      "category": "food",
+      "district": "",
+      "lat": 29.573038,
+      "lon": 106.560894,
+      "suggested_minutes": 60,
+      "best_time": "中午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 13147455465,
+        "wikidata": null
+      }
+    },
+    {
+      "id": "chongqing-node13944338410",
+      "name": "一朵浪花植物性饮食",
+      "aliases": [],
+      "category": "food",
+      "district": "",
+      "lat": 29.582955,
+      "lon": 106.515288,
+      "suggested_minutes": 60,
+      "best_time": "中午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 13944338410,
+        "wikidata": null
+      }
+    },
+    {
+      "id": "chongqing-node13940403437",
+      "name": "一面汁原",
+      "aliases": [],
+      "category": "food",
+      "district": "",
+      "lat": 29.595192,
+      "lon": 106.547679,
+      "suggested_minutes": 60,
+      "best_time": "中午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 13940403437,
+        "wikidata": null
+      }
+    },
+    {
+      "id": "chongqing-node11896942780",
+      "name": "万州杂酱面",
+      "aliases": [],
+      "category": "food",
+      "district": "",
+      "lat": 29.565353,
+      "lon": 106.456599,
+      "suggested_minutes": 60,
+      "best_time": "中午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 11896942780,
+        "wikidata": null
+      }
+    },
+    {
+      "id": "chongqing-node13577468301",
+      "name": "三哥肥肠鱼",
+      "aliases": [],
+      "category": "food",
+      "district": "",
+      "lat": 29.499758,
+      "lon": 106.645753,
+      "suggested_minutes": 60,
+      "best_time": "中午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 13577468301,
+        "wikidata": null
+      }
+    },
+    {
+      "id": "chongqing-node12251310685",
+      "name": "三番料理",
+      "aliases": [],
+      "category": "food",
+      "district": "",
+      "lat": 29.538091,
+      "lon": 106.600262,
+      "suggested_minutes": 60,
+      "best_time": "中午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 12251310685,
+        "wikidata": null
+      }
+    },
+    {
+      "id": "chongqing-node10212257328",
+      "name": "两江沸点老火锅店",
+      "aliases": [],
+      "category": "food",
+      "district": "",
+      "lat": 29.716978,
+      "lon": 106.596079,
+      "suggested_minutes": 60,
+      "best_time": "中午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 10212257328,
+        "wikidata": null
+      }
+    },
+    {
+      "id": "chongqing-node11074259169",
+      "name": "乡城故事土家菜",
+      "aliases": [],
+      "category": "food",
+      "district": "渝北区",
+      "lat": 29.721076,
+      "lon": 106.604299,
+      "suggested_minutes": 60,
+      "best_time": "中午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 11074259169,
+        "wikidata": null
+      }
+    },
+    {
+      "id": "chongqing-way589752618",
+      "name": "抗战胜利纪功碑暨人民解放纪念碑",
+      "aliases": [
+        "People's Liberation Monument"
+      ],
+      "category": "historic",
+      "district": "",
+      "lat": 29.560101,
+      "lon": 106.573357,
+      "suggested_minutes": 60,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 589752618,
+        "wikidata": "Q6683399"
+      }
+    }
+  ]
+}

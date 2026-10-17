@@ -202,6 +202,11 @@ suggested_minutes，部分含 district、best_time、highlight。
 
 5. candidates 为空数组表示该城市暂无景点库数据，此时 attractionId 留空字符串，
    按原有规则自由安排，但仍不得虚构具体门票价格与开门状态。
+
+6. category 为「餐饮」的候选用于午餐/晚餐时段，优先安排在当天游览区域附近；
+   确实没有合适候选时写「用餐（建议现场选择）」，并把 attractionId 留空。
+
+7. 「住宿」不是行程时段，不要排进 plan；住哪儿由服务端在报告末尾单独给出。
 """
 
 

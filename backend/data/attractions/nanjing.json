@@ -1,0 +1,1329 @@
+{
+  "city": "南京",
+  "city_slug": "nanjing",
+  "version": 1,
+  "updated_at": "2026-10-17",
+  "source": {
+    "provider": "openstreetmap",
+    "license": "ODbL-1.0",
+    "endpoint": "https://overpass-api.de/api/interpreter"
+  },
+  "notes": "名称/类别/坐标为 OSM 实测数据；suggested_minutes 与 best_time 为程序估计，非官方信息。",
+  "items": [
+    {
+      "id": "nanjing-way62344632",
+      "name": "红山森林动物园",
+      "aliases": [],
+      "category": "zoo",
+      "district": "",
+      "lat": 32.093953,
+      "lon": 118.796677,
+      "suggested_minutes": 180,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 62344632,
+        "wikidata": "Q6963658"
+      }
+    },
+    {
+      "id": "nanjing-way319201085",
+      "name": "中央商场",
+      "aliases": [
+        "Central Emporium",
+        "南京中央商场"
+      ],
+      "category": "sight",
+      "district": "秦淮区",
+      "lat": 32.040888,
+      "lon": 118.78006,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 319201085,
+        "wikidata": "Q10875053"
+      }
+    },
+    {
+      "id": "nanjing-way1531638749",
+      "name": "南京夫子庙",
+      "aliases": [],
+      "category": "sight",
+      "district": "秦淮区",
+      "lat": 32.022735,
+      "lon": 118.783603,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 1531638749,
+        "wikidata": "Q835494"
+      }
+    },
+    {
+      "id": "nanjing-way155883007",
+      "name": "南京新百",
+      "aliases": [
+        "Nanjing Xinjiekou Department Store",
+        "南京新街口百货商店"
+      ],
+      "category": "sight",
+      "district": "秦淮区",
+      "lat": 32.042862,
+      "lon": 118.779634,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 155883007,
+        "wikidata": "Q11084295"
+      }
+    },
+    {
+      "id": "nanjing-way1518562426",
+      "name": "大华大戏院",
+      "aliases": [
+        "Dahua Theater"
+      ],
+      "category": "sight",
+      "district": "秦淮区",
+      "lat": 32.041007,
+      "lon": 118.779474,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 1518562426,
+        "wikidata": "Q10906696"
+      }
+    },
+    {
+      "id": "nanjing-way461035531",
+      "name": "阅江楼",
+      "aliases": [
+        "Yuejiang Tower"
+      ],
+      "category": "sight",
+      "district": "鼓楼区",
+      "lat": 32.096145,
+      "lon": 118.741324,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 461035531,
+        "wikidata": "Q8060271"
+      }
+    },
+    {
+      "id": "nanjing-way1518562390",
+      "name": "马歇尔公馆旧址",
+      "aliases": [
+        "Former Residence of General Marshall"
+      ],
+      "category": "sight",
+      "district": "鼓楼区",
+      "lat": 32.066421,
+      "lon": 118.764193,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 1518562390,
+        "wikidata": "Q15927279"
+      }
+    },
+    {
+      "id": "nanjing-way135290880",
+      "name": "鼓楼",
+      "aliases": [
+        "Drum Tower"
+      ],
+      "category": "sight",
+      "district": "",
+      "lat": 32.060729,
+      "lon": 118.77683,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 135290880,
+        "wikidata": null
+      }
+    },
+    {
+      "id": "nanjing-way141915419",
+      "name": "中山陵音乐台",
+      "aliases": [],
+      "category": "sight",
+      "district": "",
+      "lat": 32.057315,
+      "lon": 118.850252,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 141915419,
+        "wikidata": "Q7638615"
+      }
+    },
+    {
+      "id": "nanjing-relation18416429",
+      "name": "侵华日军南京大屠杀遇难同胞纪念馆",
+      "aliases": [
+        "the Memorial Hall of the Victims in Nanjing Massacre by Japanese Invaders"
+      ],
+      "category": "museum",
+      "district": "建邺区",
+      "lat": 32.037718,
+      "lon": 118.737705,
+      "suggested_minutes": 120,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "relation",
+        "osm_id": 18416429,
+        "wikidata": "Q32391"
+      }
+    },
+    {
+      "id": "nanjing-way319998727",
+      "name": "南京博物院",
+      "aliases": [
+        "NanJing Museum"
+      ],
+      "category": "museum",
+      "district": "南京市",
+      "lat": 32.042953,
+      "lon": 118.819349,
+      "suggested_minutes": 120,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 319998727,
+        "wikidata": "Q1815891"
+      }
+    },
+    {
+      "id": "nanjing-way333793961",
+      "name": "国立美术陈列馆旧址",
+      "aliases": [
+        "Former National Art Gallery"
+      ],
+      "category": "museum",
+      "district": "",
+      "lat": 32.046199,
+      "lon": 118.788462,
+      "suggested_minutes": 120,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 333793961,
+        "wikidata": "Q11135032"
+      }
+    },
+    {
+      "id": "nanjing-node13888596084",
+      "name": "太平天国历史博物馆",
+      "aliases": [
+        "Taiping Heavenly Kingdom History Museum"
+      ],
+      "category": "museum",
+      "district": "秦淮区",
+      "lat": 32.02314,
+      "lon": 118.779781,
+      "suggested_minutes": 120,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 13888596084,
+        "wikidata": "Q15911467"
+      }
+    },
+    {
+      "id": "nanjing-way62353727",
+      "name": "总统府",
+      "aliases": [
+        "Presidential Palace"
+      ],
+      "category": "museum",
+      "district": "",
+      "lat": 32.04622,
+      "lon": 118.792257,
+      "suggested_minutes": 120,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 62353727,
+        "wikidata": "Q1065016"
+      }
+    },
+    {
+      "id": "nanjing-node1608062767",
+      "name": "江南贡院",
+      "aliases": [
+        "Imperial Examinations History Museum"
+      ],
+      "category": "museum",
+      "district": "南京市",
+      "lat": 32.023086,
+      "lon": 118.785483,
+      "suggested_minutes": 120,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 1608062767,
+        "wikidata": "Q6191673"
+      }
+    },
+    {
+      "id": "nanjing-way156050920",
+      "name": "赛珍珠故居",
+      "aliases": [],
+      "category": "museum",
+      "district": "",
+      "lat": 32.057218,
+      "lon": 118.773072,
+      "suggested_minutes": 120,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 156050920,
+        "wikidata": null
+      }
+    },
+    {
+      "id": "nanjing-way917051724",
+      "name": "江苏园博园",
+      "aliases": [],
+      "category": "park",
+      "district": "",
+      "lat": 32.077249,
+      "lon": 119.008238,
+      "suggested_minutes": 90,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 917051724,
+        "wikidata": null
+      }
+    },
+    {
+      "id": "nanjing-way62354287",
+      "name": "玄武湖公园",
+      "aliases": [
+        "Xuanwu Lake Park"
+      ],
+      "category": "park",
+      "district": "",
+      "lat": 32.074916,
+      "lon": 118.795061,
+      "suggested_minutes": 90,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 62354287,
+        "wikidata": "Q7361660"
+      }
+    },
+    {
+      "id": "nanjing-way1062340502",
+      "name": "珍珠泉旅游度假区",
+      "aliases": [],
+      "category": "park",
+      "district": "",
+      "lat": 32.129966,
+      "lon": 118.656385,
+      "suggested_minutes": 90,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 1062340502,
+        "wikidata": null
+      }
+    },
+    {
+      "id": "nanjing-way91997298",
+      "name": "瞻园",
+      "aliases": [
+        "Zhan Garden"
+      ],
+      "category": "park",
+      "district": "秦淮区",
+      "lat": 32.023024,
+      "lon": 118.780022,
+      "suggested_minutes": 90,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 91997298,
+        "wikidata": "Q2494098"
+      }
+    },
+    {
+      "id": "nanjing-way62381499",
+      "name": "雨花台风景名胜区",
+      "aliases": [
+        "Yuhuatai Scenic Area"
+      ],
+      "category": "park",
+      "district": "雨花台区",
+      "lat": 32.000653,
+      "lon": 118.778055,
+      "suggested_minutes": 90,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 62381499,
+        "wikidata": "Q11659765"
+      }
+    },
+    {
+      "id": "nanjing-node13830575912",
+      "name": "颐和路历史文化街区",
+      "aliases": [
+        "Yihe Road Historic Cultural District"
+      ],
+      "category": "park",
+      "district": "",
+      "lat": 32.065667,
+      "lon": 118.761853,
+      "suggested_minutes": 90,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 13830575912,
+        "wikidata": "Q97351914"
+      }
+    },
+    {
+      "id": "nanjing-way606577017",
+      "name": "净觉寺",
+      "aliases": [
+        "Jingjue Mosque"
+      ],
+      "category": "temple",
+      "district": "",
+      "lat": 32.026145,
+      "lon": 118.777827,
+      "suggested_minutes": 60,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 606577017,
+        "wikidata": "Q10895704"
+      }
+    },
+    {
+      "id": "nanjing-way1343806293",
+      "name": "吉兆营清真寺",
+      "aliases": [
+        "Jizhaoying Mosque"
+      ],
+      "category": "temple",
+      "district": "",
+      "lat": 32.054111,
+      "lon": 118.78004,
+      "suggested_minutes": 60,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 1343806293,
+        "wikidata": null
+      }
+    },
+    {
+      "id": "nanjing-node1065972549",
+      "name": "圣保罗堂",
+      "aliases": [
+        "St. Paul’s Church"
+      ],
+      "category": "temple",
+      "district": "南京市",
+      "lat": 32.03146,
+      "lon": 118.785529,
+      "suggested_minutes": 60,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 1065972549,
+        "wikidata": "Q10906674"
+      }
+    },
+    {
+      "id": "nanjing-way1243073749",
+      "name": "栖霞寺",
+      "aliases": [
+        "Qixia Temple"
+      ],
+      "category": "temple",
+      "district": "栖霞区",
+      "lat": 32.153735,
+      "lon": 118.952839,
+      "suggested_minutes": 60,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 1243073749,
+        "wikidata": "Q2661094"
+      }
+    },
+    {
+      "id": "nanjing-way318198218",
+      "name": "毗卢寺",
+      "aliases": [
+        "Pilu Temple"
+      ],
+      "category": "temple",
+      "district": "玄武区",
+      "lat": 32.044979,
+      "lon": 118.798242,
+      "suggested_minutes": 60,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 318198218,
+        "wikidata": null
+      }
+    },
+    {
+      "id": "nanjing-way1088448627",
+      "name": "灵谷寺",
+      "aliases": [
+        "Linggu Temple"
+      ],
+      "category": "temple",
+      "district": "玄武区",
+      "lat": 32.057678,
+      "lon": 118.862873,
+      "suggested_minutes": 60,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 1088448627,
+        "wikidata": "Q2501664"
+      }
+    },
+    {
+      "id": "nanjing-way319055520",
+      "name": "鸡鸣寺",
+      "aliases": [
+        "Jiming Temple"
+      ],
+      "category": "temple",
+      "district": "玄武区",
+      "lat": 32.06305,
+      "lon": 118.790031,
+      "suggested_minutes": 60,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 319055520,
+        "wikidata": "Q2624443"
+      }
+    },
+    {
+      "id": "nanjing-node6635348866",
+      "name": "31 Morning",
+      "aliases": [],
+      "category": "food",
+      "district": "",
+      "lat": 32.041223,
+      "lon": 118.782125,
+      "suggested_minutes": 60,
+      "best_time": "中午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 6635348866,
+        "wikidata": null
+      }
+    },
+    {
+      "id": "nanjing-node7979245898",
+      "name": "Dogtown Burger",
+      "aliases": [],
+      "category": "food",
+      "district": "",
+      "lat": 32.049888,
+      "lon": 118.77948,
+      "suggested_minutes": 60,
+      "best_time": "中午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 7979245898,
+        "wikidata": null
+      }
+    },
+    {
+      "id": "nanjing-node2471715042",
+      "name": "Element Fresh",
+      "aliases": [],
+      "category": "food",
+      "district": "",
+      "lat": 32.049068,
+      "lon": 118.779443,
+      "suggested_minutes": 60,
+      "best_time": "中午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 2471715042,
+        "wikidata": null
+      }
+    },
+    {
+      "id": "nanjing-node8776725422",
+      "name": "En Space",
+      "aliases": [],
+      "category": "food",
+      "district": "",
+      "lat": 32.011505,
+      "lon": 118.779401,
+      "suggested_minutes": 60,
+      "best_time": "中午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 8776725422,
+        "wikidata": null
+      }
+    },
+    {
+      "id": "nanjing-node8788454098",
+      "name": "IN FAB 西餐馆",
+      "aliases": [],
+      "category": "food",
+      "district": "",
+      "lat": 32.04951,
+      "lon": 118.7953,
+      "suggested_minutes": 60,
+      "best_time": "中午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 8788454098,
+        "wikidata": null
+      }
+    },
+    {
+      "id": "nanjing-node13242493787",
+      "name": "Jikon",
+      "aliases": [],
+      "category": "food",
+      "district": "",
+      "lat": 31.990744,
+      "lon": 118.705635,
+      "suggested_minutes": 60,
+      "best_time": "中午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 13242493787,
+        "wikidata": null
+      }
+    },
+    {
+      "id": "nanjing-way1518562417",
+      "name": "Le Siècle",
+      "aliases": [],
+      "category": "food",
+      "district": "鼓楼区",
+      "lat": 32.06615,
+      "lon": 118.764776,
+      "suggested_minutes": 60,
+      "best_time": "中午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 1518562417,
+        "wikidata": null
+      }
+    },
+    {
+      "id": "nanjing-way1432574364",
+      "name": "Mino",
+      "aliases": [],
+      "category": "food",
+      "district": "",
+      "lat": 31.805494,
+      "lon": 118.721759,
+      "suggested_minutes": 60,
+      "best_time": "中午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 1432574364,
+        "wikidata": null
+      }
+    },
+    {
+      "id": "nanjing-node2492194724",
+      "name": "Pisa Pizza",
+      "aliases": [],
+      "category": "food",
+      "district": "",
+      "lat": 32.05426,
+      "lon": 118.769629,
+      "suggested_minutes": 60,
+      "best_time": "中午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 2492194724,
+        "wikidata": null
+      }
+    },
+    {
+      "id": "nanjing-node13747451189",
+      "name": "Podo in Podo",
+      "aliases": [],
+      "category": "food",
+      "district": "",
+      "lat": 32.049076,
+      "lon": 118.779391,
+      "suggested_minutes": 60,
+      "best_time": "中午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 13747451189,
+        "wikidata": null
+      }
+    },
+    {
+      "id": "nanjing-node4441508789",
+      "name": "Sta Food",
+      "aliases": [
+        "Sta Food"
+      ],
+      "category": "food",
+      "district": "",
+      "lat": 32.04833,
+      "lon": 118.792373,
+      "suggested_minutes": 60,
+      "best_time": "中午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 4441508789,
+        "wikidata": null
+      }
+    },
+    {
+      "id": "nanjing-node13891562066",
+      "name": "The Boots 泥靴",
+      "aliases": [
+        "The Boots",
+        "The Boots 泥靴美式餐吧"
+      ],
+      "category": "food",
+      "district": "秦淮区",
+      "lat": 32.043016,
+      "lon": 118.777055,
+      "suggested_minutes": 60,
+      "best_time": "中午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 13891562066,
+        "wikidata": null
+      }
+    },
+    {
+      "id": "nanjing-way1231581899",
+      "name": "中国共产党代表团梅园新村纪念馆",
+      "aliases": [],
+      "category": "historic",
+      "district": "",
+      "lat": 32.045077,
+      "lon": 118.796481,
+      "suggested_minutes": 60,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 1231581899,
+        "wikidata": "Q10873186"
+      }
+    },
+    {
+      "id": "nanjing-relation19803027",
+      "name": "侵华日军南京大屠杀死难同胞丛葬地",
+      "aliases": [
+        "Nanjing Massacre Mass Graves"
+      ],
+      "category": "historic",
+      "district": "",
+      "lat": 32.06939,
+      "lon": 118.797524,
+      "suggested_minutes": 60,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "relation",
+        "osm_id": 19803027,
+        "wikidata": "Q133277036"
+      }
+    },
+    {
+      "id": "nanjing-way606870222",
+      "name": "无梁殿（辛亥革命烈士蜡像馆）",
+      "aliases": [],
+      "category": "historic",
+      "district": "",
+      "lat": 32.057135,
+      "lon": 118.861601,
+      "suggested_minutes": 60,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 606870222,
+        "wikidata": "Q15908051"
+      }
+    },
+    {
+      "id": "nanjing-node12128988230",
+      "name": "城堡奇遇",
+      "aliases": [],
+      "category": "historic",
+      "district": "",
+      "lat": 31.800946,
+      "lon": 118.71208,
+      "suggested_minutes": 60,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 12128988230,
+        "wikidata": null
+      }
+    }
+  ]
+}

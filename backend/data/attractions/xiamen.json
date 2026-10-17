@@ -1,0 +1,511 @@
+{
+  "city": "厦门",
+  "city_slug": "xiamen",
+  "version": 1,
+  "updated_at": "2026-10-17",
+  "source": {
+    "provider": "openstreetmap",
+    "license": "ODbL-1.0",
+    "endpoint": "https://nominatim.openstreetmap.org/search",
+    "query_mode": "curated_name_lookup",
+    "attribution": "© OpenStreetMap contributors"
+  },
+  "notes": "指定景点名称逐项查询并核对 OSM 标识与坐标；category 优先按 OSM 标签映射，缺少可映射标签时人工分类（见 field_confidence）；suggested_minutes 与 best_time 为程序估计，门票与预约信息未采集。",
+  "items": [
+    {
+      "id": "xiamen-relation10994474",
+      "name": "鼓浪屿",
+      "aliases": [
+        "Gulangyu",
+        "Kulangsu"
+      ],
+      "category": "sight",
+      "district": "思明区",
+      "lat": 24.447246,
+      "lon": 118.061891,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "curated",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "relation",
+        "osm_id": 10994474,
+        "wikidata": "Q1025339",
+        "lookup_query": "鼓浪屿, 厦门",
+        "osm_category": "place",
+        "osm_feature_type": "island"
+      }
+    },
+    {
+      "id": "xiamen-way641097234",
+      "name": "日光岩",
+      "aliases": [
+        "Sunlight Rock Park"
+      ],
+      "category": "park",
+      "district": "思明区",
+      "lat": 24.444956,
+      "lon": 118.06231,
+      "suggested_minutes": 90,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "curated",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 641097234,
+        "wikidata": null,
+        "lookup_query": "日光岩, 厦门",
+        "osm_category": "leisure",
+        "osm_feature_type": "park"
+      }
+    },
+    {
+      "id": "xiamen-way1526681210",
+      "name": "菽庄花园",
+      "aliases": [
+        "Shuzhuang Garden"
+      ],
+      "category": "park",
+      "district": "思明区",
+      "lat": 24.441674,
+      "lon": 118.06451,
+      "suggested_minutes": 90,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "curated",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "curated",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 1526681210,
+        "wikidata": null,
+        "lookup_query": "菽庄花园, 厦门",
+        "osm_category": "leisure",
+        "osm_feature_type": "garden"
+      }
+    },
+    {
+      "id": "xiamen-way905748487",
+      "name": "皓月园",
+      "aliases": [
+        "Bright Moon Garden"
+      ],
+      "category": "park",
+      "district": "思明区",
+      "lat": 24.443898,
+      "lon": 118.07122,
+      "suggested_minutes": 90,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "curated",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 905748487,
+        "wikidata": null,
+        "lookup_query": "皓月园, 厦门",
+        "osm_category": "leisure",
+        "osm_feature_type": "park"
+      }
+    },
+    {
+      "id": "xiamen-way151181439",
+      "name": "南普陀寺",
+      "aliases": [
+        "South Putuo Temple"
+      ],
+      "category": "temple",
+      "district": "思明区",
+      "lat": 24.443258,
+      "lon": 118.091503,
+      "suggested_minutes": 60,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "curated",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 151181439,
+        "wikidata": "Q2416831",
+        "lookup_query": "南普陀寺, 厦门",
+        "osm_category": "landuse",
+        "osm_feature_type": "religious"
+      }
+    },
+    {
+      "id": "xiamen-node3126479317",
+      "name": "胡里山炮台",
+      "aliases": [
+        "Hulishan Cannon Fort"
+      ],
+      "category": "historic",
+      "district": "思明区",
+      "lat": 24.431541,
+      "lon": 118.101582,
+      "suggested_minutes": 60,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 3126479317,
+        "wikidata": "Q15903382",
+        "lookup_query": "胡里山炮台, 厦门",
+        "osm_category": "historic",
+        "osm_feature_type": "fort"
+      }
+    },
+    {
+      "id": "xiamen-way1248144377",
+      "name": "厦门海底世界",
+      "aliases": [
+        "Xiamen Underwater World"
+      ],
+      "category": "park",
+      "district": "思明区",
+      "lat": 24.448757,
+      "lon": 118.066303,
+      "suggested_minutes": 90,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "curated",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 1248144377,
+        "wikidata": null,
+        "lookup_query": "厦门海底世界, 厦门",
+        "osm_category": "tourism",
+        "osm_feature_type": "theme_park"
+      }
+    },
+    {
+      "id": "xiamen-way1110997838",
+      "name": "华侨博物院",
+      "aliases": [
+        "Overseas Chinese Museum"
+      ],
+      "category": "museum",
+      "district": "思明区",
+      "lat": 24.444558,
+      "lon": 118.085306,
+      "suggested_minutes": 120,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 1110997838,
+        "wikidata": null,
+        "lookup_query": "华侨博物院, 厦门",
+        "osm_category": "tourism",
+        "osm_feature_type": "museum"
+      }
+    },
+    {
+      "id": "xiamen-way168406230",
+      "name": "厦门博物馆",
+      "aliases": [],
+      "category": "museum",
+      "district": "思明区",
+      "lat": 24.493897,
+      "lon": 118.104103,
+      "suggested_minutes": 120,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "curated",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 168406230,
+        "wikidata": null,
+        "lookup_query": "厦门博物馆, 厦门",
+        "osm_category": "tourism",
+        "osm_feature_type": "museum"
+      }
+    },
+    {
+      "id": "xiamen-way675481454",
+      "name": "陈嘉庚纪念馆",
+      "aliases": [
+        "Tan Kah Kee Memorial Hall"
+      ],
+      "category": "museum",
+      "district": "集美区",
+      "lat": 24.572624,
+      "lon": 118.102397,
+      "suggested_minutes": 120,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 675481454,
+        "wikidata": "Q15941620",
+        "lookup_query": "陈嘉庚纪念馆, 厦门",
+        "osm_category": "tourism",
+        "osm_feature_type": "museum"
+      }
+    },
+    {
+      "id": "xiamen-way164688343",
+      "name": "白城沙滩",
+      "aliases": [
+        "White City Beach"
+      ],
+      "category": "park",
+      "district": "思明区",
+      "lat": 24.433291,
+      "lon": 118.099633,
+      "suggested_minutes": 90,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "curated",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "curated",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 164688343,
+        "wikidata": null,
+        "lookup_query": "白城沙滩, 厦门",
+        "osm_category": "natural",
+        "osm_feature_type": "beach"
+      }
+    },
+    {
+      "id": "xiamen-way431429156",
+      "name": "南湖公园",
+      "aliases": [
+        "Nanhu Park"
+      ],
+      "category": "park",
+      "district": "思明区",
+      "lat": 24.481462,
+      "lon": 118.101485,
+      "suggested_minutes": 90,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "curated",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 431429156,
+        "wikidata": null,
+        "lookup_query": "南湖公园, 厦门",
+        "osm_category": "leisure",
+        "osm_feature_type": "park"
+      }
+    },
+    {
+      "id": "xiamen-relation17975677",
+      "name": "白鹭洲公园",
+      "aliases": [
+        "Bailuzhou Park"
+      ],
+      "category": "park",
+      "district": "思明区",
+      "lat": 24.475493,
+      "lon": 118.083845,
+      "suggested_minutes": 90,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "curated",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "relation",
+        "osm_id": 17975677,
+        "wikidata": null,
+        "lookup_query": "白鹭洲公园, 厦门",
+        "osm_category": "leisure",
+        "osm_feature_type": "park"
+      }
+    },
+    {
+      "id": "xiamen-way1240889775",
+      "name": "厦门市园林植物园",
+      "aliases": [
+        "Xiamen Botanical Garden",
+        "万石植物园"
+      ],
+      "category": "park",
+      "district": "思明区",
+      "lat": 24.451022,
+      "lon": 118.104535,
+      "suggested_minutes": 90,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "curated",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 1240889775,
+        "wikidata": "Q74703619",
+        "lookup_query": "万石植物园, 厦门",
+        "osm_category": "leisure",
+        "osm_feature_type": "garden"
+      }
+    },
+    {
+      "id": "xiamen-relation20823748",
+      "name": "鼓浪屿钢琴博物馆",
+      "aliases": [
+        "Gulangyu Piano Museum"
+      ],
+      "category": "museum",
+      "district": "思明区",
+      "lat": 24.441472,
+      "lon": 118.064831,
+      "suggested_minutes": 120,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "curated",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "relation",
+        "osm_id": 20823748,
+        "wikidata": null,
+        "lookup_query": "钢琴博物馆, 厦门",
+        "osm_category": "tourism",
+        "osm_feature_type": "museum"
+      }
+    }
+  ]
+}

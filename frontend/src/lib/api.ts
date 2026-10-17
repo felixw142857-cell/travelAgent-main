@@ -1,5 +1,4 @@
-import type { RecordItem } from "../model";
-import type { AgentResults, Clarification, ConversationTurn, PlanReply } from "../types";
+import type { AgentResults, Clarification, ConversationTurn, PlanReply, RecordItem } from "../types";
 
 interface PlanStreamOptions {
   query: string;
@@ -7,6 +6,7 @@ interface PlanStreamOptions {
   onRecord: (record: RecordItem) => void;
   signal?: AbortSignal;
   history?: ConversationTurn[];
+  apiBase?: string;
 }
 
 type PlanEvent =
@@ -18,10 +18,17 @@ type PlanEvent =
 
 const apiBaseUrl = import.meta.env.VITE_API_BASE_URL?.replace(/\/$/, "") || "";
 
+export class PlanError extends Error {
+  constructor(message: string, public requestId = "") {
+    super(message);
+    this.name = "PlanError";
+  }
+}
+
 export async function streamPlan(options: PlanStreamOptions): Promise<PlanReply> {
   let response: Response;
   try {
-    response = await fetch(`${apiBaseUrl}/api/v1/travel/plan/stream`, {
+    response = await fetch(`${(options.apiBase ?? apiBaseUrl).replace(/\/+$/, "")}/api/v1/travel/plan/stream`, {
       method: "POST",
       headers: { "Content-Type": "application/json", Accept: "application/x-ndjson" },
       body: JSON.stringify({ query: options.query, mode: options.mode, history: options.history ?? [] }),
@@ -32,8 +39,8 @@ export async function streamPlan(options: PlanStreamOptions): Promise<PlanReply>
     throw new Error("无法连接 Python 后端，请确认 FastAPI 已启动，并检查后端地址配置");
   }
   if (!response.ok) {
-    const body = await response.json().catch(() => null) as { msg?: string } | null;
-    throw new Error(body?.msg || `后端请求失败（HTTP ${response.status}）`);
+    const body = await response.json().catch(() => null) as { msg?: string; request_id?: string } | null;
+    throw new PlanError(body?.msg || `后端请求失败（HTTP ${response.status}）`, body?.request_id || response.headers.get("X-Request-ID") || "");
   }
   if (!response.headers.get("Content-Type")?.includes("application/x-ndjson")) {
     throw new Error("后端未返回执行进度流，请检查 /api 代理是否指向 Python 后端");
@@ -60,7 +67,7 @@ export async function streamPlan(options: PlanStreamOptions): Promise<PlanReply>
     else if (event.event === "clarification") return { kind: "clarification", clarification: event.data };
     else if (event.event === "error") {
       const reference = event.data.request_id ? `（请求 ID：${event.data.request_id}）` : "";
-      throw new Error(event.data.message + reference);
+      throw new PlanError(event.data.message + reference, event.data.request_id);
     }
   };
 

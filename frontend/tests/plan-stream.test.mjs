@@ -114,3 +114,19 @@ test("信息不足时返回追问，并传递之前的对话", async (t) => {
   assert.deepEqual(await streamPlan({ ...request, query: "明天出发，两天", history }), { kind: "clarification", clarification });
   assert.equal(cancelled, true);
 });
+
+test("后端设置覆盖默认 API 地址并保留完整请求上下文", async (t) => {
+  t.mock.method(globalThis, "fetch", async (url, options) => {
+    assert.equal(url, "http://127.0.0.1:8002/service/api/v1/travel/plan/stream");
+    assert.equal(JSON.parse(options.body).mode, "smart");
+    return responseFromChunks([encoder.encode(JSON.stringify({ event: "result", data: result }) + "\n")]);
+  });
+  await streamPlan({ ...request, mode: "smart", apiBase: "http://127.0.0.1:8002/service/" });
+});
+
+test("HTTP 错误保留可供界面展示的请求 ID", async (t) => {
+  t.mock.method(globalThis, "fetch", async () => Response.json({ msg: "服务繁忙" }, {
+    status: 503, headers: { "X-Request-ID": "request-503" },
+  }));
+  await assert.rejects(streamPlan(request), (error) => error.message === "服务繁忙" && error.requestId === "request-503");
+});

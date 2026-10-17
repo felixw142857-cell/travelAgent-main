@@ -61,6 +61,12 @@ async def main(query: str) -> int:
     print()
     print(f"时段总数 {total}，其中引用景点库 {from_library}")
     print("资料来源脚注：", "资料来源" in outcome.result.planner.text)
+    print("预算估算段：", "预算估算" in outcome.result.planner.text)
+    print()
+    print("== planner.text 的预算段 ==")
+    text = outcome.result.planner.text
+    marker = text.find("【预算估算】")
+    print(text[marker:] if marker != -1 else "(没有预算段)")
     return 0
 
 

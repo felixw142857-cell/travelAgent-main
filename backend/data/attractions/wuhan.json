@@ -1,0 +1,724 @@
+{
+  "city": "武汉",
+  "city_slug": "wuhan",
+  "version": 1,
+  "updated_at": "2026-10-17",
+  "source": {
+    "provider": "openstreetmap",
+    "license": "ODbL-1.0",
+    "endpoint": "https://overpass-api.de/api/interpreter"
+  },
+  "notes": "名称/类别/坐标为 OSM 实测数据；suggested_minutes 与 best_time 为程序估计，非官方信息。",
+  "items": [
+    {
+      "id": "wuhan-way99465606",
+      "name": "武汉动物园",
+      "aliases": [
+        "Wuhan Zoo"
+      ],
+      "category": "zoo",
+      "district": "",
+      "lat": 30.544778,
+      "lon": 114.23635,
+      "suggested_minutes": 180,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 99465606,
+        "wikidata": "Q11124472"
+      }
+    },
+    {
+      "id": "wuhan-node12112290164",
+      "name": "无影塔",
+      "aliases": [
+        "Wuying Pagoda"
+      ],
+      "category": "sight",
+      "district": "",
+      "lat": 30.53581,
+      "lon": 114.329621,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 12112290164,
+        "wikidata": "Q15938261"
+      }
+    },
+    {
+      "id": "wuhan-relation19735702",
+      "name": "武汉大学早期建筑",
+      "aliases": [
+        "Early Buildings of Wuhan University"
+      ],
+      "category": "sight",
+      "district": "",
+      "lat": 30.536727,
+      "lon": 114.356572,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "relation",
+        "osm_id": 19735702,
+        "wikidata": "Q11124590"
+      }
+    },
+    {
+      "id": "wuhan-way1389860246",
+      "name": "武汉大学牌楼",
+      "aliases": [],
+      "category": "sight",
+      "district": "",
+      "lat": 30.535693,
+      "lon": 114.352697,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 1389860246,
+        "wikidata": "Q11124604"
+      }
+    },
+    {
+      "id": "wuhan-relation19787453",
+      "name": "武汉长江大桥",
+      "aliases": [
+        "Wuhan Yangtze River Bridge"
+      ],
+      "category": "sight",
+      "district": "",
+      "lat": 30.552619,
+      "lon": 114.282014,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "relation",
+        "osm_id": 19787453,
+        "wikidata": "Q8039097"
+      }
+    },
+    {
+      "id": "wuhan-way81641900",
+      "name": "黄鹤楼",
+      "aliases": [
+        "Yellow Crane Tower"
+      ],
+      "category": "sight",
+      "district": "武昌区",
+      "lat": 30.547078,
+      "lon": 114.297047,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 81641900,
+        "wikidata": "Q462372"
+      }
+    },
+    {
+      "id": "wuhan-way103752732",
+      "name": "万林艺术博物馆",
+      "aliases": [
+        "武汉大学万林艺术博物馆"
+      ],
+      "category": "museum",
+      "district": "",
+      "lat": 30.53893,
+      "lon": 114.357601,
+      "suggested_minutes": 120,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 103752732,
+        "wikidata": "Q17012666"
+      }
+    },
+    {
+      "id": "wuhan-way1449557278",
+      "name": "中共中央领导人汉口住地旧址",
+      "aliases": [
+        "Residence of CPC Central Committee Leaders at Hankou"
+      ],
+      "category": "museum",
+      "district": "",
+      "lat": 30.58788,
+      "lon": 114.291393,
+      "suggested_minutes": 120,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 1449557278,
+        "wikidata": "Q48935172"
+      }
+    },
+    {
+      "id": "wuhan-way917269321",
+      "name": "中共五大会址纪念馆",
+      "aliases": [
+        "Site of the 5th National Congress of the Chinese Communist Party"
+      ],
+      "category": "museum",
+      "district": "中华路街道",
+      "lat": 30.553443,
+      "lon": 114.292961,
+      "suggested_minutes": 120,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 917269321,
+        "wikidata": "Q48936785"
+      }
+    },
+    {
+      "id": "wuhan-way1096143710",
+      "name": "八七会议会址",
+      "aliases": [
+        "Site of the August 7 Conference"
+      ],
+      "category": "museum",
+      "district": "",
+      "lat": 30.589032,
+      "lon": 114.294471,
+      "suggested_minutes": 120,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 1096143710,
+        "wikidata": "Q10891896"
+      }
+    },
+    {
+      "id": "wuhan-way1318779319",
+      "name": "武汉中共中央机关旧址",
+      "aliases": [
+        "Site of CPC Central Committee Bureau at Wuhan"
+      ],
+      "category": "museum",
+      "district": "",
+      "lat": 30.590348,
+      "lon": 114.293064,
+      "suggested_minutes": 120,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 1318779319,
+        "wikidata": "Q48935000"
+      }
+    },
+    {
+      "id": "wuhan-way908272800",
+      "name": "武汉中央军事政治学校陈列馆",
+      "aliases": [],
+      "category": "museum",
+      "district": "",
+      "lat": 30.542264,
+      "lon": 114.291465,
+      "suggested_minutes": 120,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 908272800,
+        "wikidata": "Q56271951"
+      }
+    },
+    {
+      "id": "wuhan-way1323776439",
+      "name": "汉口中共中央宣传部旧址",
+      "aliases": [
+        "Former CPC Central Committee's Propaganda Department at Hankou"
+      ],
+      "category": "museum",
+      "district": "",
+      "lat": 30.588888,
+      "lon": 114.287243,
+      "suggested_minutes": 120,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 1323776439,
+        "wikidata": "Q48934588"
+      }
+    },
+    {
+      "id": "wuhan-way1313922754",
+      "name": "汉口中华全国总工会旧址",
+      "aliases": [
+        "All-China Federation of Trade Unions in Hankou"
+      ],
+      "category": "museum",
+      "district": "",
+      "lat": 30.593283,
+      "lon": 114.290048,
+      "suggested_minutes": 120,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 1313922754,
+        "wikidata": "Q11133139"
+      }
+    },
+    {
+      "id": "wuhan-way1091893007",
+      "name": "汉口华俄道胜银行旧址",
+      "aliases": [
+        "Former Sino Russia Daosheng Bank"
+      ],
+      "category": "museum",
+      "district": "",
+      "lat": 30.588979,
+      "lon": 114.296795,
+      "suggested_minutes": 120,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 1091893007,
+        "wikidata": "Q10905444"
+      }
+    },
+    {
+      "id": "wuhan-way1092815752",
+      "name": "汉口景明大楼旧址",
+      "aliases": [
+        "Hemmings ＆ Berkley Co （Hankou Jingming Foreign Firm）Building Former Site"
+      ],
+      "category": "museum",
+      "district": "",
+      "lat": 30.585206,
+      "lon": 114.291223,
+      "suggested_minutes": 120,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 1092815752,
+        "wikidata": "Q11090058"
+      }
+    },
+    {
+      "id": "wuhan-way1092815751",
+      "name": "汉口英商电灯公司旧址",
+      "aliases": [
+        "Hankou British Lamp Company Former Site"
+      ],
+      "category": "museum",
+      "district": "",
+      "lat": 30.587683,
+      "lon": 114.293031,
+      "suggested_minutes": 120,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 1092815751,
+        "wikidata": "Q133312779"
+      }
+    },
+    {
+      "id": "wuhan-way363656371",
+      "name": "湖北省博物馆",
+      "aliases": [
+        "Hubei Provincial Museum"
+      ],
+      "category": "museum",
+      "district": "武昌区",
+      "lat": 30.563741,
+      "lon": 114.359726,
+      "suggested_minutes": 120,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 363656371,
+        "wikidata": "Q4391403"
+      }
+    },
+    {
+      "id": "wuhan-way1136234331",
+      "name": "辛亥革命博物院(北区)",
+      "aliases": [
+        "The 1911 Revolution Museum (North Wing)"
+      ],
+      "category": "museum",
+      "district": "",
+      "lat": 30.544712,
+      "lon": 114.300901,
+      "suggested_minutes": 120,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 1136234331,
+        "wikidata": "Q15925097"
+      }
+    },
+    {
+      "id": "wuhan-way1143665742",
+      "name": "辛亥革命博物院(南区)",
+      "aliases": [
+        "The 1911 Revolution Museum (South Wing)"
+      ],
+      "category": "museum",
+      "district": "",
+      "lat": 30.539341,
+      "lon": 114.300274,
+      "suggested_minutes": 120,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 1143665742,
+        "wikidata": "Q30946741"
+      }
+    },
+    {
+      "id": "wuhan-way103747551",
+      "name": "李达故居",
+      "aliases": [],
+      "category": "museum",
+      "district": "",
+      "lat": 30.534825,
+      "lon": 114.358761,
+      "suggested_minutes": 120,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 103747551,
+        "wikidata": "Q133307094"
+      }
+    },
+    {
+      "id": "wuhan-way733293315",
+      "name": "武昌中央农民运动讲习所旧址纪念馆",
+      "aliases": [],
+      "category": "museum",
+      "district": "中华路街道",
+      "lat": 30.556099,
+      "lon": 114.295105,
+      "suggested_minutes": 120,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 733293315,
+        "wikidata": "Q10875043"
+      }
+    },
+    {
+      "id": "wuhan-way1314771297",
+      "name": "汉口中华全国文艺界抗敌协会旧址",
+      "aliases": [
+        "Former Site of the All-China Anti-Japanese Federation of Writers and Artists"
+      ],
+      "category": "museum",
+      "district": "",
+      "lat": 30.580368,
+      "lon": 114.283593,
+      "suggested_minutes": 120,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 1314771297,
+        "wikidata": "Q133309453"
+      }
+    },
+    {
+      "id": "wuhan-way1314323879",
+      "name": "詹天佑故居博物馆",
+      "aliases": [],
+      "category": "museum",
+      "district": "",
+      "lat": 30.587672,
+      "lon": 114.293953,
+      "suggested_minutes": 120,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 1314323879,
+        "wikidata": "Q32165030"
+      }
+    }
+  ]
+}

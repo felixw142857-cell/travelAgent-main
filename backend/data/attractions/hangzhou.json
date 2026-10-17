@@ -99,6 +99,36 @@
       }
     },
     {
+      "id": "hangzhou-node1468743758",
+      "name": "柳浪闻莺",
+      "aliases": [
+        "Orioles Singing in the Willows"
+      ],
+      "category": "sight",
+      "district": "",
+      "lat": 30.241903,
+      "lon": 120.151076,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 1468743758,
+        "wikidata": "Q11109951"
+      }
+    },
+    {
       "id": "hangzhou-node1218588822",
       "name": "灵隐寺",
       "aliases": [
@@ -217,6 +247,156 @@
       }
     },
     {
+      "id": "hangzhou-way229726934",
+      "name": "雷峰塔",
+      "aliases": [
+        "Leifeng Pagoda"
+      ],
+      "category": "sight",
+      "district": "",
+      "lat": 30.233884,
+      "lon": 120.145013,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 229726934,
+        "wikidata": "Q1155765"
+      }
+    },
+    {
+      "id": "hangzhou-node1468743757",
+      "name": "南屏晚钟",
+      "aliases": [
+        "Evening Bell Ringing on Nanping Hill"
+      ],
+      "category": "sight",
+      "district": "",
+      "lat": 30.231293,
+      "lon": 120.144462,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 1468743757,
+        "wikidata": "Q10907489"
+      }
+    },
+    {
+      "id": "hangzhou-way399030896",
+      "name": "城隍阁",
+      "aliases": [
+        "City God Pavilion"
+      ],
+      "category": "sight",
+      "district": "",
+      "lat": 30.238885,
+      "lon": 120.159932,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 399030896,
+        "wikidata": "Q10930133"
+      }
+    },
+    {
+      "id": "hangzhou-way435906176",
+      "name": "岳王庙",
+      "aliases": [
+        "Yue Fei Temple and Mausoleum"
+      ],
+      "category": "sight",
+      "district": "杭州",
+      "lat": 30.254738,
+      "lon": 120.129765,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 435906176,
+        "wikidata": "Q579874"
+      }
+    },
+    {
+      "id": "hangzhou-node1468743785",
+      "name": "曲院风荷",
+      "aliases": [
+        "Wind and Lotus at the Crooked Courtyard"
+      ],
+      "category": "sight",
+      "district": "",
+      "lat": 30.251607,
+      "lon": 120.126904,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 1468743785,
+        "wikidata": "Q11090831"
+      }
+    },
+    {
       "id": "hangzhou-way489075428",
       "name": "胡雪岩故居",
       "aliases": [
@@ -224,7 +404,7 @@
       ],
       "category": "sight",
       "district": "",
-      "lat": 30.239582,
+      "lat": 30.239585,
       "lon": 120.168278,
       "suggested_minutes": 120,
       "best_time": "上午",
@@ -250,7 +430,7 @@
       "id": "hangzhou-node4676431394",
       "name": "虎跑梦泉",
       "aliases": [
-        "Tiger Spring entrance"
+        "Dreaming of Tiger Spring"
       ],
       "category": "sight",
       "district": "",
@@ -304,6 +484,36 @@
         "osm_type": "node",
         "osm_id": 775019817,
         "wikidata": "Q6145857"
+      }
+    },
+    {
+      "id": "hangzhou-way979207106",
+      "name": "钱王祠",
+      "aliases": [
+        "Temple of the Qian Kings"
+      ],
+      "category": "sight",
+      "district": "",
+      "lat": 30.245253,
+      "lon": 120.153255,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 979207106,
+        "wikidata": "Q15943594"
       }
     },
     {
@@ -395,6 +605,66 @@
       }
     },
     {
+      "id": "hangzhou-way445674471",
+      "name": "中国湿地博物馆",
+      "aliases": [
+        "China Wetland Museum"
+      ],
+      "category": "museum",
+      "district": "西湖区",
+      "lat": 30.266527,
+      "lon": 120.082768,
+      "suggested_minutes": 120,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 445674471,
+        "wikidata": "Q22100874"
+      }
+    },
+    {
+      "id": "hangzhou-relation13237505",
+      "name": "中国茶叶博物馆",
+      "aliases": [
+        "China National Tea Museum"
+      ],
+      "category": "museum",
+      "district": "西湖区",
+      "lat": 30.222134,
+      "lon": 120.108561,
+      "suggested_minutes": 120,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "relation",
+        "osm_id": 13237505,
+        "wikidata": "Q1514687"
+      }
+    },
+    {
       "id": "hangzhou-way161455677",
       "name": "中国茶叶博物馆（双峰馆区）",
       "aliases": [
@@ -421,36 +691,6 @@
         "license": "ODbL-1.0",
         "osm_type": "way",
         "osm_id": 161455677,
-        "wikidata": "Q1514687"
-      }
-    },
-    {
-      "id": "hangzhou-relation13237505",
-      "name": "中国茶叶博物馆（龙井馆区）",
-      "aliases": [
-        "China National Tea Museum (Longjing)"
-      ],
-      "category": "museum",
-      "district": "西湖区",
-      "lat": 30.222134,
-      "lon": 120.108561,
-      "suggested_minutes": 120,
-      "best_time": "下午",
-      "field_confidence": {
-        "name": "osm",
-        "category": "osm",
-        "coord": "osm",
-        "suggested_minutes": "estimate",
-        "best_time": "estimate"
-      },
-      "highlight": null,
-      "booking": null,
-      "notability": "wikidata",
-      "source": {
-        "provider": "openstreetmap",
-        "license": "ODbL-1.0",
-        "osm_type": "relation",
-        "osm_id": 13237505,
         "wikidata": "Q1514687"
       }
     },
@@ -714,6 +954,344 @@
         "license": "ODbL-1.0",
         "osm_type": "way",
         "osm_id": 608971086,
+        "wikidata": null
+      }
+    },
+    {
+      "id": "hangzhou-node5017309761",
+      "name": "Foodie's Bistro",
+      "aliases": [],
+      "category": "food",
+      "district": "",
+      "lat": 30.181702,
+      "lon": 120.25725,
+      "suggested_minutes": 60,
+      "best_time": "中午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 5017309761,
+        "wikidata": null
+      }
+    },
+    {
+      "id": "hangzhou-node13763705576",
+      "name": "GUNAM",
+      "aliases": [],
+      "category": "food",
+      "district": "",
+      "lat": 30.235384,
+      "lon": 120.118466,
+      "suggested_minutes": 60,
+      "best_time": "中午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 13763705576,
+        "wikidata": null
+      }
+    },
+    {
+      "id": "hangzhou-node26607397",
+      "name": "Indian Kitchen",
+      "aliases": [],
+      "category": "food",
+      "district": "",
+      "lat": 30.237582,
+      "lon": 120.15146,
+      "suggested_minutes": 60,
+      "best_time": "中午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 26607397,
+        "wikidata": null
+      }
+    },
+    {
+      "id": "hangzhou-node339645058",
+      "name": "Panchos",
+      "aliases": [],
+      "category": "food",
+      "district": "",
+      "lat": 30.272662,
+      "lon": 120.118061,
+      "suggested_minutes": 60,
+      "best_time": "中午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 339645058,
+        "wikidata": null
+      }
+    },
+    {
+      "id": "hangzhou-node11383713470",
+      "name": "Seoul Bibimbap",
+      "aliases": [],
+      "category": "food",
+      "district": "",
+      "lat": 30.209931,
+      "lon": 120.220416,
+      "suggested_minutes": 60,
+      "best_time": "中午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 11383713470,
+        "wikidata": null
+      }
+    },
+    {
+      "id": "hangzhou-node6773333387",
+      "name": "Wade's Bar & Grill (Wulin branch)",
+      "aliases": [],
+      "category": "food",
+      "district": "",
+      "lat": 30.264604,
+      "lon": 120.156206,
+      "suggested_minutes": 60,
+      "best_time": "中午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 6773333387,
+        "wikidata": null
+      }
+    },
+    {
+      "id": "hangzhou-node9247378266",
+      "name": "Zhenyi Steak Wu",
+      "aliases": [],
+      "category": "food",
+      "district": "",
+      "lat": 30.209562,
+      "lon": 120.218495,
+      "suggested_minutes": 60,
+      "best_time": "中午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 9247378266,
+        "wikidata": null
+      }
+    },
+    {
+      "id": "hangzhou-node14040771845",
+      "name": "一只大公鸡居酒屋",
+      "aliases": [],
+      "category": "food",
+      "district": "",
+      "lat": 30.180207,
+      "lon": 120.257924,
+      "suggested_minutes": 60,
+      "best_time": "中午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 14040771845,
+        "wikidata": null
+      }
+    },
+    {
+      "id": "hangzhou-node14040771839",
+      "name": "七欣天",
+      "aliases": [],
+      "category": "food",
+      "district": "",
+      "lat": 30.180965,
+      "lon": 120.257599,
+      "suggested_minutes": 60,
+      "best_time": "中午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 14040771839,
+        "wikidata": null
+      }
+    },
+    {
+      "id": "hangzhou-node13240786729",
+      "name": "万松岭炒菜店",
+      "aliases": [],
+      "category": "food",
+      "district": "",
+      "lat": 30.228205,
+      "lon": 120.162662,
+      "suggested_minutes": 60,
+      "best_time": "中午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 13240786729,
+        "wikidata": null
+      }
+    },
+    {
+      "id": "hangzhou-node6720359185",
+      "name": "上乘精酿餐吧",
+      "aliases": [
+        "Brewgang Kitchen & Craft Beer"
+      ],
+      "category": "food",
+      "district": "上城区",
+      "lat": 30.23851,
+      "lon": 120.1665,
+      "suggested_minutes": 60,
+      "best_time": "中午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 6720359185,
+        "wikidata": null
+      }
+    },
+    {
+      "id": "hangzhou-node2456761421",
+      "name": "临湖餐厅",
+      "aliases": [],
+      "category": "food",
+      "district": "",
+      "lat": 30.305969,
+      "lon": 120.081162,
+      "suggested_minutes": 60,
+      "best_time": "中午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 2456761421,
         "wikidata": null
       }
     },

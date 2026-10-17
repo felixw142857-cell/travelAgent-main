@@ -1,140 +1,85 @@
-import { useEffect, useRef, useState } from "react";
-import { Calendar, FileText, MapPin, Plane, Sparkles, Wallet } from "lucide-react";
-import type { AgentResults, ChatMessage, Clarification, ConversationTurn } from "./types";
-import { streamPlan } from "./lib/api";
-import ChatPanel from "./components/ChatPanel";
-import AgentStatus from "./components/AgentStatus";
-import PlanResult from "./components/PlanResult";
-import { Button } from "./components/ui/button";
-import { Card } from "./components/ui/card";
-import { useStore } from "./model";
-
-const welcome: ChatMessage = {
-  id: "welcome", role: "assistant",
-  content: "你好！想去哪里走走？\n告诉我目的地、出发日期、旅行天数和总预算，我会帮你安排。信息还没想全也没关系，我们可以慢慢补充。",
-};
+import { useCallback, useEffect, useRef, useState } from "react";
+import ConnectionDialog from "./components/ConnectionDialog";
+import { Conversation, JourneyComposer } from "./components/JourneyComposer";
+import JourneyProgress from "./components/JourneyProgress";
+import JourneyReport, { ClarificationPanel } from "./components/JourneyReport";
+import { EmptyJourney, Hero, Icon, IconSprite } from "./components/VoyageArt";
+import { readStorage, useConnection, writeStorage } from "./hooks/useConnection";
+import { useTravelPlanning } from "./hooks/useTravelPlanning";
 
 function App() {
-  const [isPlanning, setIsPlanning] = useState(false);
-  const [planningError, setPlanningError] = useState<string | null>(null);
-  const [travelPlan, setTravelPlan] = useState<AgentResults | null>(null);
-  const [clarification, setClarification] = useState<Clarification | null>(null);
-  const [messages, setMessages] = useState<ChatMessage[]>([welcome]);
-  const [showReport, setShowReport] = useState(false);
-  const [smartMode, setSmartMode] = useState(false);
-  const addRecord = useStore((state) => state.addRecord);
-  const clearRecord = useStore((state) => state.clearRecord);
-  const records = useStore((state) => state.records);
-  const activeRequest = useRef<AbortController | null>(null);
+  const [query, setQuery] = useState(() => (new URLSearchParams(location.search).get("query") || "").slice(0, 5000));
+  const [mode, setMode] = useState<"standard" | "smart">("standard");
+  const [settingsOpen, setSettingsOpen] = useState(false);
+  const [theme, setTheme] = useState(() => {
+    const value = new URLSearchParams(location.search).get("theme") || readStorage("voyage.theme.v1");
+    return value === "night" ? "night" : "day";
+  });
+  const [toast, setToast] = useState("");
+  const toastTimer = useRef<number>();
+  const notify = useCallback((text: string) => {
+    window.clearTimeout(toastTimer.current);
+    setToast(text);
+    toastTimer.current = window.setTimeout(() => setToast(""), 3200);
+  }, []);
+  useEffect(() => () => window.clearTimeout(toastTimer.current), []);
+  const connection = useConnection();
+  const plan = useTravelPlanning(connection.apiBase, mode, notify);
+  const stage = useRef<HTMLElement>(null);
+  const planning = plan.phase === "planning";
 
-  useEffect(() => () => activeRequest.current?.abort(), []);
+  useEffect(() => {
+    document.documentElement.dataset.theme = theme;
+    document.querySelector('meta[name="theme-color"]')?.setAttribute("content", theme === "night" ? "#0d1815" : "#f7f3ea");
+  }, [theme]);
+  useEffect(() => {
+    document.body.dataset.view = plan.phase === "done" ? "result" : plan.phase;
+    return () => { delete document.body.dataset.view; };
+  }, [plan.phase]);
+  useEffect(() => {
+    if (plan.phase === "done" && window.matchMedia("(max-width: 980px)").matches) stage.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+    if (plan.phase === "clarify" && window.matchMedia("(min-width: 981px)").matches) document.getElementById("query")?.focus({ preventScroll: true });
+  }, [plan.phase]);
 
-  const handlePlanningSubmit = async (input: string) => {
-    if (activeRequest.current) return;
-    const controller = new AbortController();
-    activeRequest.current = controller;
-    const history: ConversationTurn[] = messages
-      .filter((message) => message.id !== "welcome" && !message.isError)
-      .slice(-20).map(({ role, content }) => ({ role, content }));
-    while (history.reduce((size, message) => size + message.content.length, 0) > 20000) history.shift();
-    setMessages((previous) => [...previous, { id: crypto.randomUUID(), role: "user", content: input }]);
-    setIsPlanning(true);
-    setPlanningError(null);
-    setTravelPlan(null);
-    setClarification(null);
-    setShowReport(false);
-    clearRecord();
+  function newTrip() {
+    plan.reset();
+    setQuery("");
+    notify("新的旅程，从哪里开始？");
+    document.getElementById("query")?.focus({ preventScroll: true });
+  }
+  function submit() {
+    if (planning) return;
+    if (!query.trim()) { notify("先写下一点旅行想法吧"); document.getElementById("query")?.focus(); return; }
+    void plan.run(query);
+    setQuery("");
+  }
+  const loadingText = plan.activeStage === "weather" ? "正在查询目的地天气，为每一天准备出行建议…"
+    : plan.activeStage === "planner" ? "正在安排逐日路线与景点，写下旅行的每个细节…" : "正在确认目的地、日期、天数与预算…";
 
-    try {
-      const reply = await streamPlan({ query: input, history, mode: smartMode ? "smart" : "standard", onRecord: addRecord, signal: controller.signal });
-      if (reply.kind === "clarification") {
-        setClarification(reply.clarification);
-        setMessages((previous) => [...previous, { id: crypto.randomUUID(), role: "assistant", content: reply.clarification.message, missingFields: reply.clarification.missingFields }]);
-      } else {
-        setTravelPlan(reply.result);
-        const analysis = reply.result.analysis.json;
-        setMessages((previous) => [...previous, {
-          id: crypto.randomUUID(), role: "assistant",
-          content: `行程已经准备好了！\n${analysis.destination} · ${analysis.duration}天\n${analysis.startDate}出发，预算：${analysis.budget}。\n可以在右侧查看完整报告，也可以继续告诉我想调整什么。`,
-        }]);
-      }
-    } catch (error) {
-      const cancelled = controller.signal.aborted;
-      const message = cancelled ? "已取消本次规划。之前的对话还在，你可以继续补充或修改需求。" : error instanceof Error ? error.message : "规划失败，请稍后重试";
-      if (!cancelled) setPlanningError(message);
-      setMessages((previous) => [...previous, { id: crypto.randomUUID(), role: "assistant", content: message, isError: true }]);
-      addRecord({ id: crypto.randomUUID(), name: "旅行规划", type: "supervisor", desc: cancelled ? "规划已取消" : "规划失败", content: message, contentType: "text", createdAt: Date.now() });
-    } finally {
-      activeRequest.current = null;
-      setIsPlanning(false);
-    }
-  };
-
-  const resetConversation = () => {
-    if (activeRequest.current) return;
-    setMessages([welcome]);
-    setTravelPlan(null);
-    setClarification(null);
-    setPlanningError(null);
-    setShowReport(false);
-    clearRecord();
-  };
-
-  return (
-    <div className="min-h-screen bg-slate-50 text-slate-900">
-      <header className="flex h-16 items-center gap-3 border-b border-slate-200 bg-white px-5 lg:px-7">
-        <span className="flex h-8 w-8 items-center justify-center rounded-xl bg-indigo-600 text-white"><Plane className="h-4 w-4" /></span>
-        <h1 className="text-base font-semibold tracking-tight">旅行规划助手</h1>
-        <span className="hidden text-xs text-slate-400 sm:inline">从一个想法，到一段好旅程</span>
-      </header>
-
-      <main className="mx-auto grid max-w-[1680px] items-start gap-5 p-4 md:grid-cols-[320px_minmax(0,1fr)] md:p-6 xl:grid-cols-[360px_minmax(0,1fr)] xl:gap-7">
-        <ChatPanel messages={messages} isPlanning={isPlanning} smartMode={smartMode} onSmartModeChange={setSmartMode} onSubmit={handlePlanningSubmit} onCancel={() => activeRequest.current?.abort()} onReset={resetConversation} />
-
-        <section aria-label="规划工作台" className="min-w-0 space-y-5">
-          <div className="px-1 py-1">
-            <h2 className="text-lg font-semibold">规划工作台</h2>
-            <p className="mt-1 text-xs leading-6 text-slate-500">{clarification ? "还有一些信息需要确认，在左侧回复旅行助手即可继续。" : travelPlan ? "行程已生成，查看报告或在左侧继续调整需求。" : "在左侧聊聊你的旅行想法，执行进度和报告会显示在这里。"}</p>
-          </div>
-
-          {travelPlan && (
-            <Card className="border-indigo-100 bg-white p-5 shadow-sm">
-              <div className="flex flex-wrap items-start justify-between gap-4">
-                <div>
-                  <p className="mb-2 text-xs font-medium text-indigo-600">旅行计划已完成</p>
-                  <h3 className="text-xl font-semibold">{travelPlan.analysis.json.destination} · {travelPlan.analysis.json.duration}日游</h3>
-                  <div className="mt-3 flex flex-wrap gap-x-4 gap-y-2 text-xs text-slate-500">
-                    <span className="flex items-center gap-1"><Calendar className="h-3.5 w-3.5" />{travelPlan.analysis.json.startDate}</span>
-                    <span className="flex items-center gap-1"><Wallet className="h-3.5 w-3.5" />{travelPlan.analysis.json.budget}</span>
-                  </div>
-                </div>
-                <Button onClick={() => setShowReport(true)} className="gap-2 bg-indigo-600 hover:bg-indigo-700"><FileText className="h-4 w-4" />查看完整报告</Button>
-              </div>
-            </Card>
-          )}
-
-          {clarification && <div role="status" className="rounded-xl border border-amber-200 bg-amber-50 px-5 py-4 text-sm text-amber-800">等待补充信息 · 尚未开始天气查询和行程生成</div>}
-          {planningError && <div role="alert" className="rounded-xl border border-red-200 bg-red-50 p-4 text-sm text-red-700">{planningError}</div>}
-
-          <Card className="min-w-0 rounded-2xl border-slate-200 bg-white p-5 shadow-sm lg:p-6">
-            {records.length > 0 || isPlanning ? <AgentStatus isPlanning={isPlanning} records={records} /> : (
-              <div className="flex min-h-[460px] flex-col items-center justify-center px-4 text-center">
-                <div className="mb-5 flex h-16 w-16 items-center justify-center rounded-2xl bg-indigo-50 text-indigo-500"><MapPin className="h-7 w-7" /></div>
-                <h3 className="text-lg font-semibold">下一站，想去哪里？</h3>
-                <p className="mt-3 max-w-sm text-sm leading-7 text-slate-500">不必一次说完所有信息。先告诉我你的想法，旅行助手会和你一起确认细节。</p>
-                <div className="mt-8 flex flex-wrap justify-center gap-2 text-xs text-slate-400">
-                  {["确认需求", "查询天气", "安排行程"].map((label) => <span key={label} className="rounded-full border border-slate-100 px-3 py-1.5">{label}</span>)}
-                </div>
-                <span className="mt-8 flex items-center gap-1.5 text-[11px] text-slate-400"><Sparkles className="h-3 w-3" />信息齐全后，再开始规划</span>
-              </div>
-            )}
-          </Card>
-        </section>
-      </main>
-
-      {showReport && travelPlan && <PlanResult plan={travelPlan} open={showReport} onOpenChange={setShowReport} />}
-    </div>
-  );
+  return <>
+    <div className="ambient" aria-hidden="true"><span className="ambient__blob ambient__blob--one" /><span className="ambient__blob ambient__blob--two" /><span className="ambient__blob ambient__blob--three" /></div><div className="grain" aria-hidden="true" /><IconSprite />
+    <header className="topbar"><a className="brand" href="./" aria-label="远行 · 首页"><span className="brand__mark"><Icon name="plane" /></span><span className="brand__text"><strong>远行</strong><small>VOYAGE ATELIER</small></span></a>
+      <nav className="topnav" aria-label="页面导航"><a href="#studio">规划旅程</a><a href={connection.docsUrl} target="_blank" rel="noreferrer">接口文档</a></nav>
+      <div className="topbar__tools"><button className="conn" type="button" data-state={connection.connection.status} title={connection.connection.title} onClick={() => void connection.check()}><span className="conn__dot" aria-hidden="true" /><span className="conn__text">{connection.connection.status === "ok" ? "后端在线" : connection.connection.status === "fail" ? "后端离线" : "检查服务中"}</span></button>
+        <button className="icon-btn" type="button" aria-label="后端设置" title="后端设置" onClick={() => setSettingsOpen(true)}><Icon name="settings" /></button>
+        <button className="icon-btn" type="button" aria-label={theme === "day" ? "切换夜间模式" : "切换日间模式"} title={theme === "day" ? "切换夜间模式" : "切换日间模式"} onClick={() => { const next = theme === "day" ? "night" : "day"; setTheme(next); writeStorage("voyage.theme.v1", next); }}><Icon name={theme === "day" ? "moon" : "sun"} /></button></div>
+    </header>
+    <main id="studio"><Hero /><div className="studio-grid"><aside className="rail" aria-label="输入与执行进度">
+      <JourneyComposer query={query} onQuery={setQuery} mode={mode} onMode={setMode} planning={planning} hasResult={!!plan.result} clarification={plan.clarification} onSubmit={submit} onStop={plan.stop} />
+      <Conversation thread={plan.thread} onNewTrip={newTrip} />
+      <JourneyProgress records={plan.records} phase={plan.phase} activeStage={plan.activeStage} elapsed={plan.elapsed} showTimer={!!plan.startedAt && !plan.isDemo} />
+    </aside>
+      <section ref={stage} className="stage card" aria-live="polite" aria-busy={planning} aria-label="规划结果">
+        {plan.phase === "idle" && <EmptyJourney onDemo={plan.showDemo} />}
+        {planning && <div className="stage__loading"><div className="compass-loader" aria-hidden="true"><span className="compass-loader__ring" /><span className="compass-loader__ring compass-loader__ring--two" /><Icon className="compass-loader__icon" name="compass" /></div><p className="kicker">DRAWING THE ROUTE</p><h2>正在为你绘制旅程</h2><p className="stage__loading-text">{loadingText}</p><div className="loading-lines" aria-hidden="true"><span /><span /><span /></div></div>}
+        {plan.phase === "done" && plan.result && <JourneyReport result={plan.result} demo={plan.isDemo} onNewTrip={newTrip} notify={notify} />}
+        {plan.phase === "clarify" && plan.clarification && <ClarificationPanel clarification={plan.clarification} />}
+        {(plan.phase === "error" || plan.phase === "stopped") && <div className="stage__error"><div className={`error-card ${plan.phase === "stopped" ? "error-card--stopped" : ""}`}><div className="error-card__icon">{plan.phase === "stopped" ? <Icon name="stop" /> : "!"}</div><p className="kicker">{plan.phase === "stopped" ? "JOURNEY PAUSED" : "SOMETHING WENT WRONG"}</p><h2>{plan.phase === "stopped" ? "已停止本次规划" : "这次没有走通"}</h2><p style={{ whiteSpace: "pre-wrap" }}>{plan.error?.message || "执行记录仍保留在左侧。你可以重新尝试，或继续补充需求后再开始。"}</p>{plan.error?.requestId && <p className="error-card__ref">Request ID · {plan.error.requestId}</p>}<div className="error-card__actions">{plan.canRetry && <button className="btn btn--primary" onClick={() => void plan.retry()}>重新尝试</button>}<button className="btn btn--ghost" onClick={() => setSettingsOpen(true)}>检查后端设置</button></div></div></div>}
+      </section>
+    </div></main>
+    <footer className="footer"><p><span className="footer__mark"><Icon name="plane" /></span>远行 · VOYAGE ATELIER<span className="footer__sep">/</span>由 FastAPI 多智能体服务驱动</p><div className="footer__links"><span>{connection.version}</span><a href={connection.docsUrl} target="_blank" rel="noreferrer">OpenAPI 文档</a><span className="footer__note">AI 生成内容，出行前请核实开放时间与价格</span></div></footer>
+    <ConnectionDialog apiBase={connection.apiBase} open={settingsOpen} onClose={() => setSettingsOpen(false)} onSave={(base) => { connection.save(base); notify("后端地址已保存"); }} />
+    <div className={`toast ${toast ? "is-visible" : ""}`} role="status" aria-live="polite">{toast}</div>
+  </>;
 }
-
 export default App;

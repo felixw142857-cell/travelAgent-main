@@ -1,4 +1,14 @@
 // 浏览器仅保留接口契约；Agent、提示词和外部 API 调用在 Python 后端。
+export interface RecordItem {
+  id: string;
+  name: string;
+  type: "supervisor" | "agent" | "tool";
+  desc: string;
+  content: string;
+  contentType: "json" | "text" | "";
+  createdAt: number;
+}
+
 export interface AnalysisResult {
   destination: string;
   duration: number;

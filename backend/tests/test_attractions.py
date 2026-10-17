@@ -13,6 +13,7 @@ from src.tools.attraction import (
     Attraction,
     AttractionDataError,
     AttractionSource,
+    accommodation,
     available_cities,
     build_candidates,
     load_city,
@@ -217,3 +218,43 @@ def test_planner_text_lists_sources():
 def test_planner_text_without_source_has_no_footer():
     plan = make_plan([["", "", ""]])
     assert "资料来源" not in planner_text(plan)
+
+
+# ---------------- 餐饮与住宿 ----------------
+
+
+def test_build_candidates_excludes_hotels(monkeypatch):
+    """住宿不占行程时段，不能出现在候选池里。"""
+    hotel = make_attraction("h1", "某酒店", "hotel")
+    sight = make_attraction("s1", "某塔", "sight")
+    food = make_attraction("f1", "某小吃店", "food")
+    monkeypatch.setattr(
+        "src.tools.attraction.load_city",
+        lambda city: {"h1": hotel, "s1": sight, "f1": food},
+    )
+    candidates = build_candidates("成都", days=1)
+    ids = [item.id for item in candidates]
+    assert "h1" not in ids
+    assert "f1" in ids and "s1" in ids
+
+
+def test_accommodation_lists_only_hotels(monkeypatch):
+    hotel = make_attraction("h1", "某酒店", "hotel")
+    sight = make_attraction("s1", "某塔", "sight")
+    monkeypatch.setattr(
+        "src.tools.attraction.load_city",
+        lambda city: {"h1": hotel, "s1": sight},
+    )
+    result = accommodation("成都")
+    assert [item.id for item in result] == ["h1"]
+
+
+def test_build_candidates_prefers_food_when_asked(monkeypatch):
+    food = make_attraction("f1", "龙抄手", "food")
+    sight = make_attraction("s1", "某塔", "sight")
+    monkeypatch.setattr(
+        "src.tools.attraction.load_city",
+        lambda city: {"f1": food, "s1": sight},
+    )
+    candidates = build_candidates("成都", preferences=["美食"], days=1)
+    assert candidates[0].id == "f1"

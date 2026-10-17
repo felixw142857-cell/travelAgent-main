@@ -6,7 +6,7 @@
   "source": {
     "provider": "openstreetmap",
     "license": "ODbL-1.0",
-    "endpoint": "https://overpass-api.de/api/interpreter"
+    "endpoint": "https://overpass.kumi.systems/api/interpreter"
   },
   "notes": "名称/类别/坐标为 OSM 实测数据；suggested_minutes 与 best_time 为程序估计，非官方信息。",
   "items": [
@@ -101,6 +101,34 @@
       }
     },
     {
+      "id": "chengdu-way1158624488",
+      "name": "寿安陈家大院",
+      "aliases": [],
+      "category": "sight",
+      "district": "",
+      "lat": 30.823926,
+      "lon": 103.739975,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 1158624488,
+        "wikidata": "Q17024821"
+      }
+    },
+    {
       "id": "chengdu-way660894418",
       "name": "文殊院",
       "aliases": [
@@ -191,13 +219,43 @@
       }
     },
     {
+      "id": "chengdu-node1003930254",
+      "name": "毛主席像",
+      "aliases": [
+        "Chairman Mao statue"
+      ],
+      "category": "sight",
+      "district": "",
+      "lat": 30.66124,
+      "lon": 104.063301,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 1003930254,
+        "wikidata": "Q11880816"
+      }
+    },
+    {
       "id": "chengdu-node4787165826",
       "name": "永陵",
       "aliases": [
-        "Yongling Mausoleum"
+        "yongling"
       ],
       "category": "sight",
-      "district": "金牛区",
+      "district": "",
       "lat": 30.676078,
       "lon": 104.044499,
       "suggested_minutes": 120,
@@ -248,6 +306,34 @@
         "osm_type": "relation",
         "osm_id": 18440094,
         "wikidata": "Q2121639"
+      }
+    },
+    {
+      "id": "chengdu-node12137002795",
+      "name": "刘氏庄园",
+      "aliases": [],
+      "category": "sight",
+      "district": "",
+      "lat": 30.508674,
+      "lon": 103.626329,
+      "suggested_minutes": 120,
+      "best_time": "上午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 12137002795,
+        "wikidata": "Q10938219"
       }
     },
     {
@@ -311,6 +397,36 @@
       }
     },
     {
+      "id": "chengdu-relation17876822",
+      "name": "四川科技馆",
+      "aliases": [
+        "Sichuan Science and Technology Museum"
+      ],
+      "category": "museum",
+      "district": "",
+      "lat": 30.66243,
+      "lon": 104.063301,
+      "suggested_minutes": 120,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "relation",
+        "osm_id": 17876822,
+        "wikidata": "Q7507431"
+      }
+    },
+    {
       "id": "chengdu-way239424429",
       "name": "四川科技馆",
       "aliases": [
@@ -347,7 +463,7 @@
         "Chengdu Museum"
       ],
       "category": "museum",
-      "district": "青羊区",
+      "district": "",
       "lat": 30.659669,
       "lon": 104.061127,
       "suggested_minutes": 120,
@@ -522,6 +638,36 @@
       }
     },
     {
+      "id": "chengdu-way525168193",
+      "name": "建川博物馆",
+      "aliases": [
+        "Jianchuan Museum Cluster"
+      ],
+      "category": "park",
+      "district": "",
+      "lat": 30.502308,
+      "lon": 103.617783,
+      "suggested_minutes": 90,
+      "best_time": "下午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikipedia",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 525168193,
+        "wikidata": "Q15894094"
+      }
+    },
+    {
       "id": "chengdu-relation18440093",
       "name": "成都市文化公园",
       "aliases": [
@@ -672,17 +818,15 @@
       }
     },
     {
-      "id": "chengdu-way921160362",
-      "name": "辛亥秋保路死事纪念碑",
-      "aliases": [
-        "Monument to the Martyrs of the Railway Protection Movement"
-      ],
-      "category": "historic",
+      "id": "chengdu-way1103082061",
+      "name": "努力餐",
+      "aliases": [],
+      "category": "food",
       "district": "",
-      "lat": 30.660766,
-      "lon": 104.054476,
+      "lat": 30.662606,
+      "lon": 104.053318,
       "suggested_minutes": 60,
-      "best_time": "上午",
+      "best_time": "中午",
       "field_confidence": {
         "name": "osm",
         "category": "osm",
@@ -697,8 +841,602 @@
         "provider": "openstreetmap",
         "license": "ODbL-1.0",
         "osm_type": "way",
-        "osm_id": 921160362,
-        "wikidata": "Q15934393"
+        "osm_id": 1103082061,
+        "wikidata": "Q56271972"
+      }
+    },
+    {
+      "id": "chengdu-node13707192612",
+      "name": "86烧烤",
+      "aliases": [],
+      "category": "food",
+      "district": "",
+      "lat": 30.626558,
+      "lon": 104.057812,
+      "suggested_minutes": 60,
+      "best_time": "中午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 13707192612,
+        "wikidata": null
+      }
+    },
+    {
+      "id": "chengdu-node14138581438",
+      "name": "Bashu Qianchuanchuan Hot Pot (Kuan Alley and Zhai Alley Branch)",
+      "aliases": [],
+      "category": "food",
+      "district": "",
+      "lat": 30.667879,
+      "lon": 104.049834,
+      "suggested_minutes": 60,
+      "best_time": "中午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 14138581438,
+        "wikidata": null
+      }
+    },
+    {
+      "id": "chengdu-node9609222879",
+      "name": "BiangBiang面",
+      "aliases": [],
+      "category": "food",
+      "district": "",
+      "lat": 30.660982,
+      "lon": 104.076612,
+      "suggested_minutes": 60,
+      "best_time": "中午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 9609222879,
+        "wikidata": null
+      }
+    },
+    {
+      "id": "chengdu-node14191266147",
+      "name": "Crescendo@FIELDS 十域",
+      "aliases": [],
+      "category": "food",
+      "district": "高新区",
+      "lat": 30.553153,
+      "lon": 104.045254,
+      "suggested_minutes": 60,
+      "best_time": "中午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 14191266147,
+        "wikidata": null
+      }
+    },
+    {
+      "id": "chengdu-node6127624906",
+      "name": "FIELDS CONCORD 十域·至臻",
+      "aliases": [],
+      "category": "food",
+      "district": "锦江区",
+      "lat": 30.657252,
+      "lon": 104.080911,
+      "suggested_minutes": 60,
+      "best_time": "中午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 6127624906,
+        "wikidata": null
+      }
+    },
+    {
+      "id": "chengdu-node10811766224",
+      "name": "HYGGE Life·来福",
+      "aliases": [],
+      "category": "food",
+      "district": "",
+      "lat": 30.624943,
+      "lon": 104.05298,
+      "suggested_minutes": 60,
+      "best_time": "中午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 10811766224,
+        "wikidata": null
+      }
+    },
+    {
+      "id": "chengdu-node337540009",
+      "name": "He's",
+      "aliases": [],
+      "category": "food",
+      "district": "",
+      "lat": 30.625372,
+      "lon": 104.07451,
+      "suggested_minutes": 60,
+      "best_time": "中午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 337540009,
+        "wikidata": null
+      }
+    },
+    {
+      "id": "chengdu-node4879973465",
+      "name": "Lenbach",
+      "aliases": [],
+      "category": "food",
+      "district": "",
+      "lat": 30.646219,
+      "lon": 104.08226,
+      "suggested_minutes": 60,
+      "best_time": "中午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 4879973465,
+        "wikidata": null
+      }
+    },
+    {
+      "id": "chengdu-node6127624903",
+      "name": "Let's Seafood",
+      "aliases": [],
+      "category": "food",
+      "district": "",
+      "lat": 30.656742,
+      "lon": 104.080552,
+      "suggested_minutes": 60,
+      "best_time": "中午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 6127624903,
+        "wikidata": null
+      }
+    },
+    {
+      "id": "chengdu-node13508093301",
+      "name": "Li Ji Wei Zhi Yuan Old-fashioned Bread",
+      "aliases": [],
+      "category": "food",
+      "district": "",
+      "lat": 30.647454,
+      "lon": 104.059934,
+      "suggested_minutes": 60,
+      "best_time": "中午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 13508093301,
+        "wikidata": null
+      }
+    },
+    {
+      "id": "chengdu-node4729194189",
+      "name": "Local Hotpot",
+      "aliases": [],
+      "category": "food",
+      "district": "",
+      "lat": 30.672144,
+      "lon": 104.046017,
+      "suggested_minutes": 60,
+      "best_time": "中午",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 4729194189,
+        "wikidata": null
+      }
+    },
+    {
+      "id": "chengdu-node4223495594",
+      "name": "18步岛别墅",
+      "aliases": [
+        "18 Bu dao"
+      ],
+      "category": "hotel",
+      "district": "",
+      "lat": 30.54693,
+      "lon": 104.075565,
+      "suggested_minutes": 0,
+      "best_time": "",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 4223495594,
+        "wikidata": null
+      }
+    },
+    {
+      "id": "chengdu-node5469306641",
+      "name": "7天酒店",
+      "aliases": [
+        "7 Days Inn"
+      ],
+      "category": "hotel",
+      "district": "",
+      "lat": 30.632042,
+      "lon": 104.058543,
+      "suggested_minutes": 0,
+      "best_time": "",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 5469306641,
+        "wikidata": null
+      }
+    },
+    {
+      "id": "chengdu-node12512460500",
+      "name": "99旅馆连锁",
+      "aliases": [],
+      "category": "hotel",
+      "district": "",
+      "lat": 30.689441,
+      "lon": 104.038595,
+      "suggested_minutes": 0,
+      "best_time": "",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 12512460500,
+        "wikidata": null
+      }
+    },
+    {
+      "id": "chengdu-node14291180295",
+      "name": "Anyee Xinliang Grand Hotel",
+      "aliases": [],
+      "category": "hotel",
+      "district": "",
+      "lat": 30.65661,
+      "lon": 104.071504,
+      "suggested_minutes": 0,
+      "best_time": "",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 14291180295,
+        "wikidata": null
+      }
+    },
+    {
+      "id": "chengdu-node12551444845",
+      "name": "CHIC外星人电竞酒店(太古里店)",
+      "aliases": [],
+      "category": "hotel",
+      "district": "",
+      "lat": 30.653036,
+      "lon": 104.092979,
+      "suggested_minutes": 0,
+      "best_time": "",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 12551444845,
+        "wikidata": null
+      }
+    },
+    {
+      "id": "chengdu-node14132832140",
+      "name": "Chengdu KuanZhai Jin Qi Hotel",
+      "aliases": [],
+      "category": "hotel",
+      "district": "",
+      "lat": 30.664711,
+      "lon": 104.04707,
+      "suggested_minutes": 0,
+      "best_time": "",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 14132832140,
+        "wikidata": null
+      }
+    },
+    {
+      "id": "chengdu-node4279264989",
+      "name": "Cici GH",
+      "aliases": [
+        "Cici GH"
+      ],
+      "category": "hotel",
+      "district": "",
+      "lat": 30.6151,
+      "lon": 104.054562,
+      "suggested_minutes": 0,
+      "best_time": "",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 4279264989,
+        "wikidata": null
+      }
+    },
+    {
+      "id": "chengdu-way638199462",
+      "name": "Crowne Plaza Chengdu West",
+      "aliases": [],
+      "category": "hotel",
+      "district": "Hi-Technology West Zone",
+      "lat": 30.731429,
+      "lon": 103.971405,
+      "suggested_minutes": 0,
+      "best_time": "",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 638199462,
+        "wikidata": null
+      }
+    },
+    {
+      "id": "chengdu-way638199461",
+      "name": "Holiday Inn Chengdu High-Tech Center",
+      "aliases": [],
+      "category": "hotel",
+      "district": "Hi-Tech Development Zone",
+      "lat": 30.730766,
+      "lon": 103.97126,
+      "suggested_minutes": 0,
+      "best_time": "",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "way",
+        "osm_id": 638199461,
+        "wikidata": null
+      }
+    },
+    {
+      "id": "chengdu-node12551444846",
+      "name": "ISEYA世野·设计酒店(太古里店)",
+      "aliases": [],
+      "category": "hotel",
+      "district": "",
+      "lat": 30.653118,
+      "lon": 104.09282,
+      "suggested_minutes": 0,
+      "best_time": "",
+      "field_confidence": {
+        "name": "osm",
+        "category": "osm",
+        "coord": "osm",
+        "suggested_minutes": "estimate",
+        "best_time": "estimate"
+      },
+      "highlight": null,
+      "booking": null,
+      "notability": "wikidata",
+      "source": {
+        "provider": "openstreetmap",
+        "license": "ODbL-1.0",
+        "osm_type": "node",
+        "osm_id": 12551444846,
+        "wikidata": null
       }
     }
   ]

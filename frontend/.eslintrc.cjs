@@ -9,15 +9,6 @@ module.exports = {
   ignorePatterns: ['dist', '.eslintrc.cjs'],
   overrides: [
     { files: ['*.config.ts', '*.config.js'], env: { node: true } },
-    {
-      files: ['src/components/ui/button.tsx', 'src/components/ui/badge.tsx'],
-      rules: {
-        'react-refresh/only-export-components': ['warn', {
-          allowConstantExport: true,
-          allowExportNames: ['buttonVariants', 'badgeVariants'],
-        }],
-      },
-    },
   ],
   parser: '@typescript-eslint/parser',
   plugins: ['react-refresh'],

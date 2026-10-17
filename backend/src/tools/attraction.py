@@ -31,6 +31,11 @@ PREFERENCE_CATEGORY = {
     "熊猫": "zoo",
     "观景": "sight",
     "地标": "sight",
+    "美食": "food",
+    "小吃": "food",
+    "餐厅": "food",
+    "住宿": "hotel",
+    "酒店": "hotel",
 }
 
 CATEGORY_LABEL = {
@@ -40,7 +45,14 @@ CATEGORY_LABEL = {
     "temple": "寺庙",
     "zoo": "动物园",
     "historic": "古迹",
+    "food": "餐饮",
+    "hotel": "住宿",
 }
+
+# 能占用行程时段的类别；住宿是"住哪儿"，不是时段
+SLOT_CATEGORIES = frozenset(
+    {"sight", "museum", "park", "temple", "zoo", "historic", "food"}
+)
 
 # 类别优先级，用于候选排序
 CATEGORY_ORDER = {
@@ -49,7 +61,9 @@ CATEGORY_ORDER = {
     "museum": 2,
     "park": 3,
     "temple": 4,
-    "historic": 5,
+    "food": 5,
+    "historic": 6,
+    "hotel": 7,
 }
 
 
@@ -156,7 +170,7 @@ def load_city(city: str) -> dict[str, Attraction]:
 
 
 def score(item: Attraction, preferences: list[str]) -> int:
-    """偏好命中加分；类别越靠前越优先。"""
+    """偏好命中加分；显式偏好要压过默认的类别顺序。"""
     points = 10 - CATEGORY_ORDER.get(item.category, 9)
     if item.notability == "wikipedia":
         points += 3
@@ -168,7 +182,8 @@ def score(item: Attraction, preferences: list[str]) -> int:
             points += 6
         target = PREFERENCE_CATEGORY.get(key)
         if target and target == item.category:
-            points += 4
+            # 与关键词命中同权：用户说"喜欢美食"，美食类就要排到地标前面
+            points += 6
     return points
 
 
@@ -178,14 +193,28 @@ def build_candidates(
     limit: int = 24,
     days: int = 1,
 ) -> list[Attraction]:
-    """按偏好筛选并排序，保证候选数至少够 days*3 个时段使用。"""
+    """按偏好筛选并排序，保证候选数至少够 days*3 个时段使用。
+
+    住宿（hotel）不占行程时段，不进入候选池，需要时用 accommodation()。
+    """
     items = load_city(city)
     ranked = sorted(
-        items.values(),
+        (item for item in items.values() if item.category in SLOT_CATEGORIES),
         key=lambda item: (-score(item, preferences or []), item.name),
     )
     minimum = max(days * 3 + 3, 12)
     return ranked[: max(limit, minimum)]
+
+
+def accommodation(city: str, limit: int = 8) -> list[Attraction]:
+    """住宿建议：只给真实名称与所在区域。
+
+    OSM 没有可靠的房价数据，因此这里不提供价格，预算由 tools/budget.py 按档位估算。
+    """
+    items = load_city(city)
+    hotels = [item for item in items.values() if item.category == "hotel"]
+    hotels.sort(key=lambda item: (item.district or "~", item.name))
+    return hotels[:limit]
 
 
 def search(

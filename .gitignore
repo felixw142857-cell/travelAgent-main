@@ -29,6 +29,8 @@ dist-ssr
 .env.development.local
 .env.test.local
 .env.production.local
+.env.*
+!.env.example
 
 # Dependencies
 node_modules/
@@ -73,3 +75,9 @@ __pycache__/
 .ruff_cache/
 .uv-cache/
 .tools/
+.tmp/
+.test-tmp/
+pytest-of-*/
+pytest-tmp*/
+.coverage
+htmlcov/

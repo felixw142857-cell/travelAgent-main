@@ -22,8 +22,10 @@ from src.services.progress import ProgressReporter
 from src.tools.attraction import (
     Attraction,
     AttractionDataError,
+    accommodation,
     build_candidates,
 )
+from src.tools.budget import estimate as budget_estimate
 
 MAX_DAY_MINUTES = 720  # 单日景点停留上限 12 小时，超出只告警
 SOURCE_MODEL = "model（未使用景点库，待核实）"
@@ -169,7 +171,7 @@ def _validate(
     return warnings
 
 
-def planner_text(plan: list[DayPlan]) -> str:
+def planner_text(plan: list[DayPlan], analysis: AnalysisResult | None = None) -> str:
     body = "\n\n".join(
         f"第{index + 1}天（{day.date}）\n"
         + "\n".join(
@@ -179,9 +181,33 @@ def planner_text(plan: list[DayPlan]) -> str:
         + f"\n当日建议：{day.generalTips}"
         for index, day in enumerate(plan)
     )
+    parts = [body]
     sources = {
         activity.source for day in plan for activity in day.plan if activity.source
     }
-    if not sources:
-        return body
-    return body + "\n\n资料来源：" + "；".join(sorted(sources))
+    if sources:
+        parts.append("资料来源：" + "；".join(sorted(sources)))
+    if analysis is not None:
+        parts.extend(_accommodation_block(analysis))
+        # 预算不能靠"编价格"落地：给档位区间与假设，明确标注不是报价
+        parts.append(
+            budget_estimate(
+                analysis.budget, analysis.duration, analysis.travelers
+            ).render()
+        )
+    return "\n\n".join(parts)
+
+
+def _accommodation_block(analysis: AnalysisResult) -> list[str]:
+    """住宿只给真实名称与区域；OSM 没有可靠房价，价格交给预算档位估算。"""
+    try:
+        hotels = accommodation(analysis.destination)
+    except AttractionDataError:
+        return []
+    if not hotels:
+        return []
+    lines = ["【住宿建议】以下为景点库中的真实住宿地点，房价以实际预订为准"]
+    for hotel in hotels:
+        area = f"（{hotel.district}）" if hotel.district else ""
+        lines.append(f"- {hotel.name}{area}")
+    return ["\n".join(lines)]
