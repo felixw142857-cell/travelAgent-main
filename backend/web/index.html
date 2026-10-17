@@ -105,8 +105,10 @@
           <circle class="route-map__dot" cx="88" cy="318" r="5" />
           <circle class="route-map__halo route-map__halo--end" cx="496" cy="84" r="16" />
           <circle class="route-map__dot route-map__dot--end" cx="496" cy="84" r="5" />
-          <g class="route-map__plane" transform="translate(396 170) rotate(16)">
-            <path d="M18 1 2 8.5l5.4 2.1L9.5 18l2.7-5.3L18 1Z" />
+          <g transform="translate(396 170) rotate(16)">
+            <g class="route-map__plane">
+              <path d="M18 1 2 8.5l5.4 2.1L9.5 18l2.7-5.3L18 1Z" />
+            </g>
           </g>
           <text class="route-map__label" x="70" y="352">SHANGHAI</text>
           <text class="route-map__label route-map__label--end" x="452" y="118">CHENGDU</text>
@@ -125,7 +127,6 @@
           <span class="art-card__weather"><svg class="icon"><use href="#i-cloud"></use></svg></span>
           <div><small>10月23日</small><strong>24° 多云</strong></div>
         </div>
-        <div class="art-stamp">31.23°N<br />104.06°E</div>
       </div>
     </section>
 
@@ -234,8 +235,10 @@
               <circle class="empty-art__pin" cx="122" cy="212" r="5" />
               <circle class="empty-art__halo" cx="362" cy="106" r="15" />
               <circle class="empty-art__pin" cx="362" cy="106" r="5" />
-              <g class="empty-art__plane" transform="translate(266 158) rotate(14)">
-                <path d="M18 1 2 8.5l5.4 2.1L9.5 18l2.7-5.3L18 1Z" />
+              <g transform="translate(266 158) rotate(14)">
+                <g class="empty-art__plane">
+                  <path d="M18 1 2 8.5l5.4 2.1L9.5 18l2.7-5.3L18 1Z" />
+                </g>
               </g>
               <g class="empty-art__compass" transform="translate(220 150)">
                 <circle r="34" />
@@ -312,7 +315,7 @@
       </div>
       <label class="field-label" for="apiInput">FastAPI 服务地址</label>
       <input class="text-input" id="apiInput" type="url" placeholder="http://127.0.0.1:8001" autocomplete="off" spellcheck="false" />
-      <p class="dialog__hint">默认读取 <code>127.0.0.1:8001</code>。页面需通过 <code>http://127.0.0.1:5173</code> 打开，后端 <code>CORS_ORIGINS</code> 已允许该来源。</p>
+      <p class="dialog__hint">默认读取 <code>127.0.0.1:8001</code>。使用 <code>web/serve.py</code> 时页面会通过同源代理访问后端；若用其他静态服务器打开，需要把页面来源加入后端 <code>CORS_ORIGINS</code>。</p>
       <p class="dialog__status" id="settingsStatus" hidden></p>
       <div class="dialog__actions">
         <button class="btn btn--ghost" id="cancelSettings" type="button">取消</button>
