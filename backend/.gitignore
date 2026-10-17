@@ -1,0 +1,17 @@
+.env
+.env.*
+!.env.example
+.venv/
+.tools/
+.tmp/
+.test-tmp/
+pytest-of-*/
+.uv-cache/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+logs/
+*.db

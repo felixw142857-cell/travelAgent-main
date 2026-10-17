@@ -1,0 +1,8 @@
+"""一级路由：集中挂载各版本 API。"""
+
+from fastapi import APIRouter
+
+from src.api.v1 import v1_router
+
+api_router = APIRouter()
+api_router.include_router(v1_router, prefix="/v1")
